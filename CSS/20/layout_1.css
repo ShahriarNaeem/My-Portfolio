@@ -1,0 +1,28 @@
+.A {
+  color: blue;
+  background-color: yellow;
+}
+.B {
+  width: 300px;
+  height: 150px;
+  border: 2px dashed darkred;
+  overflow: visible;
+}
+.C {
+  width: 300px;
+  height: 150px;
+  border: 2px dotted darkmagenta;
+  overflow: hidden;
+}
+.D {
+  width: 300px;
+  height: 150px;
+  border: 2px inset darkgreen;
+  overflow: scroll;
+}
+.E {
+  width: 300px;
+  height: 150px;
+  border: 2px groove darkslateblue;
+  overflow: auto;
+}

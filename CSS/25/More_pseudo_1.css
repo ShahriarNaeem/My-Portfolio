@@ -1,0 +1,19 @@
+p::first-letter {
+  color: blue;
+  font-size: 50px;
+}
+div::first-line {
+  color: red;
+  background: lightgoldenrodyellow;
+  font-size: 20px;
+}
+h2::before {
+  content: url(Water.png);
+}
+h2::after {
+  content: url(Water.png);
+}
+h2 {
+  color: magenta;
+  background: black;
+}

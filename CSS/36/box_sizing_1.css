@@ -1,0 +1,30 @@
+.A {
+  width: 350px;
+  height: 150px;
+  border: 1.5px solid blue;
+  padding: 30px;
+}
+.B {
+  width: 350px;
+  height: 150px;
+  border: 1.5px solid magenta;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.C {
+  width: 300px;
+  border: 1.5px dotted red;
+  padding: 5px 0px;
+}
+.C input {
+  width: 100%;
+}
+.D {
+  width: 300px;
+  border: 1.5px dotted green;
+  padding: 5px 0px;
+}
+.D input {
+  width: 100%;
+  box-sizing: border-box;
+}

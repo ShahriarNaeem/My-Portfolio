@@ -1,0 +1,42 @@
+p {
+  font-size: 30px;
+  color: coral;
+  text-align: justify;
+  text-indent: 60px;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+.A {
+  text-decoration: underline;
+}
+.B {
+  text-decoration: overline;
+}
+.C {
+  text-decoration: line-through;
+}
+.D {
+  text-transform: uppercase;
+}
+.E {
+  text-transform: lowercase;
+}
+.F {
+  text-transform: capitalize;
+}
+.G {
+  letter-spacing: 15px;
+}
+.H {
+  line-height: 2;
+}
+.I {
+  word-spacing: 30px;
+}
+.J {
+  word-spacing: 10px;
+  text-shadow: 3px -3px magenta;
+}

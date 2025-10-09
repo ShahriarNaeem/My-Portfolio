@@ -1,0 +1,32 @@
+img {
+  width: 30%;
+  height: auto;
+  float: left;
+}
+.blur {
+  filter: blur(3px);
+}
+.brightness {
+  filter: brightness(300%);
+}
+.contrast {
+  filter: contrast(300%);
+}
+.grayscale {
+  filter: grayscale(300%);
+}
+.invert {
+  filter: invert(200%);
+}
+.sepia {
+  filter: sepia(110%);
+}
+.opacity {
+  filter: opacity(50%);
+}
+.saturate {
+  filter: saturate(6);
+}
+.drop-shadow {
+  filter: drop-shadow(11px 8px 16px blue);
+}

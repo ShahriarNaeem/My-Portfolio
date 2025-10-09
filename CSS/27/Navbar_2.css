@@ -1,0 +1,42 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  background: rgb(44, 42, 42);
+  float: left;
+  list-style-type: none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px 0px red;
+}
+ul li a {
+  color: cornsilk;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: capitalize;
+  width: 200px;
+}
+ul li a:hover {
+  background: lightslategrey;
+  color: rgb(251, 255, 8);
+}
+.C {
+  position: absolute;
+  box-shadow: 0px 8px 15px 0px rgb(59, 55, 80);
+  display: none;
+}
+.A:hover .C {
+  display: block;
+}
+.C a {
+  display: block;
+  background: rgb(178, 223, 101);
+  color: rgb(151, 7, 115);
+  font-weight: 900;
+  width: 167px;
+}
+.C a:hover {
+  background: darkblue;
+  color: cyan;
+}

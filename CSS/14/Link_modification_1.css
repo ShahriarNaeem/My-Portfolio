@@ -1,0 +1,20 @@
+a {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: tahoma;
+}
+a:link {
+  text-decoration: none;
+  background: blue;
+}
+a:visited {
+  color: beige;
+}
+a:hover {
+  color: yellow;
+  background: red;
+}
+a:active {
+  color: cyan;
+  background: black;
+}

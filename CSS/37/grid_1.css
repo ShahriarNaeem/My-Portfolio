@@ -1,0 +1,119 @@
+.A {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background: black;
+  color: yellow;
+  padding: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.I {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid cyan;
+  font-size: 30px;
+}
+.B {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+
+.II {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid red;
+  font-size: 30px;
+}
+.C {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+
+.D {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.row1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.E {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.column1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.F {
+  display: grid;
+  grid-template-columns: 110px 440px 220px;
+  grid-template-rows: 220px 220px 220px;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.G {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.H {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.J {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.K {
+  display: grid;
+  align-content: space-between;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+  height: 500px;
+}
+.L {
+  display: grid;
+  align-content: end;
+  grid-template-columns: auto auto auto;
+  background: yellow;
+  color: blue;
+  padding: 10px;
+  grid-gap: 30px;
+  height: 500px;
+}

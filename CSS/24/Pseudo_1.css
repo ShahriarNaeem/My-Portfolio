@@ -1,0 +1,20 @@
+div:nth-child(7) {
+  color: darkgreen;
+  background: yellow;
+  padding: 20px;
+}
+div:first-child {
+  color: bisque;
+  background: black;
+  padding: 20px;
+}
+div {
+  color: yellow;
+  background: blue;
+  padding: 20px;
+  font-size: 20px;
+}
+h2:nth-child(15) {
+  color: cyan;
+  background: red;
+}

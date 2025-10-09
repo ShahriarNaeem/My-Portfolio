@@ -1,0 +1,12 @@
+.A {
+  color: darkmagenta;
+  border: 4px inset red;
+  margin: auto;
+  width: 700px;
+}
+.B {
+  color: green;
+  border: 4px dashed blue;
+  margin: auto;
+  max-width: 700px;
+}

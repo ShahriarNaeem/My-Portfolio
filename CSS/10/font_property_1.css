@@ -1,0 +1,13 @@
+.A {
+  color: orangered;
+  font-family: Tahoma;
+  font-size: 6ex;
+  font-style: italic;
+  font-weight: lighter;
+}
+.B {
+  color: blueviolet;
+  font-size: 3em;
+  font-weight: 700;
+  font-variant: small-caps;
+}

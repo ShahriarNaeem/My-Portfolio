@@ -1,0 +1,56 @@
+.A {
+  width: 100px;
+  height: 100px;
+  background: darkblue;
+  color: yellow;
+  padding: 5px;
+  display: inline;
+}
+.B {
+  width: 100px;
+  height: 100px;
+  background: darkblue;
+  color: yellow;
+  padding: 5px;
+  display: inline-block;
+}
+.C {
+  width: 100px;
+  height: 100px;
+  background: darkblue;
+  color: yellow;
+  padding: 5px;
+  display: block;
+}
+.D {
+  color: white;
+  background: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+ul {
+  background: yellow;
+  text-align: center;
+  margin: 0px;
+  border: 1px dotted blue;
+  border-radius: 5px;
+  padding: 0px;
+  position: sticky;
+  top: 0px;
+}
+ul li {
+  padding: 10px;
+  display: inline-block;
+}
+.E {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.E:hover {
+  color: cyan;
+  background: red;
+}

@@ -1,0 +1,15 @@
+h2 {
+  color: darkgreen;
+  text-align: center;
+  display: inline;
+}
+span {
+  font-size: 40px;
+  color: darkred;
+  text-align: center;
+  display: block;
+}
+ul,
+li {
+  display: inline-block;
+}

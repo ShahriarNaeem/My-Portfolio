@@ -1,0 +1,25 @@
+img {
+  width: 400px;
+  height: 250px;
+}
+img:hover {
+  opacity: 0.5;
+}
+.A {
+  width: 500px;
+  height: 350px;
+  background: url("sad.jpg") no-repeat center / cover;
+  overflow: hidden;
+}
+.B {
+  color: yellow;
+  background: black;
+  padding: 20px;
+  opacity: 0.5;
+  margin-top: 175px;
+  text-align: center;
+}
+h1 {
+  color: blue;
+  background: lightsalmon;
+}

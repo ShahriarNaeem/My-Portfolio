@@ -1,0 +1,44 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+ul li {
+  list-style-type: none;
+  float: left;
+}
+.A li a {
+  background-image: url("new.png");
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  background-position: -200.7px -125px;
+  border: 1px dotted rgb(164, 140, 165);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  transition: 0.8s;
+}
+.A li:hover:nth-child(1) a {
+  background-position: -202px -512px;
+}
+
+.A li:nth-child(2) a {
+  background-position: -333px -125px;
+}
+.A li:hover:nth-child(2) a {
+  background-position: -333px -512px;
+}
+.A li:nth-child(3) a {
+  background-position: -461.8px -125px;
+}
+.A li:hover:nth-child(3) a {
+  background-position: -461.8px -512px;
+}
+.A li:nth-child(4) a {
+  background-position: -590.2px -125px;
+  margin-right: 0px;
+}
+.A li:hover:nth-child(4) a {
+  background-position: -590.2px -512px;
+}

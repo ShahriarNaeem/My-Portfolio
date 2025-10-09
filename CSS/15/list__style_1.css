@@ -1,0 +1,26 @@
+.A {
+  list-style-type: circle;
+}
+.B {
+  list-style-type: upper-roman;
+}
+.C {
+  list-style-type: lower-alpha;
+}
+.D {
+  list-style-type: lower-greek;
+}
+.E {
+  list-style-image: url("ok.png");
+}
+.F {
+  list-style-image: url("ok.png");
+  list-style-position: inside;
+}
+.G {
+  list-style: square inside url("ok.png");
+}
+h1 {
+  color: blue;
+  background: yellow;
+}

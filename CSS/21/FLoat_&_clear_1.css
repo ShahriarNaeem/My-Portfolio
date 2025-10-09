@@ -1,0 +1,43 @@
+.A {
+  color: blanchedalmond;
+  background: crimson;
+  border: 1px solid crimson;
+  border-radius: 15px;
+  padding: 10px;
+}
+.B {
+  width: 350px;
+  float: left;
+}
+.C {
+  width: 300px;
+  float: right;
+}
+.D {
+  clear: right;
+}
+.E {
+  color: yellow;
+  background: black;
+  border: 1px solid black;
+  border-radius: 9px;
+  font-size: 20px;
+  padding: 10px;
+}
+.box {
+  height: 200px;
+  width: 25%;
+  float: left;
+}
+.F {
+  background: blue;
+}
+.G {
+  background: red;
+}
+.H {
+  background: greenyellow;
+}
+.I {
+  background: purple;
+}

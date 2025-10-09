@@ -1,0 +1,48 @@
+.A {
+  width: 400px;
+  height: 400px;
+  background: blue;
+}
+@media (max-width: 600px) {
+  .A {
+    background: brown;
+  }
+}
+.B {
+  width: 500px;
+  height: 300px;
+  background: rgb(15, 255, 235);
+}
+@media (min-width: 800px) {
+  .B {
+    background: black;
+  }
+}
+.C {
+  width: 500px;
+  height: 300px;
+  background: rgb(91, 2, 133);
+}
+@media (max-width: 1000px) and (min-width: 700px) {
+  .C {
+    background: yellow;
+  }
+}
+h3 {
+  color: red;
+  background: yellow;
+}
+@media (max-width: 1110px) and (min-width: 800px) {
+  h3 {
+    font-size: 13px;
+    background: darkred;
+    color: white;
+  }
+}
+@media (max-width: 799px) and (min-width: 400px) {
+  h3 {
+    font-size: 7.4px;
+    background: black;
+    color: yellow;
+  }
+}

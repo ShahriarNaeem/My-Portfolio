@@ -1,0 +1,30 @@
+p {
+  font-family: fantasy;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: -5px 0px 10px red, 5px 0px 10px yellowgreen, 0px -5px 10px blue,
+    0px 5px 10px cyan;
+  text-transform: capitalize;
+}
+.A {
+  width: 600px;
+  margin: auto;
+  border: 1px solid lightgray;
+}
+.A img {
+  width: 100%;
+}
+.B {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: maroon;
+  text-transform: capitalize;
+  opacity: 1;
+  font-family: sans-serif;
+}
+.A:hover {
+  box-shadow: -5px 0px 16px rgb(211, 114, 4),
+    5px 0px 16px rgba(231, 136, 58, 0.582), 0px -5px 16px rgb(255, 0, 0),
+    0px 5px 16px rgb(0, 255, 221);
+}

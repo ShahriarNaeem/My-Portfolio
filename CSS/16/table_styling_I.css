@@ -1,0 +1,16 @@
+table,
+td,
+th {
+  border: 2px dotted orangered;
+  text-align: center;
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 15px;
+  color: darkblue;
+  font-size: 20px;
+}

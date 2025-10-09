@@ -1,0 +1,63 @@
+.I {
+  display: flex;
+  background: black;
+  color: yellow;
+  padding: 10px;
+}
+
+.A {
+  border: 1px solid cyan;
+  padding: 10px;
+  font-size: 35px;
+  margin: 10px;
+}
+.II {
+  display: flex;
+  flex-direction: column-reverse;
+  background: lightgreen;
+  color: maroon;
+  padding: 10px;
+}
+
+.B {
+  border: 2px solid blue;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  width: 200px;
+}
+.III {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: darkblue;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.C {
+  border: 2px solid red;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  width: 170px;
+}
+.IV {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  background: yellow;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  height: 500px;
+}
+
+.D {
+  border: 2px solid green;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  width: 170px;
+}

@@ -1,0 +1,58 @@
+.A {
+  width: 500px;
+  height: 500px;
+  background: rgb(255, 0, 0);
+}
+.B {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(red, yellow);
+  margin-left: 30%;
+}
+.C {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(green, red, cyan, black);
+  margin-left: 60%;
+}
+.D {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(green 50%, blue 50%);
+  margin-left: 10%;
+}
+.E {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to right, green, cyan, brown);
+  margin-left: 40%;
+}
+.F {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to right bottom, black, lightgreen, magenta);
+  margin-left: 20%;
+}
+.G {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+  margin-left: 50%;
+}
+.H {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(blue, orange, green);
+  margin-left: 10%;
+}
+.I {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(black 20%, greenyellow 40%, white);
+  margin-left: 40%;
+}
+.J {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, yellow, maroon, black);
+}

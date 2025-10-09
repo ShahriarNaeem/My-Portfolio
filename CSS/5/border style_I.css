@@ -1,0 +1,45 @@
+.A {
+  border-width: 5px;
+  border-color: blue;
+  border-style: double;
+}
+.B {
+  border-width: 6px;
+  border-color: red;
+  border-style: solid dashed;
+  border-radius: 15px;
+}
+.C {
+  border: 7px green solid;
+  border-radius: 9px;
+}
+.D {
+  border-width: 6px;
+  border-color: purple;
+  border-style: dotted;
+  border-radius: 15px;
+}
+.E {
+  border-width: 6px;
+  border-color: orange;
+  border-style: inset;
+  border-radius: 15px;
+}
+.F {
+  border-width: 8px;
+  border-color: lime;
+  border-style: ridge dotted solid dashed;
+  border-radius: 29px;
+}
+.G {
+  border-width: 6px 11px 20px 33px;
+  border-color: navy;
+  border-style: ridge;
+  border-radius: 15px;
+}
+.H {
+  border-width: 10px 20px;
+  border-color: teal indigo orangered deeppink;
+  border-style: dashed inset dotted ridge;
+  border-radius: 15px;
+}

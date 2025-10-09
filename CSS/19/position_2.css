@@ -1,0 +1,46 @@
+.A {
+  color: royalblue;
+  background: yellow;
+}
+.B {
+  width: 400px;
+  height: 250px;
+  background: green;
+  position: relative;
+}
+.C {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+p {
+  margin-top: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid red;
+  background: red;
+  position: sticky;
+  top: 0;
+}
+.D {
+  background: black;
+  color: cyan;
+  padding-bottom: 2000px;
+}
+.E {
+  border: 1px solid blue;
+  background: blue;
+  color: beige;
+  width: 300px;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}

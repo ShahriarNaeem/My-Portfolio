@@ -1,0 +1,29 @@
+h2 {
+  color: rgb(45, 25, 133);
+  background: lightgreen;
+  margin: 40px;
+}
+
+.fa-facebook-square {
+  font-size: 80px;
+  color: dodgerblue;
+  margin: 50px;
+}
+.fa-angry {
+  font-size: 50px;
+  color: rgb(214, 18, 18);
+}
+.material-icons {
+  font-size: 80px;
+  color: blue;
+  margin: 30px;
+}
+.A {
+  color: rgb(255, 255, 0);
+  font-size: 70px;
+}
+h3 {
+  margin: 20px;
+  color: red;
+  background: cyan;
+}

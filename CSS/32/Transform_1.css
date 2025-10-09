@@ -1,0 +1,129 @@
+.A {
+  width: 300px;
+  height: 300px;
+  background: black;
+  color: white;
+  transform: translate(200px, 100px);
+  overflow: hidden;
+  border: 2px inset black;
+}
+.B {
+  width: 300px;
+  height: 300px;
+  background: blue;
+  color: yellow;
+  transform: translateX(1300px);
+  overflow: hidden;
+  border: 2px inset black;
+}
+.C {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(green, red, cyan, black);
+  color: rgb(174, 255, 255);
+  transform: translateY(100px);
+  overflow: hidden;
+  border: 2px inset black;
+}
+.D {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(green, red, cyan, black);
+  color: rgb(174, 255, 255);
+  transform: rotate(45deg);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 100px auto;
+}
+.E {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(blue, black);
+  color: rgb(174, 255, 255);
+  transform: rotate(-45deg);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 200px auto;
+}
+.F {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(maroon, white);
+  color: rgb(174, 255, 255);
+  transform: scale(0.5);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 10px auto;
+}
+.G {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(8, 65, 11), rgb(255, 251, 4));
+  color: rgb(174, 255, 255);
+  transform: scaleX(2);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 200px auto;
+}
+.H {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(
+    greenyellow,
+    white,
+    orange,
+    rgb(15, 26, 87),
+    rgb(204, 189, 122)
+  );
+  color: rgb(174, 255, 255);
+  transform: scaleY(2);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 400px auto;
+}
+.I {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(255, 5, 5), rgb(255, 251, 4));
+  color: rgb(174, 255, 255);
+  transform: skew(20deg);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 10px auto;
+}
+.J {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(132, 1, 255), rgb(241, 241, 241));
+  color: rgb(174, 255, 255);
+  transform: skewX(-60deg);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 100px auto;
+}
+.K {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(0, 255, 21), rgb(255, 138, 4));
+  color: rgb(174, 255, 255);
+  transform: skewY(45deg);
+  overflow: hidden;
+  border: 2px inset black;
+  margin: 200px auto;
+}
+a {
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background: linear-gradient(yellow, cyan);
+  color: black;
+  border: 1px dotted grey;
+  border-radius: 5px;
+  box-shadow: 0px 8px 14px 0px red;
+  text-decoration: none;
+}
+a:hover {
+  background: radial-gradient(blue, rgb(0, 34, 0));
+  color: rgb(0, 255, 221);
+  box-shadow: 0px 8px 14px 0px rgb(0, 105, 109);
+}
