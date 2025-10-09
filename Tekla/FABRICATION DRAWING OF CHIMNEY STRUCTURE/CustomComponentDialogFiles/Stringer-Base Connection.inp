@@ -1,0 +1,23 @@
+page("TeklaStructures","")
+{
+   joint(1, "Stringer-Base Connection")
+   {
+       helpurl("cchelp_usa_stringer_connections")
+       tab_page("", " Parameters ", 1)
+       {
+		part ("Plate",     P1,  ,  ,P10 ,P7 , ,P6 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P8", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P9", integer, number, 940,26,40)		
+           parameter("Create End Plate", "P2", YesNo, number, 4)
+		   
+	     picture("usa_stringer_base",150,155,200,150)		   
+	   
+           parameter(" Overlap past CL of support beam", "P5", distance, number, 180,150,65)
+           parameter(" Weld Gap", "P12", distance, number, 160,205,65)		   
+           parameter(" Beam Clearance", "P11", distance, number, 380,265,65)		   
+
+       }
+   }
+}

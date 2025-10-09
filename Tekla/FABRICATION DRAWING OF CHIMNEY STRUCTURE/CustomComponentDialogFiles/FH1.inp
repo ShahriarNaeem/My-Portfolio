@@ -1,0 +1,15 @@
+page("TeklaStructures","")
+{
+   macro(1, "FH1")
+   {
+       helpurl("cchelp_usa_embed_plates")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Class", "P1", integer, number, 1)
+           parameter("Finish", "P2", string, text, 2)
+           parameter("Thickness", "P3", distance, number, 3)
+           parameter("Length", "P4", distance, number, 4)
+           parameter("Material", "P5", material, text, 5)
+       }
+   }
+}

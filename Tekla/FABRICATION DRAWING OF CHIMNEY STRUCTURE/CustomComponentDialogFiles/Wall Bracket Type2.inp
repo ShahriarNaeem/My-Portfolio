@@ -1,0 +1,55 @@
+page("TeklaStructures","")
+{
+   detail(1, "Wall Bracket Type2")
+   {
+       helpurl("cchelp_usa_wall_rail_bracket_components")
+	 tab_page("", " Picture ", 1)
+       {
+           picture("usa_wall_bracket2",333,314,100,40)
+
+           parameter("", "A7", distance, number, 68,160,60)
+           parameter("", "A3", distance, number, 170,38,60)
+           parameter("", "A2", distance, number, 300,175,60)
+           parameter("", "A10", distance, number, 460,290,60)
+
+           attribute("LABEL4", "Include Bolts\Holes", label, "%s", no, none, "0.0", "0.0", 19,364)
+	attribute("A9", "", option, "%s", no, none, "0.0", "0.0", 374,364,160,"dia_enable_field_ocb:A8_diameter=2;A8_screwdin=1,2;A13=1,2;A14=1,2;A10=2")
+                {
+                     value("Yes",1)
+                     value("Just Holes",0)
+                     value("Neither",0)
+                }
+
+	     parameter("Bolt Diameter", "A8_diameter", bolt_size, number, 15)
+           parameter("Bolt Standard", "A8_screwdin", bolt_standard, text, 16)
+           parameter("Bolt Type", "A14", bolt_type, number, 18)
+           parameter("Bolt Length", "A13", distance, number, 17)
+
+
+       }
+       tab_page("", " Parts & Welds ", 2)
+	 {
+	   part("Wall Plate",   A4, A5 , ,A15 ,A19 ,A17 , ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "A20", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "A21", integer, number, 940,26,40)
+
+           attribute("LABEL6", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,75)
+           parameter("", "A22", string, text, 398,75,160)
+
+	   part("Bent Rod",   A6,  , , ,  , , ,5)
+
+           picture("usa_horz_line2", 720, 5, 25, 158)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,180)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,180)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,205)
+           parameter("", "A23", distance, number, 64,205,60)
+           parameter("", "A24", weld_type, number, 160,205,100)
+           parameter("", "A25", welding_site, number, 395,205,60)
+
+       }
+   }
+}

@@ -1,0 +1,24 @@
+page("TeklaStructures","")
+{
+   joint( 1 , Kicker Gusset )
+   {
+       helpurl("cchelp_usa_kicker_bracing_components")
+       tab_page("", " Parameters ", 1)
+       {
+	   picture("usa_kicker_gusset",200, 200, 150, 100)
+	   part ("Plate",     P6,  ,   , , P8, ,P7 ,1)
+	parameter("", "P11", string, text, 385,25,40)
+	parameter("", "P12", integer, number, 455,25,40)
+	parameter("", "P13", string, text, 385,49,40)
+	parameter("", "P14", integer, number, 455,49,40)
+	   attribute("LABEL1", "Finish", label, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P9", string, text, 830,26,80)
+	   attribute("LABEL2", "Class", label, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P10", integer, number, 940,26,40)
+
+           parameter("", "P1", distance, number, 213, 332, 65)
+           parameter("", "P2", distance, number, 385, 230, 65)
+           parameter("", "P4", distance, number, 370, 295,65)
+       }
+   }
+}

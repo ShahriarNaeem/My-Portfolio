@@ -1,0 +1,18 @@
+page("TeklaStructures", "")
+{
+    macro(1, "Stair Layout")
+    {
+        helpurl("cchelp_usa_stair_layout")
+        tab_page("", "Stair Layout", 1)
+        {
+            parameter("", "P11", distance, number, 234, 18, 100)
+            picture("usa_StairLayout", 0, 0, 128, 42)
+            parameter("", "P2", distance, number, 966, 42, 50)
+            attribute("", "Maximum Riser", label, "%s", none, none, "0", "0", 804, 45)
+            parameter("", "P3", distance, number, 966, 70, 50)
+            attribute("", "Fixed Tread Run", label, "%s", none, none, "0", "0", 801, 75)
+            parameter("", "P1", distance, number, 38, 175, 100)
+            attribute("", "Use insertion handles to set stair direction", label, "%s", none, none, "0", "0", 289, 329)
+        }
+    }
+}

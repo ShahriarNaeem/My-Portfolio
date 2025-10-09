@@ -1,0 +1,49 @@
+page("TeklaStructures","")
+{
+   detail(1, "Column Safety")
+   {
+       helpurl("cchelp_usa_safety_components")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("", "Conc_thick", distance, number, 80,300,80)
+           parameter("", "1st_Dim", distance, number, 80,230,80)
+           parameter("", "2nd_Dim", distance, number, 80,130,80)
+           picture("usa_col_safety1",100, 75, 82, 35)   
+       }
+       tab_page("", " Web Holes ", 2)
+       {
+           parameter("Add Holes To Web", "Add_Web", YesNo, number, 1)
+           parameter("Holes NS Web", "NS_Web", YesNo, number, 2)
+           parameter("Hole Diameter", "WHole_D_diameter", bolt_size, number, 3)
+           parameter("Hole Type", "WHole_D_screwdin", bolt_standard, text, 4)
+           parameter("Hole Tolerance", "WTolerance", distance, number, 5)
+		   attribute("O1", "Distance from CL", option, "%s", no, none, "0.0", "0.0", 374, 139, 160, "toggle_field:!W_Offset=1;!MW1=0")
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 		   
+           parameter("", "W_Offset", distance, number, 310,180,80)
+           parameter("", "MW1", distance, number, 190, 223, 81)
+           picture("usa_col_safety2",100, 75, 82, 135) 
+
+       }
+       tab_page("", " Flange Holes ", 3)
+       {
+           parameter("Add To Face A", "Add_FaceA", YesNo, number, 1)
+           parameter("Add To Face C", "Add_FaceC", YesNo, number, 2)
+           parameter("Holes NS Flange", "NS_Flg", YesNo, number, 3)
+           parameter("Hole Diameter", "FHole_D_diameter", bolt_size, number, 4)
+           parameter("Hole Type", "FHole_D_screwdin", bolt_standard, text, 5)
+           parameter("Hole Tolerance", "FTolerance", distance, number, 6)
+		   attribute("O2", "Distance from CL", option, "%s", no, none, "0.0", "0.0", 374, 165, 160, "toggle_field:!F_Offset=1;!MF1=0")
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 		   
+           parameter("", "F_Offset", distance, number, 117,380,80)
+           parameter("", "MF1", distance, number, 117, 344, 79)
+           picture("usa_col_safety3",100, 75, 82, 160)  
+		   
+       }
+   }
+}

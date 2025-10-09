@@ -1,0 +1,30 @@
+page("TeklaStructures","")
+{
+   detail(1, "Cover Plate")
+   {
+       helpurl("cchelp_usa_cover_plate")
+       tab_page("", " Design ", 1)
+       {
+/*           */
+           parameter("Design name", "P6", string, text, 1)
+           parameter("Class", "P5", integer, number, 2)
+           parameter(" Height", "P1", distance, number, 240, 220) /*Plate Height*/
+           picture("usa_cover_plate",97,294,300,80)
+       }
+       tab_page("", " Detailing ", 2)
+       {
+           profile ("Plate profile",   P2, P7 , P4 ,,P3 ,1)
+           attribute("LABEL2", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+           parameter(" Finish", "P9", string, text, 830,26,80)
+           
+/***** Profile parameters **************************************************
+ *       parameter(" Plate profile (i.e. PL1X12)", "P2", profile, text, 1) *
+ *       parameter(" Part prefix", "prefix_P7", string, text, 3)           *
+ *       parameter(" Part no.", "startno_P7", integer, number, 4)          *
+ *       parameter(" Material", "P4", material, text, 3)                   *
+ *       parameter(" Name", "P3", string, text, 2)                         *
+  ***************************************************************************/
+
+       }
+   }
+}

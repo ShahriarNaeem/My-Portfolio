@@ -1,0 +1,14 @@
+page("TeklaStructures", "")
+{
+    joint(1, "Joist Panel Opening v2")
+    {
+    helpurl("cchelp_usa_joist_panel_openings")
+	tab_page("", "Joist Panel Openings", 1)
+        {
+            picture("usa_cc_JoistPanelv2", 948, 404, 13, 8)
+            parameter("", "P22", integer, number, 588, 224, 75)
+            attribute("", "Number of openings required (2 minimum)", label, "%s", none, none, "0", "0", 481, 267)
+            attribute("", "NOTE: This component is not for design purposes, but only for visually aesthetic model coordination.", label, "%s", none, none, "0", "0", 290, 311)
+        }
+    }
+}

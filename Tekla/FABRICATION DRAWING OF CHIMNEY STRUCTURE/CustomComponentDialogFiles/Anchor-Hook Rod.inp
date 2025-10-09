@@ -1,0 +1,44 @@
+page("TeklaStructures","")
+{
+   macro(1, "Anchor-Hook Rod")
+   {
+       helpurl("cchelp_usa_anchor_rods")
+       tab_page("", " Parameters ", 1)
+       {
+		   part ("Anchor Rod", R1, P7, P6, R6, R3, R7, R2, 1) 
+		   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+		   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+		   parameter("", "R4", string, text, 830,26,80) 
+		   parameter("", "R6", integer, number, 940,26,40) 
+		   
+		   part ("Plate Washer", PW1, PW2, PW3, PW8, PW6, , PW4, 3)
+		   parameter("", "PW7", string, text, 830,74,80) 
+		   parameter("", "PW5", integer, number, 940,74,40) 
+
+		   attribute("LABEL4", "Plate Washer?", label2, "%s", no, none, "0.0", "0.0", 20, 99) 
+		   attribute("PWO1", "", option, "%s", no, none, "0.0", "0.0", 398,99,93,"toggle_field:!usa_anchor_hook3=1;!usa_anchor_hook4=0;PW1=0;PW2=0;PW3=0;PW4=0;PW5=0;PW6=0;PW7=0;prefix_PW8=0;startno_PW8=0;PW_Tol=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+        	} 			   
+		   attribute("LABEL7", "Plate Washer Tolerance", label2, "%s", no, none, "0.0", "0.0", 20, 124) 
+		   parameter("", "PW_Tol", distance, number, 398, 124, 93)
+
+		   attribute("LABEL4", "Underside Nut and Washer?", label2, "%s", no, none, "0.0", "0.0", 20, 149) 
+		   attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 398,149,93,"toggle_field:!usa_anchor_hook=1;!usa_anchor_hook2=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+        	} 
+	       picture("usa_anchor_hook",217, 200, 343, 304)
+		   picture("usa_anchor_hook2",217, 200, 343, 304)			
+		   picture("usa_anchor_hook3",217, 200, 343, 244)			   
+		   picture("usa_anchor_hook4",217, 200, 343, 244)		   
+		   parameter("", "Z1", distance, number, 610, 235,90)
+           parameter("", "P8", distance, number, 305, 235,90)
+           parameter("", "RD1", distance, number, 408, 352,60)		   
+		   parameter("", "TD1", distance, number, 635, 305,90)		   
+           parameter("", "UD1", distance, number, 312, 425,70)	 
+       }
+   }
+}

@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   macro(1, "Reinforcing angle (L)")
+   {
+       helpurl("cchelp_usa_wood_connectors")
+       tab_page("", " Design ", 1)
+       {
+           parameter("Name / Design Name", "P1", string, text, 1)
+           parameter("Class", "P2", integer, number, 2)
+           parameter("Bought Out Item Name / Catalog Number", "P3", string, text, 3)
+       }
+   }
+}

@@ -1,0 +1,51 @@
+page("TeklaStructures","")
+{
+   detail(1, "Rat Hole")
+   {
+       helpurl("cchelp_usa_rat_hole")
+       tab_page("", " Parameters ", 1)
+       {
+	   picture("usa_bottom_rat",90, 90, 60, 462)
+	   picture("usa_top_rat",330, 450, 150, 200)
+	   attribute("Rat_Hgt", "How to Calculate Rat Height?", option, "%s", no, none, "0.0", "0.0", 375,0,160,"dia_enable_field_ocb:Usr_Hgt=0")
+                {
+                     value("System",1)
+                     value("User",0)
+                }
+	   attribute("RLEN_CTL", "How to Calculate Rat Length?", option, "%s", no, none, "0.0", "0.0", 375,28,160,"dia_enable_field_ocb:RHOR1=0;Rt_Ang=1;RTD3=0,1;Len_Check=0,1")
+                {
+                     value("Entering User Angle",1)
+                     value("Enter User Distance",0)
+                }
+	   attribute("B_COPE", "Direction of Bottom Prep?", option, "%s", no, none, "0.0", "0.0")
+                {
+                     value("Same As Top",1)
+                     value("Opposite To Top",0)
+                } 
+	     parameter("Flange Angle - A", "Prep_Ang", angle, number, 4)
+           parameter("Radius - B", "Radius", distance, number, 5)
+           parameter("Min. Vert. Clearance - C", "Min_Clr", distance, number, 6)
+
+
+           parameter("", "BU_Clear", distance, number, 328, 352, 65)
+           parameter("", "T_stbk", distance, number, 300,238, 65)
+
+           parameter("", "B_Oset", distance, number, 328, 555, 65)
+           parameter("", "B_stbk", distance, number, 300, 697, 65)
+
+           parameter("", "Usr_Hgt", distance, number, 100,430, 80)
+
+           parameter("", "RHOR1", distance, number, 545, 437, 100)
+           parameter("", "Len_Check", distance, number, 545, 467, 100)
+
+           parameter("", "Rt_Ang", angle, number, 585, 338, 65)
+           parameter("", "RTD3", angle, number, 585, 368, 65)
+
+       }
+       tab_page("", " Web Cutback ", 2)
+       {
+           parameter("", "Web_Cut", distance, number, 115, 40, 60)
+	   picture("usa_cut_rat",100,75,75,20)
+       }
+   }
+}

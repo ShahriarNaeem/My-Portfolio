@@ -1,0 +1,17 @@
+page("TeklaStructures","")
+{
+   macro(1, "CMU End 4 Staggered")
+   {
+       helpurl("cchelp_usa_masonry")
+       tab_page("", " Design ", 1)
+       {
+           parameter("Wall height", "P1", distance, number, 1)
+           parameter("Name 1", "P4", string, text, 3)
+           parameter("Profile 1", "P5", profile, text, 4)
+           parameter("Name 2", "P6", string, text, 5)
+           parameter("Profile 2", "P7", profile, text, 6)
+           parameter("Material (both)", "P8", material, text, 7)
+           parameter("Class", "P12", integer, number, 8)
+       }
+   }
+}

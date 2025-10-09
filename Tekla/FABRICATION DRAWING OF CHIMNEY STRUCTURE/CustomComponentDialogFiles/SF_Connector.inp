@@ -1,0 +1,15 @@
+page("TeklaStructures","")
+{
+   macro(1, "SF_Connector")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           profile("j_part", CProf, CMark, CMat, , CName,1)
+           parameter("j_class", "CClass", integer, number, 3)
+           parameter("j_finish", "CFinish", string, text, 4)
+           parameter("j_d_j_Assembly_Prefix", "AssPrefix", string, text, 5)
+           parameter("j_d_j_Assembly_Start_No", "AssStartNo", integer, number, 6)
+       }
+   }
+}

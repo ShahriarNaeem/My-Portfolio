@@ -1,0 +1,28 @@
+page("TeklaStructures","")
+{
+   macro(1, "Bent Plate")
+   {
+	   helpurl("cchelp_usa_bent_plate")
+       tab_page("", " Parameters ", 1)
+       {
+           part ("Bent Plate", BP4, , , BP6, BP3, BP7, BP2, 1)
+		   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+		   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+		   parameter("", "BP8", string, text, 830,26,80) 
+		   parameter("", "BP9", integer, number, 940,26,40) 
+           picture("usa_bent_plate",190,194,185,75)  
+		   
+		   parameter("", "BP1", distance, number, 470,193,100)
+           parameter("", "BP10", angle, number, 383,115,100)
+           parameter("", "BP13", distance, number, 160,221,60)
+           parameter("", "BP14", distance, number, 340,285,60)
+
+		   attribute("BP17", "", option, "%s", no, none, "0.0", "0.0", 470,165,100,"toggle_field:!P1=0") 
+			{ 
+                value("Square",1) 
+                value("Rounded",0) 
+			} 			
+		
+		}
+   }
+}

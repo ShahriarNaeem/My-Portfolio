@@ -1,0 +1,5 @@
+﻿Index was outside the bounds of the array.
+   at arw.i(Object A_0, EventArgs A_1)
+   at System.Windows.Forms.Timer.OnTick(EventArgs e)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

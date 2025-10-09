@@ -1,0 +1,185 @@
+
+
+ ETABS Ultimate 64-bit 19.1.0 Build 2420 (Analysis Build 9853/64)
+ File: D:\P 2105 CWASA\NEW\P-2...1120\TPS.01.B00.G3.P 2105 105.211120.R00.XX.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2021/11/23  15:27:20
+
+
+ RUNNING ANALYSIS AS A SEPARATE PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =        2378
+    WITH RESTRAINTS                        =         209
+    WITH MASS                              =        2210
+ NUMBER OF FRAME/TENDON ELEMENTS           =        1116
+ NUMBER OF SHELL ELEMENTS                  =        1793
+ NUMBER OF CONSTRAINTS/WELDS               =           7
+ NUMBER OF LOAD PATTERNS                   =          44
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =          18
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =      31.924 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           8
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           8
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           8
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           8
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
+
+
+ E L E M E N T   F O R M A T I O N                                      15:27:20
+
+
+ NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        15:27:20
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =        6813
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =      104571
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ L I N E A R   S T A T I C   C A S E S                                  15:27:20
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF CASES TO SOLVE            =          10
+ NUMBER OF CASES TO SOLVE PER BLOCK        =          10
+
+ LINEAR STATIC CASES TO BE SOLVED:
+
+ CASE: SW
+ CASE: SDEAD
+ CASE: PW
+ CASE: FACADE
+ CASE: LL<3
+ CASE: LL>3
+ CASE: LLPR
+ CASE: RFLL
+ CASE: CONS
+ CASE: ~LLRF
+
+
+ C E N T E R   O F   R I G I D I T Y  A N A L Y S I S                   15:27:20
+
+ CASE: ~CENTER OF RIGIDITY
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOADS                           =          21
+
+
+ Solving loads:       1 to      21
+ NUMBER OF LOADS SAVED                     =          21
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      15:27:20
+
+ CASE: WX
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =          12
+
+
+ Solving load steps:       1 to      12
+ NUMBER OF OUTPUT STEPS SAVED              =          12
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      15:27:21
+
+ CASE: WY
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =          12
+
+
+ Solving load steps:       1 to      12
+ NUMBER OF OUTPUT STEPS SAVED              =          12
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      15:27:21
+
+ CASE: EQX
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =           3
+
+
+ Solving load steps:       1 to       3
+ NUMBER OF OUTPUT STEPS SAVED              =           3
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      15:27:21
+
+ CASE: EQY
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =           3
+
+
+ Solving load steps:       1 to       3
+ NUMBER OF OUTPUT STEPS SAVED              =           3
+
+
+ R I T Z   M O D A L   A N A L Y S I S                                  15:27:21
+
+ CASE: MODAL
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF STIFFNESS DEGREES OF FREEDOM    =        6813
+ NUMBER OF MASS DEGREES OF FREEDOM         =        2312
+ MAXIMUM NUMBER OF RITZ MODES SOUGHT       =          12
+ MINIMUM NUMBER OF RITZ MODES SOUGHT       =           1
+ NUMBER OF STARTING VECTORS                =           3
+ VECTOR BLOCK SIZE                         =           6
+ FREQUENCY SHIFT (CENTER) (CYC/TIME)       =     .000000
+
+ NUMBER OF RITZ MODES FOUND                =          12
+ NUMBER OF GENERATION CYCLES PERFORMED     =           4
+
+
+ R E S P O N S E - S P E C T R U M   A N A L Y S I S                    15:27:22
+
+ CASE: RSX
+
+ TYPE OF EXCITATION                        = STANDARD GROUND ACCELERATION
+
+ USING MODES FROM CASE: MODAL
+ NUMBER OF DYNAMIC MODES TO BE USED        =          12
+
+
+ R E S P O N S E - S P E C T R U M   A N A L Y S I S                    15:27:22
+
+ CASE: RSY
+
+ TYPE OF EXCITATION                        = STANDARD GROUND ACCELERATION
+
+ USING MODES FROM CASE: MODAL
+ NUMBER OF DYNAMIC MODES TO BE USED        =          12
+
+
+ A N A L Y S I S   C O M P L E T E                          2021/11/23  15:27:22

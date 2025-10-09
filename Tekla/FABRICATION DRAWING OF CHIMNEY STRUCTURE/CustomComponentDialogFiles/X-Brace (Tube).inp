@@ -1,0 +1,27 @@
+page("TeklaStructures","")
+{
+   joint(1, "X-Brace (Tube)")
+   {
+       helpurl("cchelp_usa_material_handling_components")
+	   tab_page("", "Design", 1)
+        {
+            attribute("", "Name", label, "%s", none, none, "0", "0", 710, 0)
+            parameter("", "P1", string, text, 710, 30, 150)
+            attribute("", "Profile", label, "%s", none, none, "0", "0", 25, 30)
+            parameter("", "P2", profile, text, 129, 30, 160)
+            attribute("", "Material", label, "%s", none, none, "0", "0", 540, 0)
+            parameter("", "P3", material, text, 540, 30, 100)
+            attribute("", "Finish", label, "%s", none, none, "0", "0", 250, 100)
+            parameter("", "P4", string, text, 355, 100, 120)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 250, 130)
+            parameter("", "P5", string, text, 355, 130, 120)
+            attribute("", "Prefix", label, "%s", none, none, "0", "0", 355, 0)
+            parameter("", "P6", string, text, 355, 30, 50)
+            attribute("", "No.", label, "%s", none, none, "0", "0", 445, 0)
+            parameter("", "P7", integer, number, 445, 30, 50)
+            parameter("", "P8", string, text, 355, 60, 50)
+            parameter("", "P9", integer, number, 445, 60, 50)
+            picture("usa_materials_xbrace", 400, 360, 169, 182)
+        }
+    }
+}

@@ -1,0 +1,209 @@
+page("TeklaStructures", "")
+{
+    macro(1, "Column Tiers")
+    {
+        helpurl("cchelp_usa_column_tiers")
+		tab_page("", "Columns", 1)
+        {
+            picture("usa_cc_ColumnTiers_Elev", 143, 590, 194, 24)
+			attribute("", "Pick Point", label3, "%s", none, none, "0", "0", 310, 608)
+			
+		/* --- Splice Elevations --- */
+			parameter("", "D46", distance, number, 115, 50, 80)  /* Splice 5 Elevation */
+			parameter("", "D37", distance, number, 115, 155, 80)  /* Splice 4 Elevation */
+			parameter("", "D28", distance, number, 115, 275, 80)  /* Splice 3 Elevation */
+			parameter("", "D10", distance, number, 115, 375, 80)  /* Splice 2 Elevation */
+			parameter("", "D1", distance, number, 115, 480, 80)  /* Splice 1 Elevation */
+			parameter("", "D71", distance, number, 115, 645, 80)  /* Bottom of Column and Base PL Component Elevation */
+			
+		/* --- Number of Tiers --- */
+            attribute("", "Number of Column Tiers", label3, "%s", none, none, "0", "0", 434, 24)
+            attribute("O1", "", option, "%s", none, none, "0.0", "0.0", 645, 25, 80, "toggle_field:D10=0;D28=0,1;D37=0,1,2;D46=0,1,2,3;O3=0;O4=0,1;O5=0,1,2;O6=0,1,2,3;S1_attrfile=0;S1_name=0;S2_attrfile=0,1;S2_name=0,1;S3_attrfile=0,1,2;S3_name=0,1,2;S4_attrfile=0,1,2,3;S4_name=0,1,2,3;C2_Profile=0;prefix_C2=0;startno_C2=0;prefix_C2A=0;startno_C2A=0;C2_Material=0;C2_Name=0;C2_Finish=0;C2_Class=0;C2_DGN=0;C3_Profile=0,1;prefix_C3=0,1;startno_C3=0,1;prefix_C3A=0,1;startno_C3A=0,1;C3_Material=0,1;C3_Name=0,1;C3_Finish=0,1;C3_Class=0,1;C3_DGN=0,1;C4_Profile=0,1,2;prefix_C4=0,1,2;startno_C4=0,1,2;prefix_C4A=0,1,2;startno_C4A=0,1,2;C4_Material=0,1,2;C4_Name=0,1,2;C4_Finish=0,1,2;C4_Class=0,1,2;C4_DGN=0,1,2;C5_Profile=0,1,2,3;prefix_C5=0,1,2,3;startno_C5=0,1,2,3;prefix_C5A=0,1,2,3;startno_C5A=0,1,2,3;C5_Material=0,1,2,3;C5_Name=0,1,2,3;C5_Finish=0,1,2,3;C5_Class=0,1,2,3;C5_DGN=0,1,2,3")
+            {
+                value("1", 0)
+                value("2", 0)
+                value("3", 0)
+                value("4", 0)
+                value("5", 1)
+            }
+            
+		/* --- Create Cap PL --- */
+			attribute("", "Create Cap PL?", label3, "%s", none, none, "0", "0", 480, 75)
+            attribute("O7", "", option, "%s", none, none, "0.0", "0.0", 645, 75, 80, "toggle_field:CP_attrfile=0;CP_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Component", label3, "%s", none, none, "0", "0", 480, 105)
+            parameter("", "CP_name", ComponentName, text, 645, 105, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 480, 135)
+            parameter("", "CP_attrfile", ComponentAttributeFile, text, 645, 135, 160)
+            
+		/* --- Create Splice 4 --- */
+			attribute("", "Create Splice #4?", label3, "%s", none, none, "0", "0", 480, 185)
+            attribute("O6", "", option, "%s", none, none, "0.0", "0.0", 645, 185, 80, "toggle_field:S4_attrfile=0;S4_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+			attribute("", "Component", label3, "%s", none, none, "0", "0", 480, 215)
+            parameter("", "S4_name", ComponentName, text, 645, 215, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 480, 245)
+            parameter("", "S4_attrfile", ComponentAttributeFile, text, 645, 245, 160)
+            
+		/* --- Create Splice 3 --- */
+            attribute("", "Create Splice #3?", label3, "%s", none, none, "0", "0", 480, 295)
+            attribute("O5", "", option, "%s", none, none, "0.0", "0.0", 645, 295, 80, "toggle_field:S3_attrfile=0;S3_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+			attribute("", "Component", label3, "%s", none, none, "0", "0", 480, 325)
+            parameter("", "S3_name", ComponentName, text, 645, 325, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 480, 355)
+            parameter("", "S3_attrfile", ComponentAttributeFile, text, 645, 355, 160)
+            
+		/* --- Create Splice 2 --- */
+            attribute("", "Create Splice #2?", label3, "%s", none, none, "0", "0", 480, 405)
+            attribute("O4", "", option, "%s", none, none, "0.0", "0.0", 645, 405, 80, "toggle_field:S2_attrfile=0;S2_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Component", label3, "%s", none, none, "0", "0", 480, 435)
+			parameter("", "S2_name", ComponentName, text, 645, 435, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 480, 465)
+            parameter("", "S2_attrfile", ComponentAttributeFile, text, 645, 465, 160)
+            
+		/* --- Create Splice 1 --- */
+			attribute("", "Create Splice #1?", label3, "%s", none, none, "0", "0", 480, 515)
+            attribute("O3", "", option, "%s", none, none, "0.0", "0.0", 645, 515, 80, "toggle_field:S1_attrfile=0;S1_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }            
+            attribute("", "Component", label3, "%s", none, none, "0", "0", 480, 545)
+            parameter("", "S1_name", ComponentName, text, 644, 545, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 480, 575)
+            parameter("", "S1_attrfile", ComponentAttributeFile, text, 645, 575, 160)
+            
+		/* --- Create Base PL --- */
+            attribute("", "Create Base Plate?", label3, "%s", none, none, "0", "0", 480, 625)
+            attribute("O2", "", option, "%s", none, none, "0.0", "0.0", 645, 625, 80, "toggle_field:BP_attrfile=0;BP_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+			attribute("", "Component", label3, "%s", none, none, "0", "0", 480, 655)
+            parameter("", "BP_name", ComponentName, text, 645, 655, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 480, 685)
+            parameter("", "BP_attrfile", ComponentAttributeFile, text, 645, 685, 160)            
+        }
+		
+/* ========================================================================================================= */		
+		
+		tab_page("", "Parts", 2)
+        {
+		
+        /* --- Column Tier 1 Profile --- */  
+			profile("Column Tier 1",C1_Profile,C1,C1_Material,C1A,C1_Name, 1)
+			attribute("", "Finish", label3, "%s", none, none, "0", "0", 830, 4)			
+            parameter("", "C1_Finish", string, text, 830, 26, 80)
+			attribute("", "Class", label3, "%s", none, none, "0", "0", 940, 4)
+            parameter("", "C1_Class", integer, number, 940, 26, 40)
+			attribute("", "Design Group Name", label3, "%s", none, none, "0", "0", 1010, 4)
+            parameter("", "C1_DGN", string, text, 1010, 26, 160)
+            
+		/* --- Column Tier 2 Profile --- */	
+			profile("Column Tier 2",C2_Profile,C2,C2_Material,C2A,C2_Name, 4)
+            parameter("", "C2_Finish", string, text, 830, 96, 80)
+            parameter("", "C2_Class", integer, number, 940, 96, 40)
+            parameter("", "C2_DGN", string, text, 1010, 96, 160)
+            
+		/* --- Column Tier 3 Profile --- */	
+			profile("Column Tier 3",C3_Profile,C3,C3_Material,C3A,C3_Name, 7)
+            parameter("", "C3_Finish", string, text, 830, 167, 80)
+            parameter("", "C3_Class", integer, number, 940, 167, 40)
+            parameter("", "C3_DGN", string, text, 1010, 167, 160)
+            
+		/* --- Column Tier 4 Profile --- */	
+			profile("Column Tier 4",C4_Profile,C4,C4_Material,C4A,C4_Name, 10)
+            parameter("", "C4_Finish", string, text, 830, 238, 80)
+            parameter("", "C4_Class", integer, number, 940, 238, 40)
+            parameter("", "C4_DGN", string, text, 1010, 238, 160)
+            
+		/* --- Column Tier 5 Profile --- */	
+			profile("Column Tier 5",C5_Profile,C5,C5_Material,C5A,C5_Name, 13)
+            parameter("", "C5_Finish", string, text, 830, 310, 80)
+            parameter("", "C5_Class", integer, number, 940, 310, 40)
+            parameter("", "C5_DGN", string, text, 1010, 310, 160)
+        }
+		
+/* ========================================================================================================= */
+				
+        tab_page("", "Foundation", 3)
+        {
+            picture("usa_cc_ColumnTiers_w_Pier", 400, 500, 14, 134)
+			picture("usa_cc_ColumnTiers_no_Pier", 400, 500, 14, 134)
+			attribute("", "Pick Point", label3, "%s", none, none, "0", "0", 142, 141)
+						
+		/* --- Pier and Footing Elevations --- */
+			parameter("", "D59", distance, number, 55, 224, 80)  /* Top of Pier and Top of Footing */
+			parameter("", "D65", distance, number, 580, 325, 80)  /* Top of Footing */
+			parameter("", "P1", distance, number, 580, 623, 80)  /* Footing Thickness with Pier */
+			parameter("", "P1a", distance, number, 580, 355, 80)  /* Footing Thickness without Pier */
+			
+		/* --- Pier Profile --- */
+			profile("Pier",Pier_Profile,Pier,Pier_Material,,Pier_Name, 1)
+			attribute("", "Class", label3, "%s", none, none, "0", "0", 830, 5)
+			parameter("", "Pier_Class", integer, number, 830, 26, 40)
+            attribute("", "Design Group Name", label3, "%s", none, none, "0", "0", 900, 5)            
+            parameter("", "Pier_DGN", string, text, 900, 26, 160)
+			
+		/* --- Footing Profile --- */
+            profile("Footing",F_Profile,F,F_Material,,F_Name, 3)
+            parameter("", "F_Class", integer, number, 830, 74, 40)
+            parameter("", "F_DGN", string, text, 900, 74, 160)
+			
+        /* --- Create Pier --- */    
+            attribute("", "Create Pier?", label3, "%s", none, none, "0", "0", 700, 205)
+            attribute("O8", "", option, "%s", none, none, "0.0", "0.0", 900, 205, 80, "toggle_field:O10=0;PR_attrfile=0;PR_name=0;!usa_cc_ColumnTiers_w_Pier=0;!usa_cc_ColumnTiers_no_Pier=1;!D65=0;Pier_Profile=0;prefix_Pier=0;startno_Pier=0;Pier_Material=0;Pier_Name=0;Pier_Class=0;Pier_DGN=0;!P1=0;!P1a=1")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+        
+		/* --- Create Pier Reinforcement --- */		
+            attribute("", "Create Reinforcing?", label3, "%s", none, none, "0", "0", 700, 235)
+            attribute("O10", "", option, "%s", none, none, "0.0", "0.0", 900, 235, 80, "toggle_field:PR_attrfile=0;PR_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Component", label3, "%s", none, none, "0", "0", 700, 265)
+			parameter("", "PR_name", ComponentName, text, 900, 265, 160)
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 700, 295)
+            parameter("", "PR_attrfile", ComponentAttributeFile, text, 900, 295, 160)
+			
+		/* --- Create Footing --- */
+            attribute("", "Create Footing?", label3, "%s", none, none, "0", "0", 700, 385)
+            attribute("O9", "", option, "%s", none, none, "0.0", "0.0", 900, 385, 80, "toggle_field:O11=0;FR_attrfile=0;FR_name=0;F_Profile=0;prefix_F=0;startno_F=0;F_Material=0;F_Name=0;F_Class=0;F_DGN=0;P1=0;P1a=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+			
+		/* --- Create Footing Reinforcement --- */
+            attribute("", "Create Reinforcing?", label3, "%s", none, none, "0", "0", 700, 415)
+            attribute("O11", "", option, "%s", none, none, "0.0", "0.0", 900, 415, 80, "toggle_field:FR_attrfile=0;FR_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Component", label3, "%s", none, none, "0", "0", 700, 445)
+            parameter("", "FR_name", ComponentName, text, 900, 445, 160)            
+            attribute("", "Attribute", label3, "%s", none, none, "0", "0", 700, 475)
+            parameter("", "FR_attrfile", ComponentAttributeFile, text, 900, 475, 160)            
+        }        
+    }
+}

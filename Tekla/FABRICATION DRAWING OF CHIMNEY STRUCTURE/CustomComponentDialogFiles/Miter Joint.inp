@@ -1,0 +1,14 @@
+page("TeklaStructures","")
+{
+   joint(1, "Miter Joint")
+   {
+       helpurl("cchelp_usa_joint_components")
+       tab_page("", " Precast Miter Joint ", 1)
+       {
+           picture("usa_Precast_Miter_CC",500,400,0,0)
+	   parameter("", "P1", distance, number, 80,70,75)
+           parameter("", "P3", distance, number, 265,60,75)
+           parameter("", "P4", distance, number, 487,335,75)
+       }
+   }
+}

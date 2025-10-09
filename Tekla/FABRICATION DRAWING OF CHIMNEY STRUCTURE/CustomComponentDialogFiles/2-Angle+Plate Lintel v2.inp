@@ -1,0 +1,55 @@
+page("TeklaStructures","")
+{
+   macro(1, "2-Angle+Plate Lintel v2")
+   {
+       helpurl("cchelp_usa_lintel_components")
+       tab_page("", " Parameters ", 1)
+       {
+	profile ("Plate",   P1, A20 , P17 ,A23 ,P16 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P18", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P19", integer, number, 940,26,40)
+
+	profile ("Angle 1",   P2, B16 , P13 ,B19 ,P21 ,3)
+           parameter("", "P14", string, text, 830,74,80)
+           parameter("", "P15", integer, number, 940,74,40)
+
+	profile ("Angle 2",   P3, C13 , P10 ,C15 ,P9 ,5)
+           parameter("", "P11", string, text, 830,122,80)
+           parameter("", "P12", integer, number, 940,122,40)
+         
+           picture("usa_L_lintel2", 315,196,120,213)
+           picture("usa_L_lintel_sect", 168,200,480,180)
+
+           parameter("", "P6", distance, number, 600,186,80)
+           parameter("", "P4", distance, number, 130,186,80)
+           parameter("", "P5", distance, number, 480,186,80)
+           parameter("", "D1", distance, number, 110,425,80)		   
+           parameter("", "D18", distance, number, 480,425,80)
+		   }
+        tab_page("", "Welds", 2)
+        {
+           attribute("header2","Size",label,"%s",no,none,"0.0","0.0",64,0)
+           attribute("header3","Type",label,"%s",no,none,"0.0","0.0",160,0)
+           attribute("header4","Shop/Site",label,"%s",no,none,"0.0","0.0",294,0)		   
+           attribute("header5","Incr. #",label,"%s",no,none,"0.0","0.0",395,0)
+           attribute("header6","Length",label,"%s",no,none,"0.0","0.0",495,0)
+           attribute("header7","Pitch",label,"%s",no,none,"0.0","0.0",595,0)
+           attribute("header8","Shape",label,"%s",no,none,"0.0","0.0",695,0)
+           parameter("", "w1", distance, number, 64,43,60)
+           parameter("", "w2", weld_type, number, 160,43,100)
+           parameter("", "w3", welding_site, number, 294,43,60)		   
+           parameter("", "w4", integer, number, 395,43,60)
+           parameter("", "w5", distance, number, 495,43,60)
+           parameter("", "w6", distance, number, 595,43,60)
+		   attribute("w7", "", option, "%s", no, none, "0.0", "0.0", 695,43,130) 
+			{ 
+                value("w_intermittent_type_1.xbm",1) 
+                value("w_intermittent_type_2.xbm",0) 
+                value("w_intermittent_type_3.xbm",0) 				
+			} 			
+			
+       }       
+   }
+}

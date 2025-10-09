@@ -1,0 +1,257 @@
+
+
+ ETABS Ultimate C 64-bit 20.3.0 Build 2929 (Analysis Build 9907/64)
+ File: D:\Shahriar Naeem\bill ...SE-RANGUNIA\WARE HOUSE ETABS\WARE HOUSE-R03.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2023/06/03  09:43:27
+
+
+ RUNNING ANALYSIS AS A SEPARATE PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =         796
+    WITH RESTRAINTS                        =         105
+    WITH MASS                              =         724
+ NUMBER OF FRAME/TENDON ELEMENTS           =         503
+ NUMBER OF SHELL ELEMENTS                  =         592
+ NUMBER OF CONSTRAINTS/WELDS               =           3
+ NUMBER OF LOAD PATTERNS                   =          47
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =          20
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, mm, °C, sec
+ GRAVITATIONAL ACCELERATION                =    9806.650
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =      31.924 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           8
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           8
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           8
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           8
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
+
+
+ E L E M E N T   F O R M A T I O N                                      09:43:27
+
+
+ NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        09:43:27
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =        2172
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =       34638
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ L I N E A R   S T A T I C   C A S E S                                  09:43:27
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF CASES TO SOLVE            =          13
+ NUMBER OF CASES TO SOLVE PER BLOCK        =          13
+
+ LINEAR STATIC CASES TO BE SOLVED:
+
+ CASE: SW
+ CASE: SDEAD
+ CASE: PW
+ CASE: FACADE
+ CASE: LL<3
+ CASE: LL>3
+ CASE: LLPR
+ CASE: RFLL
+ CASE: CONS
+ CASE: LL1
+ CASE: ~LLRF
+ CASE: ~CHINESEX
+ CASE: ~CHINESEY
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      09:43:27
+
+ CASE: WX
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =          12
+
+
+ Solving load steps:       1 to      12
+ NUMBER OF OUTPUT STEPS SAVED              =          12
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      09:43:27
+
+ CASE: WY
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =          12
+
+
+ Solving load steps:       1 to      12
+ NUMBER OF OUTPUT STEPS SAVED              =          12
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      09:43:27
+
+ CASE: EQX
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =           3
+
+
+ Solving load steps:       1 to       3
+ NUMBER OF OUTPUT STEPS SAVED              =           3
+
+
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      09:43:27
+
+ CASE: EQY
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF LOAD STEPS                      =           3
+
+
+ Solving load steps:       1 to       3
+ NUMBER OF OUTPUT STEPS SAVED              =           3
+
+
+ R I T Z   M O D A L   A N A L Y S I S                                  09:43:27
+
+ CASE: MODAL
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF STIFFNESS DEGREES OF FREEDOM    =        2172
+ NUMBER OF MASS DEGREES OF FREEDOM         =         700
+ MAXIMUM NUMBER OF RITZ MODES SOUGHT       =          12
+ MINIMUM NUMBER OF RITZ MODES SOUGHT       =           1
+ NUMBER OF STARTING VECTORS                =           3
+ VECTOR BLOCK SIZE                         =           6
+ FREQUENCY SHIFT (CENTER) (CYC/TIME)       =     .000000
+
+ NUMBER OF RITZ MODES FOUND                =          12
+ NUMBER OF GENERATION CYCLES PERFORMED     =           4
+
+
+ R E S P O N S E - S P E C T R U M   A N A L Y S I S                    09:43:28
+
+ CASE: RSX
+
+ TYPE OF EXCITATION                        = STANDARD GROUND ACCELERATION
+
+ USING MODES FROM CASE: MODAL
+ NUMBER OF DYNAMIC MODES TO BE USED        =          12
+
+
+ R E S P O N S E - S P E C T R U M   A N A L Y S I S                    09:43:28
+
+ CASE: RSY
+
+ TYPE OF EXCITATION                        = STANDARD GROUND ACCELERATION
+
+ USING MODES FROM CASE: MODAL
+ NUMBER OF DYNAMIC MODES TO BE USED        =          12
+
+
+ A N A L Y S I S   C O M P L E T E                          2023/06/03  09:43:28
+
+
+ ETABS Ultimate C 64-bit 20.3.0 Build 2929 (Analysis Build 9907/64)
+ File: D:\Shahriar Naeem\bill ...SE-RANGUNIA\WARE HOUSE ETABS\WARE HOUSE-R03.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2023/06/03  09:43:31
+
+
+ RUNNING ANALYSIS AS A SEPARATE PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =         796
+    WITH RESTRAINTS                        =         105
+    WITH MASS                              =         724
+ NUMBER OF FRAME/TENDON ELEMENTS           =         503
+ NUMBER OF SHELL ELEMENTS                  =         592
+ NUMBER OF CONSTRAINTS/WELDS               =           3
+ NUMBER OF LOAD PATTERNS                   =          49
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =          22
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, mm, °C, sec
+ GRAVITATIONAL ACCELERATION                =    9806.650
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =      31.924 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           8
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           8
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           8
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           8
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
+
+
+ E L E M E N T   F O R M A T I O N                                      09:43:31
+
+
+ NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        09:43:31
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =        2172
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =       34638
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ L I N E A R   S T A T I C   C A S E S                                  09:43:31
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF CASES TO SOLVE            =           2
+ NUMBER OF CASES TO SOLVE PER BLOCK        =           2
+
+ LINEAR STATIC CASES TO BE SOLVED:
+
+ CASE: ~STATICRSX
+ CASE: ~STATICRSY
+
+
+ A N A L Y S I S   C O M P L E T E                          2023/06/03  09:43:31

@@ -1,0 +1,163 @@
+page("TeklaStructures","")
+{
+   joint( 1 , Built-up plate seat )
+   {
+       helpurl("cchelp_usa_built_up_plate_seat")
+       tab_page("", " Parameters ", 1)
+       {
+		profile ("Horz. Plate",   P2, HP1, P19, , P37,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P38", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P39", integer, number, 940,26,40)
+
+		profile ("Vert. plate",  P3, VP1, P41, ,P40 ,2)
+           parameter("", "P42", string, text, 830,50,80)
+           parameter("", "P43", integer, number, 940,50,40)
+
+		part ("Stiffener Plate",  P4, , , SP1, P45, ,P44 ,3)
+           parameter("", "P46", string, text, 830,74,80)
+           parameter("", "P47", integer, number, 940,74,40)
+
+	     picture("usa_seat", 190,178,300,150)
+           picture("usa_chamfer_dim", 118,124,550,140)
+           parameter("", "D9", distance, number, 240,150)
+           parameter("", "D3", distance, number, 380,360)
+           parameter("", "P1", distance, number, 500,292)
+           parameter("", "D10", distance, number, 720,145)
+           parameter("", "D13", distance, number, 720,195)  
+       }
+       
+	 tab_page("", " Main Part Bolts ", 2)
+       {
+           
+           picture("usa_bolt_parts", 110,312,110,0)
+         attribute("P25", "", option, "%s", none, none, "0.0", "0.0", 60,90,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P26", "", option, "%s", none, none, "0.0", "0.0", 110,120,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P27", "", option, "%s", none, none, "0.0", "0.0", 200,120,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P28", "", option, "%s", none, none, "0.0", "0.0", 290,95,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P29", "", option, "%s", none, none, "0.0", "0.0", 290,55,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+           picture("usa_bolt_spacing", 228,194,100,310)
+           parameter("Main part bolt diameter", "P6_diameter", bolt_size, number, 370,160)
+           parameter("Main part bolt standard", "P6_screwdin", bolt_standard, text, 370,185)
+           /*parameter("Main part bolt structure", "P7", string, text, 370,210)*/
+           parameter("Main part bolt tolerance", "P10", distance, number, 370,210)
+	     /*parameter("Vert. distance to first bolt", "D20", distance, number, 370,235)
+           parameter("Main part bolt horizontal offset", "D21", distance, number, 370,260)
+           parameter("Main part bolt gage", "P8", distance_list, text, 370,285)
+           parameter("Main part bolt distances", "P9", distance_list, text, 370,310)*/
+           parameter("", "D20", distance, number, 50,385)
+           parameter("", "D21", distance, number, 210,300)
+           parameter("", "P8", distance_list, text, 210,495,100)
+           parameter("", "P9", distance_list, text, 400,415,100)
+       }
+       
+	 tab_page("", " 2ndary Part Bolts ", 3)
+       {
+           picture("usa_bolt_parts", 110,312,110,0)
+         attribute("P31", "", option, "%s", none, none, "0.0", "0.0", 60,90,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P32", "", option, "%s", none, none, "0.0", "0.0", 110,120,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P33", "", option, "%s", none, none, "0.0", "0.0", 200,120,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P34", "", option, "%s", none, none, "0.0", "0.0", 290,95,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+	     attribute("P35", "", option, "%s", none, none, "0.0", "0.0", 290,55,65)
+		{
+		 value("No", 1)
+        	 value("Yes", 0)
+		}
+           picture("jnt_bpic_long_holes2", 110,312,365,0)
+           parameter("", "P17", distance, number, 485,80)
+           parameter("", "P18", distance, number, 400,30)
+           /*picture("dwc_jnt_pict_ud33", 300, 400, 60, 380)*/
+            
+           parameter("2ndary part bolt diameter", "P12_diameter", bolt_size, number, 370,160)
+           parameter("2ndary part bolt standard", "P12_screwdin", bolt_standard, text, 370,185)
+           /*parameter("2ndary part bolt structure", "P13", string, text, 370,210)*/
+	     parameter("2ndary part bolt tolerance", "P16", distance, number, 370,210)
+           picture("usa_bolt_spacing2", 228,243,60,240)
+           picture("usa_bolt_spacing_secondary", 228,243,320,280)
+           parameter("", "D23", distance, number, 160,280)
+           parameter("", "P15", distance, number, 450,270)
+           parameter("", "P11", distance_list, text, 420,475,100)
+           parameter("", "P14", distance_list, text, 280,280,100)
+
+
+	     /*parameter("2ndary part bolt edge distance", "D23", distance, number, 370,235)
+           parameter("2ndary part bolt horiz. offset", "P15", distance, number, 370,260)
+           parameter("2ndary part bolt gage", "P11", distance_list, text, 370,285)
+           parameter("2ndary part bolt spacing", "P14", distance_list, text, 370,310)*/
+           /*parameter("2ndary part bolt slot X", "P17", distance, number, 370,335)*/
+           /*parameter("2ndary part bolt slot Y", "P18", distance, number, 370,360)*/
+       }
+
+       tab_page("", " Welds", 5)
+       {
+  
+ /*          parameter("Stiff. plt.\seat plt. weld N/S", "P20", distance, number, 1)
+           parameter("Stiff. plt.\seat plt. weld F/S", "P21", distance, number, 2)
+           parameter("Stiff. plt.\conn plt. weld N/S", "P22", distance, number, 3)
+           parameter("Stiff. plt.\conn plt. weld F/S", "P23", distance, number, 4)
+           parameter("Stiff. plt.\conn plt. weld N/S", "P24", distance, number, 5)*/
+
+	   attribute("header", "No        Size                   Type             Wshop/site", label, "%s", no, none, "0.0", "0.0")
+
+	   attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "P21", distance, number, 64,30,60)
+           parameter("", "P20", distance, number, 64,56,60)
+           parameter("", "P48", weld_type, number, 160,30,100)
+           parameter("", "P49", weld_type, number, 160,56,100)
+           parameter("", "P50", welding_site, number, 294,43,60)
+
+	   attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+           parameter("", "P23", distance, number, 64,85,60)
+           parameter("", "P22", distance, number, 64,111,60)
+           parameter("", "P51", weld_type, number, 160,85,100)
+           parameter("", "P52", weld_type, number, 160,111,100)
+           parameter("", "P53", welding_site, number, 294,98,60)
+
+	   attribute("weld", "3", label, "%s", no, none, "0.0", "0.0",6)
+           parameter("", "P57", distance, number, 64,140,60)
+           parameter("", "P24", distance, number, 64,166,60)
+           parameter("", "P54", weld_type, number, 160,140,100)
+           parameter("", "P55", weld_type, number, 160,166,100)
+           parameter("", "P56", welding_site, number, 294,153,60)
+
+           picture("usa_builtup_welds", 228,243,60,240)
+       }
+   }
+}

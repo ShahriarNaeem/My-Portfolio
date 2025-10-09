@@ -1,0 +1,65 @@
+page("TeklaStructures","")
+{
+   joint(1, "Rail Fitting-Tee (Side)")
+   {
+       helpurl("cchelp_usa_rail_fittings")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_rail_fit_tee_side", 200,200,155,180)
+	   attribute("LABEL_prof", "Fitting", label2, "%s", no, none, "0.0", "0.0", 19, 26) 
+	   profile ("Fitting", , N1, P8, , ,1) 
+
+	   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+	   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+	   parameter("", "P9", string, text, 830,26,80) 
+	   parameter("", "P10", integer, number, 940,26,40) 
+
+           parameter("", "P1", distance, number, 305,187,60)
+           parameter("", "P4", distance, number, 150,265,60)
+           parameter("", "P3", distance, number, 150,310,60)
+
+           attribute("LABEL4", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,51) 
+           attribute("P6", "", option, "%s", no, none, "0.0", "0.0", 398,51,120) 
+             { 
+                   value("",1) 
+                   value("Yes",0) 
+             } 
+           attribute("LABEL5", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,76) 
+           parameter("", "P7", string, text, 398,76,120)
+
+           attribute("LABEL6", "Rails Insert into Fitting?", label, "%s", no, none, "0.0", "0.0", 19,101) 
+           attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 398,101,120,"toggle_field:!P15=0") 
+             { 
+                   value("",1) 
+                   value("Yes",0) 
+             }
+
+           attribute("LABEL7", "Inserted Length", label, "%s", no, none, "0.0", "0.0", 19,126) 
+           parameter("", "P15", distance, number, 398,126,120)
+
+       }
+       tab_page("", " Welds ", 2)
+       {
+	   attribute("header", "No        Size                   Type                  Wshop/site", label, "%s", no, none, "0.0", "0.0")
+	   attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+
+           parameter("", "W1A", distance, number, 64,30,60)
+           parameter("", "W1B", weld_type, number, 160,30,100)
+           parameter("", "W1C", welding_site, number, 300,30,60)
+
+	   attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+
+           parameter("", "W2A", distance, number, 64,85,60)
+           parameter("", "W2B", weld_type, number, 160,85,100)
+           parameter("", "W2C", welding_site, number, 300,85,60)
+
+	   attribute("weld", "3", label, "%s", no, none, "0.0", "0.0",6)
+
+           parameter("", "W3A", distance, number, 64,140,60)
+           parameter("", "W3B", weld_type, number, 160,140,100)
+           parameter("", "W3C", welding_site, number, 300,140,60)
+
+           picture("usa_rail_fit_tee_side_weld", 200,200,500,50)
+       }
+   }
+}

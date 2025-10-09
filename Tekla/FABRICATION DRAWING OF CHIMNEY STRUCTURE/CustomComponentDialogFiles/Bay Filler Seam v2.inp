@@ -1,0 +1,39 @@
+page("TeklaStructures", "")
+{
+    joint(1, "Bay Filler Seam v2")
+    {
+        helpurl("cchelp_usa_bay_filler_seam")
+        tab_page("", " Parameters ", 1)
+        {
+            attribute("", "Finish", label3, "%s", none, none, "0", "0", 830, 5)
+            attribute("", "Class", label3, "%s", none, none, "0", "0", 960, 5)
+            attribute("", "Design Group Name", label3, "%s", none, none, "0", "0", 1035, 5)
+            profile("Beam",Profile,X1,Material,X3,Name, 1)
+            parameter("", "Finish", string, text, 830, 26, 100)
+            parameter("", "Class", string, text, 960, 26, 40)
+            parameter("", "Beam_DGN", string, text, 1035, 26, 130)
+            attribute("NB_label", "Number of Beams:", label3, "%s", none, none, "0", "0", 600, 120)
+            parameter("", "NBeams", integer, number, 793, 120, 100)
+            attribute("", "Calculation Method:", label3, "%s", none, none, "0", "0", 14, 121)
+            attribute("O1", "", option, "%s", none, none, "0.0", "0.0", 238, 121, 175, "toggle_field:NBeams=1;NB_label=1;P1=0;MS_label=0")
+            {
+                value("Number of Beams", 1)
+                value("Maximum Spacing", 0)
+            }
+            attribute("", "Typ. Spacing Accuracy:", label3, "%s", none, none, "0", "0", 14, 150)
+            attribute("O2", "", option, "%s", none, none, "0.0", "0.0", 240, 150, 100)
+            {
+                value("1/16''", 1)
+                value("1/8''", 0)
+                value("1/4''", 0)
+                value("1/2''", 0)
+                value("1''", 0)
+            }
+            attribute("MS_label", "Maximum Spacing:", label3, "%s", none, none, "0", "0", 600, 150)
+            parameter("", "P1", distance, number, 793, 150, 100)
+            picture("usa_bay_filler_v2", 500, 336, 90, 210)
+            parameter("", "D5", distance, number, 785, 243, 106)
+            parameter("", "D2", distance, number, 785, 510, 106)
+        }
+    }
+}

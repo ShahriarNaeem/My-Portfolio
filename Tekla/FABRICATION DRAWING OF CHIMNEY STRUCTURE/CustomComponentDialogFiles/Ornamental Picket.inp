@@ -1,0 +1,32 @@
+page("TeklaStructures","")
+{
+   detail(1, "Ornamental Picket")
+   {
+       helpurl("cchelp_usa_ornamental_picket")
+       tab_page("", " Parameters ", 1)
+       {
+	   profile("Picket",   P1,PK1 , P3 , , ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P4", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P5", integer, number, 940,26,40)
+
+         attribute("LABEL3", "Picket Thickness", label, "%s", no, none, "0.0", "0.0", 19,50) 
+         parameter("", "P2", distance, number, 398,50,120)
+
+         attribute("LABEL4", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,74) 
+         attribute("P8", "", option, "%s", no, none, "0.0", "0.0", 398,74,120) 
+              { 
+                   value("",1) 
+                   value("Yes",0) 
+              } 
+         attribute("LABEL5", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,98) 
+         parameter("", "P9", string, text, 398,98,120)
+
+           picture("usa_picket_detail", 110,142,200,200)
+
+         parameter("", "P6", distance, number, 125,207,80)
+         parameter("", "P10", distance, number, 355,270,80)
+       }
+   }
+}

@@ -1,0 +1,47 @@
+page("TeklaStructures","")
+{
+   joint(1, "Rail Connector-Beveled Tee v2")
+   {
+       helpurl("cchelp_usa_rail_connectors")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_rail_con_bev_tee", 200,200,150,160)
+	   attribute("LABEL_prof", "Connector", label2, "%s", no, none, "0.0", "0.0", 19, 26) 
+	   profile ("Connector", , N1, P19, , ,1) 
+
+	   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+	   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+	   parameter("", "P20", string, text, 830,26,80) 
+	   parameter("", "P21", integer, number, 940,26,40) 
+ 
+           parameter("", "P1", distance, number, 390,265,60)
+ 
+           attribute("LABEL4", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,51) 
+           attribute("P17", "", option, "%s", no, none, "0.0", "0.0", 398,51,120) 
+             { 
+                   value("",1) 
+                   value("Yes",0) 
+             } 
+           attribute("LABEL5", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,76) 
+           parameter("", "P18", string, text, 398,76,120)
+
+       }
+       tab_page("", " Welds ", 2)
+       {
+	   attribute("header", "No        Size                   Type                  Wshop/site", label, "%s", no, none, "0.0", "0.0")
+	   attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+
+           parameter("", "W1A", distance, number, 64,30,60)
+           parameter("", "W1B", weld_type, number, 160,30,100)
+           parameter("", "W1C", welding_site, number, 300,30,60)
+
+	   attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+
+           parameter("", "W2A", distance, number, 64,85,60)
+           parameter("", "W2B", weld_type, number, 160,85,100)
+           parameter("", "W2C", welding_site, number, 300,85,60)
+
+           picture("usa_rail_con_bev_tee_weld", 200,200,150,160)
+       }
+   }
+}

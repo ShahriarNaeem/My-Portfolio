@@ -1,0 +1,33 @@
+page("TeklaStructures","")
+{
+   joint(1, "Angle Rail Conx")
+   {
+       helpurl("cchelp_usa_angle_rail_components")
+       tab_page("", " Parameters ", 1)
+       {
+           part("Plate",   P1, , , N7, P4 , ,P3 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P5", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P6", integer, number, 940,26,40)
+
+           picture("usa_horz_line2", 720, 5, 20, 72)
+
+           parameter("Bolt Size", "P2_diameter", bolt_size, number, 4)
+           parameter("Bolt Standard", "P2_screwdin", bolt_standard, text, 5)
+
+           picture("usa_horz_line2", 720, 5, 20, 157)
+
+           parameter("Weld Size", "P9", distance, number, 7)
+           parameter("Weld Type", "P10", weld_type, number, 8)
+
+           picture("usa_horz_line2", 720, 5, 20, 242)
+
+           attribute("LABEL1", "If these values are left at 0'' then", label, "%s", no, none, "0.0", "0.0", 19,266)
+           attribute("LABEL2", "bolt will be centered on plate", label, "%s", no, none, "0.0", "0.0", 19,290)
+           picture("usa_angle_rail_conx", 230, 190, 240, 250)
+           parameter("", "P12", distance, number, 230,357,60)
+           parameter("", "P11", distance, number, 380,452,60)
+       }
+   }
+}

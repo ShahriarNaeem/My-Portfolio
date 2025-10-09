@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE TeklaStructuresModels>
+<TeklaStructuresModels>
+    <Model>
+        <Name>FABRICATION DRAWING OF CHIMNEY STRUCTURE</Name>
+        <Designer>PROJ-DESIGNER</Designer>
+        <Description>Setup for Steel Detailing</Description>
+        <Version>2023 Service Pack 3</Version>
+        <ProductVersion>2023.0</ProductVersion>
+        <Language>enu</Language>
+        <Template></Template>
+        <Environment>usa</Environment>
+        <IsTemplate>FALSE</IsTemplate>
+        <XS_PROJECT></XS_PROJECT>
+        <XS_FIRM></XS_FIRM>
+        <XS_SYSTEM>C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Metric\Steel\DrawingSettings\;C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Metric\Steel\ModelingSettings\;C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Me</XS_SYSTEM>
+        <ConnectedId></ConnectedId>
+    </Model>
+</TeklaStructuresModels>

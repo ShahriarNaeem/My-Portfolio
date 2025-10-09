@@ -1,0 +1,23 @@
+page("TeklaStructures","")
+{
+   detail(1, "Beam Safety")
+   {
+       helpurl("cchelp_usa_safety_components")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Other Side Of Web", "SOW", YesNo, number, 1)
+           parameter("Oversize Hole", "Tolerance", distance, number, 2)
+           parameter("Bolt Diameter", "HD_diameter", bolt_size, number, 3)
+           parameter("Type", "HD_screwdin", bolt_standard, number, 4)
+		   attribute("O1", "Edge Distance from CL", option, "%s", no, none, "0.0", "0.0", 374, 115, 160, "toggle_field:!FOFF=1;!MW1=0")
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 
+           picture("usa_beam_safety",100, 75, 82, 170)
+           parameter("", "MW1", distance, number, 50,322,80)
+           parameter("", "FOFF", distance, number, 50,346,80)
+           parameter("", "EOB", distance, number, 217,437,80)
+       }
+   }
+}

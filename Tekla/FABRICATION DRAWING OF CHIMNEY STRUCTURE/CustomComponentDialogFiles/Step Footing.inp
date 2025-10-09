@@ -1,0 +1,18 @@
+page("TeklaStructures","")
+{
+   joint(1, "Step Footing")
+   {
+       helpurl("cchelp_usa_step_footing")
+       tab_page("", " Parameters ", 1)
+       {
+         picture("usa_Step_Footing_CC",499,399,30,0)
+	     parameter("", "P6", distance, number,298,340,50)
+         parameter("", "P7", distance, number,270,370,50)
+	     parameter("Match Primary Width", "P11", YesNo, number, 400,80,60)
+         attribute ("P3", "Use Default (1 to 1 Slope)", option, "%s", none, none, "0.0", "0.0", 400,50,60,"toggle_field:P6=0,2;P7=0,2;P6=1,1;P7=1,1")
+	{
+	   value ("No", 0)
+	   value ("Yes", 1)
+       }
+   }
+}

@@ -1,0 +1,86 @@
+
+
+ SAFE Post Tensioning 64-bit 20.0.0 Build 1701 (Analysis Build 9879/64)         
+ File: D:\P 2105 CWASA\NEW\P-2...ES.01.B00.G3.P 2105 106.211106.R00.XX_V2016.OUT
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+      17                                    
+   ~5596 TO    1021    A   A   A   A   A   A
+    1009 TO     996                         
+     968 TO     932    -   -   -   -   -   -
+     711 TO   ~5625    A   A   A   A   A   A
+    1012 TO     992                         
+   ~4935 TO    ~997    A   A   A   A   A   A
+     975                                    
+     954 TO     931    -   -   -   -   -   -
+     773 TO    ~993    A   A   A   A   A   A
+     997                                    
+     934 TO     930    -   -   -   -   -   -
+     745 TO   ~4633    A   A   A   A   A   A
+    1000 TO     999                         
+   ~4630 TO   ~5605    A   A   A   A   A   A
+     962               -   -   -   -   -   -
+     180 TO    ~992    A   A   A   A   A   A
+     961 TO     950    -   -   -   -   -   -
+     635 TO   ~5604    A   A   A   A   A   A
+     960               -   -   -   -   -   -
+     179 TO     154    A   A   A   A   A   A
+    1002 TO    1001                         
+   ~4426 TO    ~991    A   A   A   A   A   A
+     974 TO     612                         
+     956 TO     937    -   -   -   -   -   -
+     655 TO     603    A   A   A   A   A   A
+     602                                    
+     949 TO     939    -   -   -   -   -   -
+     567 TO     618    A   A   A   A   A   A
+     614                                    
+     775 TO   ~2820    A   A   A   A   A   A
+     993 TO     978                         
+   ~5622 TO    ~977    A   A   A   A   A   A
+     601                                    
+     951 TO     941    -   -   -   -   -   -
+     561 TO   ~3555    A   A   A   A   A   A
+      19 TO     976                         
+   ~4925 TO   ~4931    A   A   A   A   A   A
+    1019 TO    1018                         
+   ~2543 TO    ~973    A   A   A   A   A   A
+    1006 TO     611                         
+     955 TO     928    -   -   -   -   -   -
+     395 TO     617    A   A   A   A   A   A
+     946 TO     945    -   -   -   -   -   -
+     546 TO    1013    A   A   A   A   A   A
+    1014                                    
+   ~3787 TO   ~5602    A   A   A   A   A   A
+     959               -   -   -   -   -   -
+     178 TO    ~970    A   A   A   A   A   A
+     958 TO     940    -   -   -   -   -   -
+     333 TO   ~5601    A   A   A   A   A   A
+     957               -   -   -   -   -   -
+     177 TO      51    A   A   A   A   A   A
+    1025 TO    1005                         
+   ~1857 TO    ~966    A   A   A   A   A   A
+     994                                    
+     927 TO     922    -   -   -   -   -   -
+     287 TO      87    A   A   A   A   A   A
+    1004 TO      32                         
+   ~1682 TO    ~962    A   A   A   A   A   A
+     972 TO      25                         
+     953 TO     921    -   -   -   -   -   -
+     293 TO   ~5624    A   A   A   A   A   A
+     467 TO      29                         
+   ~3503 TO   ~1128    A   A   A   A   A   A
+    1032 TO    1031                         
+   ~3506 TO    1020    A   A   A   A   A   A
+     977 TO      11                         
+     965 TO     923    -   -   -   -   -   -
+     519 TO      82    A   A   A   A   A   A

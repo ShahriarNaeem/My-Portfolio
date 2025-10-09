@@ -1,0 +1,64 @@
+page("TeklaStructures","")
+{
+   joint(1, "Sag Rod v3")
+   {
+       helpurl("cchelp_usa_sag_rod")
+       tab_page("", " Picture ", 1)
+	 { 
+
+		picture("usa_sag_rod_elev",376,370,200,55)
+            parameter("", "P4", distance, number, 585,32,60)
+            parameter("", "P17", distance, number, 730,142,60)
+            parameter("", "P16", distance, number, 406,125,60)
+            parameter("", "GAP1", distance, number, 335,345,60)
+            parameter("", "P18", distance, number, 406,455,60)
+            parameter("", "P19", distance, number, 730,455,60)
+	  picture("jnt_bpic_extra_length",100,100,550,500) /*picture_extra_length*/
+	  attribute("ED1", "", distance, "%s", none, none, "0.0", "0.0",610,550,50)    	
+	  {
+	     value("", 0.0)
+	  }			
+		attribute("Double_nut_lb", "Double (Outer) nuts", label, "%s", no, none, "0.0", "0.0",20,12)
+            parameter("", "P8", YesNo, number, 260,12,80)
+		attribute("Girt_hole_lb", "Girt hole tolerance", label, "%s", no, none, "0.0", "0.0",20,40)
+            parameter("", "P9", distance, number, 260,40,80)
+		attribute("Extra_nut_lb", "Inner nuts", label, "%s", no, none, "0.0", "0.0",20,68)
+           attribute("EN1", "", option, "%s", no, none, "0.0", "0.0", 260,68,80)
+                {
+                     value("No",1)
+                     value("Upper",0)
+                     value("Lower",0)
+                     value("Both",0)
+                }	
+       }
+       tab_page("", " Parts ", 2)
+       {
+           picture("usa_thru_bolt_note", 635, 20, 15, 293)	 
+		   
+	   part ("Sag Rod",     P5,  ,  , SR1,P11 ,SR2 ,P10 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P1", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P12", integer, number, 940,26,40)
+
+	   profile("Nut Profile",   NUT1,NT1 ,P14 , ,P13 ,4)		   
+           parameter("", "P15", string, text, 830,97,80)
+           parameter("", "P20", integer, number, 940,97,40)
+		attribute("Nut_lb", "Thickness", label, "%s", no, none, "0.0", "0.0",20,121)		   
+		parameter ("", "SR4", distance, number, 165,121,60)
+
+	   profile("Washer Profile",   WASH1,WS1 ,P22 , ,P21 ,7)	
+           parameter("", "P23", string, text, 830,169,80)
+           parameter("", "P24", integer, number, 940,169,40)
+		attribute("Washer_lb", "Thickness", label, "%s", no, none, "0.0", "0.0",20,193)		   
+		parameter ("", "SR28", distance, number, 165,193,60)
+		   
+		   attribute("Overide_lb", "Select Nut and Washer from Profile Catalog?", label, "%s", no, none, "0.0", "0.0",20,243)
+        attribute("OPT1", "", option, "%s", no, none, "0.0", "0.0", 398,243,120,"toggle_field:NUT1=0;WASH1=0;!usa_thru_bolt_note=1")
+            {
+                value("No",1)
+                value("Yes",0)
+            }	   
+	}
+   }
+}

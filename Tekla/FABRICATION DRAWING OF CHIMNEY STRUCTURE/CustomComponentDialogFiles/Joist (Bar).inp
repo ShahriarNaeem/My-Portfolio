@@ -1,0 +1,46 @@
+page("TeklaStructures","")
+{
+   macro(1, "Joist (Bar)")
+   {
+       helpurl("cchelp_usa_joist_bar")
+       tab_page("", " Main ", 1)
+       {
+	   picture("usa_bar_joist_main",340, 255, 150, 250)
+
+	   profile ("Joist Type",  Top_Chord, A1 , P1,  ,JSeries ,1)
+	   profile ("Bottom Chord",  Bot_Chord, , ,  , ,2)
+	   part ("Bar",  Bar_Thk, Bar_Width, , , ,  , ,3)
+
+         picture("usa_horz_line", 200, 5, 5, 130)
+           parameter("Bar Bays Start Point - A", "Bar_Start", distance, number, 6)
+           parameter("Max Spacing - B", "mspa", distance, number, 7)
+           parameter("Bar Clearance Setback - C", "Bar_Setback", distance, number, 8)
+           parameter("", "Depth", distance, number, 95, 340, 65)
+           parameter("", "Clear", distance, number, 268, 530, 60)
+           parameter("", "Shoe_Gap", distance, number, 362, 475, 60)
+       }
+       tab_page("", " Left End ", 2)
+       {
+	   picture("usa_bar_joist_left",260, 260, 150, 100)
+           profile("Left Seat Sizes", L_SeatS, , , , , 1)
+           parameter("", "L_Stbk", distance, number, 250, 390, 65)
+           parameter("", "Left_Chord", distance, number, 115, 122, 65)
+           parameter("", "L_SeatL", distance, number, 115, 300, 65)
+           parameter("", "LSt_O", distance, number, 115, 262,65)
+           parameter("", "LShoe", distance, number, 458, 132, 65)
+           parameter("", "LShoe2", distance, number, 105, 200, 65)
+       }
+       tab_page("", " Right End ", 3)
+       {
+	   picture("usa_bar_joist_right",260, 260, 150, 100)
+
+           profile("Right Seat Sizes", R_SeatS, , , , , 1)
+           parameter("", "R_Stbk", distance, number, 340, 390, 65)
+           parameter("", "Right_Chord", distance, number, 485, 122, 65)
+           parameter("", "R_SeatL", distance, number, 485, 300, 65)
+           parameter("", "RSt_O", distance, number, 485, 262, 65)
+           parameter("", "RShoe", distance, number, 148 ,132,65)
+           parameter("", "RShoe2", distance, number, 505,200,65)
+       }
+   }
+}

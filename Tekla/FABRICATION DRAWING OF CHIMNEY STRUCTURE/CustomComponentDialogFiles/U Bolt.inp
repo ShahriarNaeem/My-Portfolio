@@ -1,0 +1,75 @@
+page("TeklaStructures","")
+{
+   detail(1, "U Bolt")
+   {
+       helpurl("cchelp_usa_ubolt")
+       tab_page("", " Picture ", 1)
+       {
+           attribute("LABEL_TOP", "Top Nut/Washer?", label, "%s", no, none, "0.0", "0.0", 20, 10)
+           attribute("OPT_TOP", "", option, "%s", yes, none, "0.0","0.0", 260,10,140)
+	     {
+                     value("No",1)
+                     value("Yes",0)
+	     }
+           attribute("LABEL_BOT", "Bottom Nut/Washer?", label, "%s", no, none, "0.0", "0.0", 20, 40)
+           attribute("OPT_BOT", "", option, "%s", yes, none, "0.0","0.0", 260,40,140)
+	     {
+                     value("No",1)
+                     value("Yes",0)
+	     }
+           attribute("LABEL_HTOL", "Hole Tolerance", label, "%s", no, none, "0.0", "0.0", 20, 70)
+           parameter("", "HOLE_TOL", distance, number, 260,70,140)
+           attribute("LABEL_SITE", "Site/Workshop", label, "%s", no, none, "0.0", "0.0", 20, 100)
+           attribute("OPT_SITE", "", option, "%s", yes, none, "0.0","0.0", 260,100,140)
+	     {
+                     value("Site",1)
+                     value("Workshop",0)
+	     }
+		   
+	   picture("usa_u_bolt_elev",200,295,200,140)
+		
+	       parameter("", "BOLT_GAGE", distance, number, 290,485,100)
+           parameter("", "PROJ_DIST", distance, number, 125,324,100)
+           parameter("", "DIST_DOWN", distance, number, 473,370,100)
+   
+	   }
+       tab_page("", " Parts ", 2)
+       {
+	   part("U Bolt",   BOLT_DIA, , ,UB1 ,BOLT_MATL ,UB2 ,BOLT_NAME ,1)
+           attribute("LABEL_F", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+           parameter("", "BOLT_FIN", string, text, 830,26,80)
+           attribute("LABEL_C", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+           parameter("", "BOLT_CLASS", integer, number, 940,26,40) 
+
+	   profile("Nut*", NUT_PROF_CAT  ,NUT , NUT_MATL , ,NUT_NAME ,4)
+           parameter("", "NUT_FIN", string, text, 830,97,80) 
+           parameter("", "NUT_CLASS", integer, number, 940,97,40) 
+		attribute("Nut_lb", "Thickness", label, "%s", no, none, "0.0", "0.0",20,121)		   
+		parameter ("", "NUT_THK", distance, number, 165,121,60)
+		   
+	   profile("Washer*", WA_PROF_CAT  ,WA , WA_MATL , ,WA_NAME ,7)
+           parameter("", "WA_FIN", string, text, 830,169,80)
+           parameter("", "WA_CLASS", integer, number, 940,169,40) 
+		attribute("Washer_lb", "Thickness", label, "%s", no, none, "0.0", "0.0",20,193)		   
+		parameter ("", "WA_THK", distance, number, 165,193,60)  
+
+           picture("usa_thru_bolt_note", 635, 20, 15, 235)
+		   
+		   attribute("Overide_lb", "Select Nut and Washer from Profile Catalog?", label, "%s", no, none, "0.0", "0.0",20,260)
+        attribute("OPT_PROF_CAT", "", option, "%s", no, none, "0.0", "0.0", 398,260,140,"toggle_field:NUT_PROF_CAT=0;WA_PROF_CAT=0;!usa_thru_bolt_note=1")
+            {
+                value("No",1)
+                value("Yes",0)
+            }
+           attribute("LABEL_A", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 20, 285)
+           attribute("BOI", "", option, "%s", yes, none, "0.0","0.0", 398,285,140)
+	     {
+                     value("No",1)
+                     value("Yes",0)
+	     }
+           attribute("LABEL_B", "BOI Name", label, "%s", no, none, "0.0", "0.0", 20, 310)
+           parameter("", "BOI_NAME", string, text, 398,310,140)  		   
+
+       }
+   }
+}

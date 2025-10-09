@@ -1,0 +1,71 @@
+page("TeklaStructures","")
+{
+   macro(1, "Edge Angle")
+   {
+	   tab_page("", " Picture ", 1)
+       {
+	       helpurl("cchelp_usa_embed_angle_components")
+		   /*Profile properties*/
+		   profile("Angle",P9,P16,P11,P14,P10,1)
+		   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+		   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+		   parameter("", "P12", string, text, 830,26,80)
+		   parameter("", "P13", integer, number, 940,26,40)
+		   
+		   /*Image and edge setbacks*/
+		   picture("usa_embed_edge_angle_01", 400,221, 100, 130)
+		   parameter("", "D1", distance, number, 105,175,60)
+		   parameter("", "D2", distance, number, 570,175,60)
+		   
+		   /*Vert-Skewed stud spacing*/
+		   attribute("LABEL_min1", "minimum", label2, "%s", no, none, "0.0", "0.0", 106, 104)
+		   parameter("", "P3", distance, number, 110,128,60)
+		   parameter("", "P4", distance, number, 330,128,80)
+		   attribute("P18", "", option, "%s", no, none, "0.0", "0.0", 330,163,80,"dia_enable_field_ocb:!LABEL_min1=1")
+           {
+               value("Exact",1)
+               value("Max",0)
+           }
+		   
+		   /*Horiz stud spacing*/
+		   attribute("LABEL_min2", "minimum", label2, "%s", no, none, "0.0", "0.0", 106, 311)
+           parameter("", "P22", distance, number, 330,335,80)
+           parameter("", "P23", distance, number, 110,335,60)
+		   attribute("P27", "", option, "%s", no, none, "0.0", "0.0", 330,372,80,"dia_enable_field_ocb:!LABEL_min2=1")
+           {
+               value("Exact",1)
+               value("Max",0)
+           }
+		   
+		   /*Stud orientation drop-down and gage*/
+		   picture("usa_embed_edge_angle_06", 45,50, 854, 170)
+		   picture("usa_embed_edge_angle_07", 45,50, 780, 230)
+           attribute("P1", "", option, "%s", no, none, "0.0", "0.0", 850,230,110,"toggle_field:P4=0;P3=0;P18=0;P22=1,2;P23=1,2;P27=1,2;!usa_embed_edge_angle_06=0,2;!Gage=0,2;
+				!usa_embed_edge_angle_07=1,2;!Gage2=1,2;P8_standard=0;P8_size=0;P8_length=0;P26_standard=1,2;P26_size=1,2;P26_length=1,2")
+           {
+               value("usa_embed_edge_angle_02.xbm",1)
+               value("usa_embed_edge_angle_03.xbm",0)
+               value("usa_embed_edge_angle_04.xbm",0)
+               value("usa_embed_edge_angle_05.xbm",0)
+           }
+           parameter("", "Gage", distance, number, 851,148,60)		   
+           parameter("", "Gage2", distance, number, 720,243,60)		   
+
+		   /*Stud size and grade fields*/
+		   attribute("LABEL_std", "Grade", label2, "%s", no, none, "0.0", "0.0", 150, 450)
+		   attribute("LABEL_dia", "Diameter", label2, "%s", no, none, "0.0", "0.0", 300, 450)
+		   attribute("LABEL_lng", "Length", label2, "%s", no, none, "0.0", "0.0", 425, 450)
+		   
+		   attribute("LABEL_stud1", "Vertical Studs", label2, "%s", no, none, "0.0", "0.0", 5, 475)
+		   parameter("", "P8_standard", stud_standard, text, 150,475,120)
+           parameter("", "P8_size", stud_size, number, 300,475,80)
+           parameter("", "P8_length", stud_length, number, 425,475,80)
+		   
+		   attribute("LABEL_stud2", "Horiz. Studs", label2, "%s", no, none, "0.0", "0.0", 5, 510)
+           parameter("", "P26_standard", stud_standard, text, 150,510,120)
+           parameter("", "P26_size", stud_size, number, 300,510,80)
+           parameter("", "P26_length", stud_length, number, 425,510,80)
+		   
+	   }
+   }
+}

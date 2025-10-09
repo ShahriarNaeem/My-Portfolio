@@ -1,0 +1,782 @@
+
+
+ SAFE Post Tensioning 64-bit 20.0.0 Build 1701 (Analysis Build 9879/64)
+ File: D:\P 2105 CWASA\NEW\P-2...ES.01.B00.G3.P 2105 106.211106.R00.XX_V2016.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2021/11/06  13:06:50
+
+
+ RUNNING ANALYSIS AS A SEPARATE PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =        5702
+    WITH RESTRAINTS                        =          48
+    WITH MASS                              =        5492
+ NUMBER OF FRAME/TENDON ELEMENTS           =        1047
+ NUMBER OF SHELL ELEMENTS                  =        5315
+ NUMBER OF LOAD PATTERNS                   =          10
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =          10
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =      31.924 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           8
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           8
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           8
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           8
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           8
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
+
+
+ E L E M E N T   F O R M A T I O N                                      13:06:50
+
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        13:06:50
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =       33690
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =      870891
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ L I N E A R   S T A T I C   C A S E S                                  13:06:51
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF CASES TO SOLVE            =           1
+ NUMBER OF CASES TO SOLVE PER BLOCK        =           1
+
+ LINEAR STATIC CASES TO BE SOLVED:
+
+ CASE: ~LLRF
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:06:51
+
+ CASE: SW
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:06:51
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   6.06E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 100.000000
+ MAXIMUM VERTICAL DISPLACEMENT = 0.138811
+ MINIMUM VERTICAL DISPLACEMENT = -1.076075
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 2 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   8.94E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 7.676480
+ MAXIMUM VERTICAL DISPLACEMENT = 0.137666
+ MINIMUM VERTICAL DISPLACEMENT = -1.209319
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 3 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   9.70E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 0.602671
+ MAXIMUM VERTICAL DISPLACEMENT = 0.137184
+ MINIMUM VERTICAL DISPLACEMENT = -1.217106
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           4
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.18
+ TIME FOR CONTROLLING ANALYSIS             =        0.77
+ TIME FOR UPDATING LOADS AND STATE         =        1.07
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.25
+ TIME FOR SOLVING STIFFNESS MATRIX         =        2.15
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.25
+ TIME FOR DETERMINING EVENTS               =        0.01
+ TIME FOR SAVING RESULTS                   =        0.04
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        4.72
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:06:56
+
+ CASE: SDEAD
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:06:56
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   1.09E-07   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 100.000000
+ MAXIMUM VERTICAL DISPLACEMENT = 0.031564
+ MINIMUM VERTICAL DISPLACEMENT = -0.987143
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 2 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   1.00E-07   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 7.936240
+ MAXIMUM VERTICAL DISPLACEMENT = 0.031799
+ MINIMUM VERTICAL DISPLACEMENT = -1.095265
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 3 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   8.92E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 2.228220
+ MAXIMUM VERTICAL DISPLACEMENT = 0.031869
+ MINIMUM VERTICAL DISPLACEMENT = -1.116688
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 4 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   8.53E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 1.52E-11
+ MAXIMUM VERTICAL DISPLACEMENT = 0.031869
+ MINIMUM VERTICAL DISPLACEMENT = -1.116688
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           5
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.20
+ TIME FOR CONTROLLING ANALYSIS             =        0.81
+ TIME FOR UPDATING LOADS AND STATE         =        1.47
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.32
+ TIME FOR SOLVING STIFFNESS MATRIX         =        2.86
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.32
+ TIME FOR DETERMINING EVENTS               =        0.01
+ TIME FOR SAVING RESULTS                   =        0.05
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        6.04
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:02
+
+ CASE: PW
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:02
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   3.68E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 100.000000
+ MAXIMUM VERTICAL DISPLACEMENT = 0.211619
+ MINIMUM VERTICAL DISPLACEMENT = -0.457373
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 2 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   4.02E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 6.14E-12
+ MAXIMUM VERTICAL DISPLACEMENT = 0.211619
+ MINIMUM VERTICAL DISPLACEMENT = -0.457373
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           3
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.21
+ TIME FOR CONTROLLING ANALYSIS             =        0.76
+ TIME FOR UPDATING LOADS AND STATE         =        0.71
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.17
+ TIME FOR SOLVING STIFFNESS MATRIX         =        1.41
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.16
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.01
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        3.43
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:05
+
+ CASE: FACADE
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:05
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   7.62E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 100.000000
+ MAXIMUM VERTICAL DISPLACEMENT = 0.380726
+ MINIMUM VERTICAL DISPLACEMENT = -3.525971
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 2 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   9.27E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 25.492432
+ MAXIMUM VERTICAL DISPLACEMENT = 0.392381
+ MINIMUM VERTICAL DISPLACEMENT = -5.181863
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 3 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   7.10E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 16.670677
+ MAXIMUM VERTICAL DISPLACEMENT = 0.383657
+ MINIMUM VERTICAL DISPLACEMENT = -6.371157
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 4 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   7.62E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 7.513864
+ MAXIMUM VERTICAL DISPLACEMENT = 0.382161
+ MINIMUM VERTICAL DISPLACEMENT = -6.899359
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 5 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   7.85E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 2.413205
+ MAXIMUM VERTICAL DISPLACEMENT = 0.374536
+ MINIMUM VERTICAL DISPLACEMENT = -7.043158
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 6 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   6.73E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 0.503851
+ MAXIMUM VERTICAL DISPLACEMENT = 0.372884
+ MINIMUM VERTICAL DISPLACEMENT = -7.065063
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           7
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.22
+ TIME FOR CONTROLLING ANALYSIS             =        0.88
+ TIME FOR UPDATING LOADS AND STATE         =        2.04
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.49
+ TIME FOR SOLVING STIFFNESS MATRIX         =        4.32
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.52
+ TIME FOR DETERMINING EVENTS               =        0.02
+ TIME FOR SAVING RESULTS                   =        0.07
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        8.56
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:14
+
+ CASE: LL<3
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:14
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   7.41E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 100.000000
+ MAXIMUM VERTICAL DISPLACEMENT = 0.062040
+ MINIMUM VERTICAL DISPLACEMENT = -0.524677
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 2 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   6.59E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 1.30E-11
+ MAXIMUM VERTICAL DISPLACEMENT = 0.062040
+ MINIMUM VERTICAL DISPLACEMENT = -0.524677
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           3
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.20
+ TIME FOR CONTROLLING ANALYSIS             =        0.76
+ TIME FOR UPDATING LOADS AND STATE         =        0.70
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.15
+ TIME FOR SOLVING STIFFNESS MATRIX         =        1.44
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.17
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.02
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        3.44
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:17
+
+ CASE: LL>3
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:17
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   4.48E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 100.000000
+ MAXIMUM VERTICAL DISPLACEMENT = 0.190110
+ MINIMUM VERTICAL DISPLACEMENT = -0.798195
+ CRACKED SECTION ITERATION DID NOT CONVERGE!
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 2 OF 30
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1   6.09E-08   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = 8.48E-12
+ MAXIMUM VERTICAL DISPLACEMENT = 0.190110
+ MINIMUM VERTICAL DISPLACEMENT = -0.798195
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           3
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.21
+ TIME FOR CONTROLLING ANALYSIS             =        0.76
+ TIME FOR UPDATING LOADS AND STATE         =        0.69
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.15
+ TIME FOR SOLVING STIFFNESS MATRIX         =        1.45
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.18
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.02
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        3.46
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:21
+
+ CASE: LLPR
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:21
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1    .000000   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = .000000
+ MAXIMUM VERTICAL DISPLACEMENT = .000000
+ MINIMUM VERTICAL DISPLACEMENT = .000000
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           2
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.20
+ TIME FOR CONTROLLING ANALYSIS             =        0.70
+ TIME FOR UPDATING LOADS AND STATE         =        0.31
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.09
+ TIME FOR SOLVING STIFFNESS MATRIX         =        0.71
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.08
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.02
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        2.11
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:23
+
+ CASE: RFLL
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:23
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1    .000000   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = .000000
+ MAXIMUM VERTICAL DISPLACEMENT = .000000
+ MINIMUM VERTICAL DISPLACEMENT = .000000
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           2
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.20
+ TIME FOR CONTROLLING ANALYSIS             =        0.72
+ TIME FOR UPDATING LOADS AND STATE         =        0.30
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.07
+ TIME FOR SOLVING STIFFNESS MATRIX         =        0.74
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.09
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.03
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        2.15
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      13:07:25
+
+ CASE: CONS
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =          NO
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    1.00E-05
+
+
+ E L E M E N T   F O R M A T I O N                                      13:07:25
+
+
+ BEGIN CRACKED SECTION ITERATION NUMBER 1 OF 30
+ RELATIVE DISPL. CONVERGENCE TOLERANCE = 0.010000
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      25     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      1       0       1  Conv   -1    .000000   1.000000   1.000000   1.000000
+
+ CRACKED SECTION ITERATION RELATIVE DISPL ERROR = .000000
+ MAXIMUM VERTICAL DISPLACEMENT = .000000
+ MINIMUM VERTICAL DISPLACEMENT = .000000
+ CRACKED SECTION ITERATION HAS CONVERGED
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =           2
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.21
+ TIME FOR CONTROLLING ANALYSIS             =        0.71
+ TIME FOR UPDATING LOADS AND STATE         =        0.30
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.09
+ TIME FOR SOLVING STIFFNESS MATRIX         =        0.73
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.09
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.02
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        2.15
+
+
+ A N A L Y S I S   C O M P L E T E                          2021/11/06  13:07:27

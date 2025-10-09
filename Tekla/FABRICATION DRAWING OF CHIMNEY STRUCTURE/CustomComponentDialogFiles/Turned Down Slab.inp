@@ -1,0 +1,16 @@
+page("TeklaStructures","")
+{
+   joint(1, "Turned Down Slab")
+   {
+       helpurl("cchelp_usa_turned_down_slab")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Material", "P7", material, text, 1) 	   
+           parameter("", "P1", distance, number, 500,240,60)
+           parameter("", "P3", distance, number, 340,460,60)
+           parameter("", "P6", distance, number, 355,390,60)
+
+	   picture("usa_turned_down_slab.bmp",0, 0, 150, 150)
+       }
+   }
+}

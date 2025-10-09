@@ -1,0 +1,18 @@
+page("TeklaStructures","")
+{
+   detail(1, "FPWFT")
+   {
+       helpurl("cchelp_usa_fire_resistance")
+       tab_page("", " Design ", 1)
+       {
+           parameter("Fire protection thickness", "P5", distance, number, 1)
+           parameter("End 1 setback", "P7", distance, number, 2)
+           parameter("End 2 setback", "P8", distance, number, 3)
+           parameter("Name", "P9", string, text, 5)
+           parameter("Material", "P10", material, text, 6)
+           parameter("Class", "P11", integer, number, 7)
+           parameter("Part prefix", "P12", string, text, 8)
+           parameter("Part no.", "P13", integer, number, 9)
+       }
+   }
+}

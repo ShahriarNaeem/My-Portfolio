@@ -1,0 +1,21 @@
+page("TeklaStructures","")
+{
+   joint(1, "Rod Bracing")
+   {
+       helpurl("cchelp_usa_rod_bracing_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_rod_brace",610,210,50,200)
+           profile("Brace", BRC_Prof, BRC_P , BRC_Mat , BRC_A ,BRC_Name, 1)
+		   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+           attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+           parameter("", "BRC_Fin", string, text, 830,26,80) 
+           parameter("", "BRC_Class", integer, number, 940,26,40) 
+	   
+           parameter("Vertical Offset", "VOff", distance, number, 4)
+           parameter("Horizontal Offset", "HOff", distance, number, 5)
+           parameter("Clevis Component", "JNT_name", ComponentName, text, 6)
+
+       }
+   }
+}

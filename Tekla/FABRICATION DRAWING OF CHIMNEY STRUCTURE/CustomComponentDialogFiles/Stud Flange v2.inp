@@ -1,0 +1,48 @@
+page("TeklaStructures","")
+{
+   detail(1, "Stud Flange v2")
+   {
+       helpurl("cchelp_usa_stud_flange")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_stud_flange",100, 75, 170, 100)
+
+      attribute("LABEL1", "Stud Spacing Option", label, "%s", no, none, "0.0", "0.0", 19,0)
+	attribute("P3", "", option, "%s", no, none, "0.0", "0.0", 374,0,160,"toggle_field:!mspa=0;!P2=1;!LABEL2=1;!LABEL3=0;!LABEL4=1;!LABEL5=0")
+                {
+                     value("Number of Studs",1)
+                     value("Exact Spacing",0)
+                     value("Linear",0)
+                }
+      attribute("LABEL6", "Studs are Parts OR Studs are Bolts", label, "%s", no, none, "0.0", "0.0", 19,27)
+	attribute("P11", "", option, "%s", no, none, "0.0", "0.0", 374,27,160,"toggle_field:!W1=1;!site_work=0;!SD1=1;!P12_length=0;!P12_size=0;P14=1;P15=1;P16=1;P17=1;P18=1;prefix_P19=1;startno_P19=1;!P12_standard=0")
+                {
+                     value("Studs are Parts",1)
+                     value("Studs are Bolts",0)
+                }
+           parameter("", "P12_standard", stud_standard, text, 575,27,160)
+           parameter("Site/Workshop", "site_work", bolt_type, number, 3)
+           parameter("Site/Workshop", "W1", welding_site, number, 3)
+
+      attribute("LABEL2", "Exactly", label, "%s", no, none, "0.0", "0.0", 185,90)
+      attribute("LABEL3", "Minimum", label, "%s", no, none, "0.0", "0.0", 185,90)
+           parameter("", "min_start", distance, number, 190,115,50)
+           parameter("", "P2", integer, number, 270,115,40)
+      attribute("LABEL4", "# Studs", label, "%s", no, none, "0.0", "0.0", 270,90)
+           parameter("", "mspa", distance, number, 340,115,80)
+      attribute("LABEL5", "Spacing", label, "%s", no, none, "0.0", "0.0", 350,90)
+           parameter("", "P12_size", stud_size, number, 300,232,80)
+           parameter("", "stud_gage", distance_list, text, 455,115,60)
+           parameter("", "offset", distance, number, 625,115,60)
+           parameter("", "P12_length", stud_length, number, 535,210,80)
+           parameter("", "SD1", distance, number, 535,210,80)
+
+	   profile("Studs",   P15,P19 , P16 ,  ,P14 ,17)
+	    attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 389)   
+           parameter("", "P17", string, text, 830,410,80)
+	    attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 389)   
+           parameter("", "P18", integer, number, 940,410,40)
+
+       }
+   }
+}

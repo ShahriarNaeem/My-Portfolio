@@ -1,0 +1,30 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Column Corner Reinforcement")
+    {
+	    helpurl("cchelp_usa_column_doglegs")
+        tab_page("", " Parameters ", 1)
+        {
+            attribute("", "Name", label, "%s", none, none, "0", "0", 28, 7)
+            parameter("", "P3", string, text, 250, 9, 128)
+            attribute("", "Size", label, "%s", none, none, "0", "0", 28, 37)
+            parameter("", "P2_size", rebar_size, text, 250, 39, 128)
+            attribute("", "Grade", label, "%s", none, none, "0", "0", 28, 67)
+            parameter("", "P2_grade", rebar_grade, text, 250, 69, 128)
+            attribute("", "Bending Radius", label, "%s", none, none, "0", "0", 28, 97)
+            parameter("", "P2_radius", rebar_radius, text, 250, 99, 128)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 28, 127)
+            parameter("", "P4", string, text, 250, 129, 128)
+            parameter("", "D45", distance, number, 64, 237, 101)
+            attribute("", "Bend Offset", label, "%s", none, none, "0", "0", 450, 291)
+            parameter("", "D44", distance, number, 64, 321, 101)
+            parameter("", "D21", distance, number, 443, 321, 101)
+            parameter("", "D43", distance, number, 64, 351, 101)
+            attribute("", "Bar Cover- To CL", label, "%s", none, none, "0", "0", 28, 505)
+            parameter("", "D1", distance, number, 64, 538, 101)
+            parameter("", "P1", distance, number, 267, 687, 101)
+            attribute("", "Bottom End Clearance", label, "%s", none, none, "0", "0", 240, 723)
+            picture("usa_ColCorner_Dialog", 206, 488, 195, 186)
+        }
+    }
+}

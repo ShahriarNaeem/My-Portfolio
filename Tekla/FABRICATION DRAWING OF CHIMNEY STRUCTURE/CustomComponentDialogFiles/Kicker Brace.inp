@@ -1,0 +1,73 @@
+page("TeklaStructures","")
+{
+   joint(1, "Kicker Brace")
+   {
+       helpurl("cchelp_usa_kicker_bracing_components")
+       tab_page("", " Parameters ", 1)
+       {
+	   profile ("Kicker Brace",  GB2, GB6 , GB3,GB7 ,GB1 ,1)
+	   attribute("LABEL1", "Finish", label, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "GB4", string, text, 830,26,80)
+	   attribute("LABEL2", "Class", label, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "GB5", integer, number, 940,26,40)
+
+	   part ("Top Plate", P14_OR,P8_OR ,P9_OR ,P15_OR , P20_OR,P17_OR ,P22_OR ,3)
+           parameter("", "P24_OR", string, text, 830,74,80)
+           parameter("", "P26_OR", integer, number, 940,74,40)
+
+	   part ("Bottom Plate", P13_OR,P5_OR ,P6_OR ,P27_OR , P19_OR,P29_OR ,P21_OR ,5)
+           parameter("", "P23_OR", string, text, 830,122,80)
+           parameter("", "P25_OR", integer, number, 940,122,40)
+
+	   picture("usa_kicker_brace_top",200, 200, 150, 248)
+	   picture("usa_kicker_brace_top2",200, 200, 150, 248)
+	   picture("usa_kicker_brace_bot",200, 200, 550, 308)
+	   picture("usa_kicker_brace_bot2",200, 200, 550, 308)
+
+           parameter("", "P10_OR", distance, number, 165,273,60)
+           parameter("", "P2", distance, number, 285,240,60)
+           parameter("", "P1", distance, number, 435,320,60)
+
+           parameter("", "P4", distance, number, 710,388,60)
+           parameter("", "P7_OR", distance, number, 775,503,60)
+           parameter("", "P3", distance, number, 795,450,60)
+
+           attribute("LABEL3", "Create Top Plate", label, "%s", no, none, "0.0", "0.0", 19,170) 
+	   attribute("P11", "", option, "%s", no, none, "0.0", "0.0", 398,170,90,"toggle_field:!usa_kicker_brace_top2=1;!usa_kicker_brace_top=0;P9_OR=0;!P10_OR=0;P8_OR=0;P14_OR;prefix_P15_OR;startno_P15_OR;prefix_P17_OR;startno_P17_OR;P20_OR;P22_OR;P24_OR;P26_OR")
+                {
+                     value("No",0)
+                     value("Yes",1)
+                }
+           attribute("LABEL4", "Create Bottom Plate", label, "%s", no, none, "0.0", "0.0", 19,194) 
+	   attribute("P12", "", option, "%s", no, none, "0.0", "0.0", 398,194,90,"toggle_field:!usa_kicker_brace_bot2=1;!usa_kicker_brace_bot=0;P5_OR=0;P6_OR=0;!P7_OR=0;P13_OR;P19_OR;P21_OR;P23_OR;P25_OR;prefix_P27_OR;startno_P27_OR;prefix_P29_OR;startno_P29_OR")
+                {
+                     value("No",0)
+                     value("Yes",1)
+                }
+
+       }
+       tab_page("", " Welds ", 2)
+       {
+	    attribute("header1", "No       Size                 Type                         Length", label, 
+"%s", no, none, "0.0", "0.0") 
+	   attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,0)
+	   attribute("weld", "Top", label, "%s", no, none, "0.0", "0.0",0,30) 
+	   parameter("", "WT1", distance, number, 64,30,60) 
+	   parameter("", "WT2", distance, number, 64,56,60) 
+	   parameter("", "WT5", weld_type, number, 160,30,100) 
+	   parameter("", "WT6", weld_type, number, 160,56,100) 
+	   parameter("", "WT3", distance, number, 294,30,60) 
+	   parameter("", "WT4", distance, number, 294,56,60) 
+	   parameter("", "WT7", welding_site, number, 395,43,60) 
+
+	   attribute("weld", "Bot", label, "%s", no, none, "0.0", "0.0",0,85) 
+	   parameter("", "WB1", distance, number, 64,85,60) 
+	   parameter("", "WB2", distance, number, 64,111,60) 
+	   parameter("", "WB5", weld_type, number, 160,85,100) 
+	   parameter("", "WB6", weld_type, number, 160,111,100) 
+	   parameter("", "WB3", distance, number, 294,85,60) 
+	   parameter("", "WB4", distance, number, 294,111,60) 
+	   parameter("", "WB7", welding_site, number, 395,98,60) 
+	}
+   }
+}

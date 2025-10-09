@@ -1,0 +1,90 @@
+page("TeklaStructures","")
+{
+   joint(1, "Custom Step v2")
+   {
+       helpurl("cchelp_usa_custom_step")
+       tab_page("", " Picture ", 1)
+       {
+	   picture("usa_custom_step_v2",700, 330, 50, 50)
+	   picture("usa_custom_step_v2_Welded",700, 330, 50, 50)
+	   attribute("attachOpt", "", option, "%s", none, none, "0.0", "0.0", 688, 34, 100, "toggle_field:!usa_custom_step_v2_Welded=0;!usa_custom_step_v2=1;!P24=1;!P25=1;!P26=1")
+              {
+                value("Bolted",1)
+                value("Welded",0)
+              }
+	   attribute("P32", "Tread Type", option, "%s", no, none, "0.0", "0.0", 1)
+              {
+                value("Just Plate",1)
+                value("Checkered_Plate",0)
+                value("Expanded_Metal",0)
+                value("Grating",0)
+                value("Grip_Strut",0)
+              }
+           parameter("", "P1", distance, number, 125,35,65)
+           parameter("", "P3", distance, number, 312,189,65)
+           parameter("", "P4", distance, number, 312,354,80)
+
+           parameter("", "P21", distance, number, 565,170,65)
+           parameter("", "P26", distance, number, 930,155,65)
+           parameter("", "P25", distance, number, 730,282,65)
+           parameter("", "P24", distance, number, 830,282,65)
+           parameter("", "P22", distance, number, 653,335,65)
+           parameter("", "P23", distance, number, 730,388,65)
+           attribute("", "Attachment Type", label, "%s", none, none, "0", "0", 666, 9)
+	 }
+       tab_page("", " Parts ", 2)
+       {
+            attribute("", "Finish", label2, "%s", none, none, "0", "0", 830, 5)
+            attribute("", "Class", label2, "%s", none, none, "0", "0", 940, 5)
+            profile("",,P12,P8,P14,P11, 1)
+            attribute("", "Step Profile Prefix", label2, "%s", none, none, "0", "0", 20, 25)
+            attribute("P7", "", option, "%s", none, none, "0.0", "0.0", 180, 25, 125)
+            {
+                value("GRTG", 1)
+                value("ALUM_GRTG", 0)
+                value("PL", 0)
+                value("PLT", 0)
+                value("PLATE", 0)
+            }
+            parameter("", "P6", string, text, 830, 26, 80)
+            parameter("", "P5", integer, number, 940, 26, 40)
+            attribute("", "Bought Out Item?", label, "%s", none, none, "0", "0", 20, 84)
+            attribute("P9", "", option, "%s", none, none, "0.0", "0.0", 374, 84, 160)
+            {
+                value("", 1)
+                value("Yes", 0)
+            }
+            attribute("", "BOI Name", label, "%s", none, none, "0", "0", 20, 112)
+            parameter("", "P10", string, text, 374, 112, 160)
+            picture("usa_horz_line2", 720, 5, 25, 178)
+            picture("usa_bolt_slots", 155, 155, 350, 193)
+            attribute("", "Bolt size", label2, "%s", none, none, "0", "0", 20, 198)
+            parameter("", "P27_diameter", bolt_size, number, 180, 198, 125)
+            attribute("", "j_bolt_standard", label3, "%s", none, none, "0", "0", 20, 223)
+            parameter("", "P27_screwdin", bolt_standard, text, 180, 223, 125)
+            attribute("", "j_tolerance", label2, "%s", none, none, "0", "0", 20, 248)
+            parameter("", "P30", distance, number, 180, 248, 125)
+            parameter("", "P28", distance, number, 475, 263, 60)
+            attribute("P29", "", option, "%s", none, none, "0.0", "0.0", 180, 273, 125)
+            {
+                value("j_site", 1)
+                value("j_workshop", 0)
+            }
+            picture("usa_horz_line2", 720, 5, 25, 318)
+            parameter("", "sidePltWeldSize", distance, number, 180, 342, 125)
+            attribute("", "Weld size", label, "%s", none, none, "0", "0", 20, 346)
+            attribute("", "Location", label, "%s", none, none, "0", "0", 20, 372)
+            attribute("sidePltWeldWS", "", option, "%s", none, none, "0.0", "0.0", 180, 373, 125)
+            {
+                value("j_site", 1)
+                value("j_workshop", 0)
+            }
+            attribute("", "Side Plate Type", label, "%s", none, none, "0", "0", 20, 143)
+            attribute("sidePltType", "", option, "%s", none, none, "0.0", "0.0", 374, 143, 160)
+            {
+                value("CONTOUR PLATE", 1)
+                value("BEAM PLATE", 0)
+            }
+       }
+    }
+}

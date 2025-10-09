@@ -1,0 +1,53 @@
+page("TeklaStructures","")
+{
+   detail(1, "Wall Bracket Type4")
+   {
+       helpurl("cchelp_usa_wall_rail_bracket_components")
+	 tab_page("", " Picture ", 1)
+       {
+           picture("usa_wall_bracket4",333,314,100,40)
+
+           parameter("", "P1", distance, number, 150,38,60)
+           parameter("", "P2", distance, number, 335,195,60)
+
+           attribute("LABEL4", "Include Bolts\Holes", label, "%s", no, none, "0.0", "0.0", 19,364)
+	attribute("P6", "", option, "%s", no, none, "0.0", "0.0", 374,364,160,"dia_enable_field_ocb:P5_diameter=2;P5_screwdin=1,2;P13=1,2;P9=1,2")
+                {
+                     value("Yes",1)
+                     value("Just Holes",0)
+                     value("Neither",0)
+
+                }
+
+	     parameter("Bolt Diameter", "P5_diameter", bolt_size, number, 15)
+           parameter("Bolt Standard", "P5_screwdin", bolt_standard, text, 16)
+           parameter("Bolt Type", "P13", bolt_type, number, 18)
+           parameter("Bolt Length", "P9", distance, number, 17)
+
+
+       }
+       tab_page("", " Parts & Welds ", 2)
+	 {
+	   part("Wall Plate",   P3, P4 , ,P14 , P18 ,P16 , ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P19", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P20", integer, number, 940,26,40)
+
+           attribute("LABEL6", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,75)
+           parameter("", "P21", string, text, 398,75,160)
+
+	   part("Bent Plate",   P11, P12 , , ,  , , ,5)
+
+           picture("usa_horz_line2", 720, 5, 25, 158)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,180)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,180)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,205)
+           parameter("", "P22", distance, number, 64,205,60)
+           parameter("", "P23", weld_type, number, 160,205,100)
+           parameter("", "P24", welding_site, number, 395,205,60)
+       }
+   }
+}

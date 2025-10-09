@@ -1,0 +1,9 @@
+page("TeklaStructures","")
+{
+   joint(1, "A")
+   {
+       tab_page("", " Parameters 1 ", 1)
+       {
+       }
+   }
+}

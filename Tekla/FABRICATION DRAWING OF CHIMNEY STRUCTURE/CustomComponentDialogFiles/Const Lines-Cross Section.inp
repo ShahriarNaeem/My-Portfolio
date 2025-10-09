@@ -1,0 +1,12 @@
+page("TeklaStructures","")
+{
+   detail(1, "Const Lines-Cross Section")
+   {
+       helpurl("cchelp_usa_construction_line_components")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Show Gage (Yellow) Lines", "P1", YesNo, number, 1)
+           parameter("Show K (Red) Lines", "P2", YesNo, number, 2)
+       }
+   }
+}

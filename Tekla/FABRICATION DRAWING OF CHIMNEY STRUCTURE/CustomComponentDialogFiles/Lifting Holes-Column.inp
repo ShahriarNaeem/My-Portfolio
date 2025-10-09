@@ -1,0 +1,18 @@
+page("TeklaStructures","")
+{
+   detail(1, "Lifting Holes-Column")
+   {
+       helpurl("cchelp_usa_lifting_holes")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Distance - A", "L1", distance, number, 1)
+           parameter("Edge - B (0 = Gage line)", "L3", distance, number, 2)
+           parameter("Switch location", "SW", YesNo, number, 3)
+           parameter("Bolt Size", "P2_diameter", bolt_size, number, 4)
+           parameter("Bolt Standard", "P2_screwdin", bolt_standard, text, 5)
+           parameter("Bolt Tolerance", "P3", distance, number, 6)
+	   
+           picture("usa_LiftingHolesColumn",100,100,300,200)	   
+       }
+   }
+}

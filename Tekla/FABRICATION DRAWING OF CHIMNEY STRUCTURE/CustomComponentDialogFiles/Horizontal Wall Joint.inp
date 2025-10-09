@@ -1,0 +1,19 @@
+page("TeklaStructures","")
+{
+   joint(1, "Horizontal Wall Joint")
+   {
+       helpurl("cchelp_usa_joint_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_lap_joint_corner", 300,280)
+           parameter("", "P1", distance, number, 440,150,80)
+           parameter("", "P3", distance, number, 100,140,80)
+           parameter("", "P4", distance, number, 160,10,80)
+           parameter("", "P6", distance, number, 340,10,80)
+           parameter("", "P7", distance, number, 160,190,80)
+           parameter("", "P5", YesNo, number, 510,410,80)
+           parameter("", "P8", distance, number, 250,370,80)
+           parameter("", "P9", YesNo, number, 70,410,80)
+       }
+   }
+}

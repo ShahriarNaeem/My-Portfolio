@@ -1,0 +1,71 @@
+page("TeklaStructures", "")
+{
+    joint(1, "Knee Brace")
+    {
+        helpurl("cchelp_usa_knee_brace")
+		tab_page("", " Picture ", 1)
+        {
+            profile("Brace Profile",B1_Profile,B1,B1_Material,B1A,B1_Name, 1)
+			attribute("", "Finish", label3, "%s", none, none, "0", "0", 830, 4)
+			parameter("", "B1_Finish", string, text, 830, 26, 80)
+            attribute("", "Class", label3, "%s", none, none, "0", "0", 940, 4)
+			parameter("", "B1_Class", integer, number, 940, 26, 40)
+            attribute("", "Desing Group Name", label3, "%s", none, none, "0", "0", 1010, 4)
+            parameter("", "B1_DGN", string, text, 1010, 26, 160)
+			
+			picture("usa_cc_KneeBrace_Dialog", 400, 400, 26, 151)
+			picture("usa_cc_KneeBrace_NoConn", 400, 400, 26, 151)
+			parameter("", "P1", distance, number, 252, 197, 100)	/* --- Horiz Dim --- */
+			parameter("", "P2", distance, number, 562, 425, 100)	/* --- Vert Dim --- */
+			parameter("", "A1", angle, number, 314, 400, 80)	/* --- Desired Angle of Brace --- */
+			parameter("", "P3", factor, number, 222, 560, 80)	/* --- Actual Angle of Brace --- */
+            attribute("", "Actual Angle of Brace", label3, "%s", none, none, "0", "0", 30, 560)
+			attribute("", "(Get properties of existing to check)", label3, "%s", none, none, "0", "0", 30, 590)
+			
+            attribute("", "Create Brace", label3, "%s", none, none, "0", "0", 705, 90)            
+            attribute("O1", "", option, "%s", none, none, "0.0", "0.0", 950, 90, 100, "toggle_field:prefix_B1=2;startno_B1=2;prefix_B1A=2;startno_B1A=2;B1_Class=2;B1_DGN=2;B1_Finish=2;B1_Material=2;B1_Name=2;B1_Profile=2;BC_attrfile=2;BC_name=2;DB_attrfile=0,1;DB_name=0,1;O2=2;P4=2;TC_attrfile=2;TC_name=2;!usa_cc_KneeBrace_NoConn=0,1;!usa_cc_KneeBrace_Dialog=2;!usa_cc_KneeBrace_Note=0,1;P3=0,1,2")
+            {
+                value("NS", 1)
+                value("FS", 0)
+                value("BS", 0)
+            }
+			
+            attribute("", "Brace Offset (1/2 Gusset PL)", label3, "%s", none, none, "0", "0", 705, 120)
+            parameter("", "P4", distance, number, 950, 120, 100)			
+            
+            attribute("", "Double Brace Component", label3, "%s", none, none, "0", "0", 705, 150)
+            parameter("", "DB_name", ComponentName, text, 950, 150, 160)
+            attribute("", "Double Brace Attribute", label3, "%s", none, none, "0", "0", 705, 180)
+            parameter("", "DB_attrfile", ComponentAttributeFile, text, 950, 180, 160)
+			
+            attribute("", "Create Connections?", label3, "%s", none, none, "0", "0", 705, 220)
+            attribute("O2", "", option, "%s", none, none, "0.0", "0.0", 950, 220, 100, "toggle_field:BC_attrfile=0;BC_name=0;TC_attrfile=0;TC_name=0;!usa_cc_KneeBrace_NoConn=1;!usa_cc_KneeBrace_Dialog=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Top Component Name", label3, "%s", none, none, "0", "0", 705, 270)
+            parameter("", "TC_name", ComponentName, text, 950, 270, 160)
+            attribute("", "Top Component Attribute", label3, "%s", none, none, "0", "0", 705, 300)
+            parameter("", "TC_attrfile", ComponentAttributeFile, text, 950, 300, 160)
+			
+            picture("usa_cc_KneeBrace_Note", 258, 112, 738, 330)            
+            
+            attribute("", "Bottom Component Name", label3, "%s", none, none, "0", "0", 705, 480)
+            parameter("", "BC_name", ComponentName, text, 950, 480, 160)            
+            attribute("", "Bottom Component Attribute", label3, "%s", none, none, "0", "0", 705, 510)
+            parameter("", "BC_attrfile", ComponentAttributeFile, text, 950, 510, 160) 
+
+			attribute("", "Create Beam Connection?", label3, "%s", none, none, "0", "0", 705, 570)
+            attribute("O3", "", option, "%s", none, none, "0.0", "0.0", 950, 570, 100, "toggle_field:BmC_attrfile=0;BmC_name=0")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Bm Conn Comp Name", label3, "%s", none, none, "0", "0", 705, 600)
+            parameter("", "BmC_name", ComponentName, text, 950, 600, 160)
+            attribute("", "Bm Conn Comp Attribute", label3, "%s", none, none, "0", "0", 705, 630)
+            parameter("", "BmC_attrfile", ComponentAttributeFile, text, 950, 630, 160)			
+        }
+    }
+}

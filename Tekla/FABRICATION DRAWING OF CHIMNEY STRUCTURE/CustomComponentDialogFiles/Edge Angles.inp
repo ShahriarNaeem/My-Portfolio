@@ -1,0 +1,196 @@
+page("TeklaStructures","")
+{
+   detail(1, "Edge Angles")
+   {
+       helpurl("cchelp_usa_edgeangle")
+       tab_page("", " Picture ", 1)
+       {
+         attribute("LABEL2", "Edge Angle Side", label, "%s", no, none, "0.0", "0.0", 50,25)
+         attribute("NSFS","",option,"%s",no,none,"0.0","0.0",50,50,200,"toggle_field:!usa_edgeangle1a=1;!usa_edgeangle1b=0")
+           {
+            value("usa_edgeangle_ns.xbm",1)
+            value("usa_edgeangle_fs.xbm",0)
+		   }
+
+           picture("usa_edgeangle1a",333, 200, 50, 150)
+           picture("usa_edgeangle1b",333, 200, 50, 150)
+           parameter("", "SL_OFFSET", distance, number, 130,163,70)
+           parameter("", "SR_OFFSET", distance, number, 345,163,70)
+		   
+           picture("usa_edgeangle1",220, 250, 525, 50)		   
+           parameter("", "PS_HLEG", distance, number, 638,57,70)
+
+       }
+       tab_page("", " Parts ", 2)
+       {
+	   attribute("CLPTC1","",option,"%s",no,none,"0.0","0.0",710,173,200,
+           "toggle_field:!usa_edgeangle_chamfer_dim=0;CLPTC2=0;CLPTC3=0;")
+           {
+            value("usa_edgeangle_chamfer_no.xbm",1)
+            value("usa_edgeangle_chamfer.xbm",0)
+           }
+	       profile ("Edge Angle",   PS_PROFILE, PS1 , PS_MATL,PS2 ,PS_NAME ,1)		   
+           attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+		   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+		   parameter("", "PS_FIN", string, text, 830,26,80) 
+		   parameter("", "PS_CLASS", integer, number, 940,26,40) 
+	   
+           part ("Closure PL",     CP_THK, ,  , CP1, CP_MATL, CP2 ,CP_NAME ,3)
+		   parameter("", "CP_FIN", string, text, 830,74,80)
+		   parameter("", "CP_CLASS", integer, number, 940,74,40) 
+
+           attribute("b_lb","b=",label2,"%s",no,none,"0.0","0.0",260,135)
+           parameter("", "PS_LEN", distance, number, 315,135,70)		   
+           parameter("", "GAP1", distance, number, 315,295,70)		   
+		   
+           picture("usa_edgeangle_parts",196, 112, 221, 162)
+           attribute("CLPT1","",option,"%s",no,none,"0.0","0.0",93,187,120,"toggle_field:!usa_edgeangle_closure_l-offset=0;!CLPT3=0")
+           {
+            value("usa_edgeangle_sect_b1.xbm",1)
+            value("usa_edgeangle_sect_b2.xbm",0)
+           }
+           attribute("CLPT2","",option,"%s",no,none,"0.0","0.0",518,187,120,"toggle_field:!usa_edgeangle_closure_r-offset=0;!CLPT4=0")
+           {
+            value("usa_edgeangle_sect_a1.xbm",1)
+            value("usa_edgeangle_sect_a2.xbm",0)
+           }
+           picture("usa_edgeangle_chamfer_dim",100, 99, 838, 205)
+           parameter("", "CLPTC3", distance, number, 967,211,70)
+           parameter("", "CLPTC2", distance, number, 831,298,70)
+		   
+            picture("usa_edgeangle_closure_l-offset", 100, 98, 63,365)
+            parameter("", "CLPT3", distance, number, 146,342, 81)
+            picture("usa_edgeangle_closure_r-offset", 100, 98, 438,365)	   
+            parameter("", "CLPT4", distance, number, 476,342, 81)		   
+		   
+       }
+       tab_page("", " Bolts ", 3)
+       {
+           attribute("include_lb","Include bolts",label2,"%s",no,none,"0.0","0.0",20,5)
+           attribute("PS_BOLTED","",option,"%s",no,none,"0.0","0.0",160,5,90)
+           {
+            value("j_no",0)
+            value("j_yes",1)
+           }
+           attribute("number_lb","Bolt size",label2,"%s",no,none,"0.0","0.0",20,55)
+           parameter("", "BOLT_diameter", bolt_size, number, 160,55,90)
+           attribute("bolt_standard_lb","j_bolt_standard",label3,"%s",no,none,"0.0","0.0",20,80)
+           parameter("", "BOLT_screwdin", bolt_standard, text, 160,80,90)
+           attribute("tolerance_lb","j_tolerance",label2,"%s",no,none,"0.0","0.0",20,105)
+           parameter("", "BOLT_TOL", distance, number, 160,105,90)
+           attribute("thread_in_material_lb","j_thread_in_material",label3,"%s",no,none,"0.0","0.0",20,130)
+           attribute("BOLT_TIM","",option,"%s",no,none,"0.0","0.0",160,130,90)
+           {
+            value("j_no", 0)
+            value("j_yes", 1)
+           }
+           attribute("cutlength_lb","Cut Length",label,"%s",no,none,"0.0","0.0",20,155)
+           parameter("", "BOLT_CL", distance, number, 160,155,90)
+           attribute("BOLT_TYPE","",option,"%s",no,none,"0.0","0.0",160,180,120)
+           {
+            value("j_site", 1)
+            value("j_workshop", 0)
+           }
+           picture("jnt_bpic_long_holes2",110,312,280,5)
+           parameter("", "BOLT_SHX", distance, number, 313,30,60)
+           parameter("", "BOLT_SHY", distance, number, 410,80,60)
+           attribute("BLT01_SLOT","",option,"%s",no,none,"0.0","0.0",380,110,90)
+           {
+            value("None",1)
+            value("Angle",0)
+            value("Beam",0)
+            value("Both",0)
+           } 
+           attribute("slot_lb","Slot in",label,"%s",no,none,"0.0","0.0",292,110)
+		   
+           picture("jnt_bpic_bolt_parts_in_modify",100,100,500,5)
+           toggle_group(532,110,
+              "BLT01_W1",-20,-20,"1",
+              "BLT01_W2",  7,-20,"0",
+              "BLT01_W3", 32,-20,"1",
+              "BLT01_N1", 57,-20,"1",
+              "BLT01_N2",102,-40,"0",
+              "BLT01_BOLT",102,-80,"1")
+			  
+           picture("jnt_bpic_extra_length",100,100,551,150)
+           attribute("BOLT_XLEN","",distance,"%s",no,none,"0.0","0.0",586,200,50)
+            {
+            value("",0.0)
+            }
+           attribute("BOLT_OPT","",option,"%s",no,none,"0.0","0.0",160,304,300,
+           "toggle_field:!d_lb=1;!BOLT_SPA=1;!BOLT_QTY=0;!BOLT_EDGE_R=0;BOLT_SPA_L=1;BOLT_SPA_R=1;BOLT_QTY_R=0;BOLT_QTY_L=0;!d_lb2=1;!LABEL_ext=0;!LABEL_min=1;!LABEL_ext2=0;!LABEL_nb=0")
+           {
+            value("usa_edgeangle_bolts.xbm",0)
+            value("usa_edgeangle_bolts2.xbm",1)
+           } 
+		   attribute("LABEL_ext", "Exactly", label, "%s", no, none, "0.0", "0.0", 160,249)
+		   attribute("LABEL_min", "Minimum", label, "%s", no, none, "0.0", "0.0", 160,249)
+           attribute("LABEL_nb", "# Bolts", label, "%s", no, none, "0.0", "0.0", 270,249)		   
+		   attribute("LABEL_ext2", "Exactly", label, "%s", no, none, "0.0", "0.0", 370,249)		   
+           attribute("d_lb","d=",label2,"%s",no,none,"0.0","0.0",280,274)
+           parameter("", "BOLT_SPA", distance, number, 330,274,60)
+           parameter("", "BOLT_OFFSET", distance, number, 500,374,60)
+
+           parameter("", "BOLT_EDGE_L", distance, number, 160,274,60)
+           parameter("", "BOLT_QTY", integer, number, 270,274,50) 
+           parameter("", "BOLT_EDGE_R", distance, number, 370,274,60)
+
+           attribute("", "Use these fields to control the first or last edge angle when it extends beyond the end of the beam", label, "%s", none, none, "0", "0", 20, 449)
+           attribute("first_lb","FIRST",label2,"%s",no,none,"0.0","0.0",274,478)	
+           attribute("last_lb","LAST",label2,"%s",no,none,"0.0","0.0",374,478)	
+           attribute("d_lb2","d=",label2,"%s",no,none,"0.0","0.0",225,506)	
+           attribute("bolt_spa_lb","Bolt spacing",label2,"%s",no,none,"0.0","0.0",20,506)	
+           attribute("num_bolts_lb","Number of bolts",label2,"%s",no,none,"0.0","0.0",20,532)		   
+           parameter("", "BOLT_SPA_R", distance, number, 374,506,60)		   
+           parameter("", "BOLT_QTY_R", integer, number, 374,532,60)		   
+           parameter("", "BOLT_SPA_L", distance, number, 274,506,60)		   
+           parameter("", "BOLT_QTY_L", integer, number, 274,532,60)
+		   }
+       tab_page("", " Welds ", 5)
+       {
+           attribute("header1","No",label,"%s",no,none,"0.0","0.0",10,0)
+           attribute("header2","Size",label,"%s",no,none,"0.0","0.0",64,0)
+           attribute("header3","Type",label,"%s",no,none,"0.0","0.0",160,0)
+           attribute("header4","Shop/Site",label,"%s",no,none,"0.0","0.0",294,0)		   
+           attribute("header5","Incr. #",label,"%s",no,none,"0.0","0.0",395,0)
+           attribute("header6","Length",label,"%s",no,none,"0.0","0.0",495,0)
+           attribute("header7","Pitch",label,"%s",no,none,"0.0","0.0",595,0)
+           attribute("header8","Shape",label,"%s",no,none,"0.0","0.0",695,0)
+           attribute("header9","Create Welds",label,"%s",no,none,"0.0","0.0",865,0)		   
+           attribute("weld1","1",label,"%s",no,none,"0.0","0.0",10,43)
+           parameter("", "WLD1", distance, number, 64,30,60)
+           parameter("", "WLD2", distance, number, 64,56,60)
+           parameter("", "WLD5", weld_type, number, 160,30,100)
+           parameter("", "WLD6", weld_type, number, 160,56,100)
+           parameter("", "WLD7", welding_site, number, 294,43,60)		   
+           parameter("", "WLD15", integer, number, 395,30,60)
+           parameter("", "WLD16", integer, number, 395,56,60)
+           parameter("", "WLD3", distance, number, 495,30,60)
+           parameter("", "WLD4", distance, number, 495,56,60)
+           parameter("", "WLD17", distance, number, 595,30,60)
+           parameter("", "WLD18", distance, number, 595,56,60)
+		   attribute("WLD19", "", option, "%s", no, none, "0.0", "0.0", 695,43,130) 
+			{ 
+                value("w_intermittent_type_1.xbm",1) 
+                value("w_intermittent_type_2.xbm",0) 
+                value("w_intermittent_type_3.xbm",0) 				
+			} 		   
+           attribute("PS_WELDED","",option,"%s",no,none,"0.0","0.0",865,43,60)
+           {
+            value("j_no",0)
+            value("j_yes",1)
+           }
+		   
+		   attribute("weld2","2",label,"%s",no,none,"0.0","0.0",10,103)
+           parameter("", "WLD8", distance, number, 64,90,60)
+           parameter("", "WLD9", distance, number, 64,116,60)
+           parameter("", "WLD12", weld_type, number, 160,90,100)
+           parameter("", "WLD13", weld_type, number, 160,116,100)
+           parameter("", "WLD14", welding_site, number, 294,103,60)		   
+//           parameter("", "WLD10", distance, number, 395,90,60)
+//           parameter("", "WLD11", distance, number, 395,116,60)
+
+		   picture("usa_edgeangle_welds",170, 208, 50, 210)
+       }
+   }
+}

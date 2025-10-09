@@ -1,0 +1,40 @@
+page("TeklaStructures","")
+{
+   macro(1, "General_Frame_And_Jacks")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("Tekla_Slab_Support_Frame2", 300,300,100,50)
+           picture("Tekla_Extension", 150,150,550,350)
+           parameter("", "FBtmExt", distance, number, 470,370,80)
+           parameter("", "BtmJack_name", ComponentName, text, 200,410,180)
+           parameter("", "TopJack_name", ComponentName, text, 500,200,180)
+           parameter("", "FTopExt", distance, number, 520,100,80)
+           parameter("", "CrExt", YesNo, number, 700,380,60)
+           parameter("", "Extension_name", ComponentName, text, 700,450,100)
+       }
+       tab_page("", "j_d_jd_frames", 2)
+       {
+           picture("Tekla_Slab_Support_Frame", 300,300,100,50)
+           profile("j_beam", FProf1, FMark, FMat, , FName,21)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 840,482)
+           parameter("", "FClass", integer, number, 840,502,80)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 20,532)
+           parameter("", "FFinish", string, text, 397,532,235)
+           attribute(" ","j_Assembly_Prefix",label,"%s",none,none,"0","0", 20,562)
+           parameter("", "FAssPrefix", string, text, 397,562,235)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 20,592)
+           parameter("", "FAssStartno", integer, number, 397,592,235)
+           parameter("", "FProf2", profile, text, 500,295,100)
+           parameter("", "FProf3", profile, text, 500,230,100)
+           parameter("", "FProf4", profile, text, 500,85,100)
+           parameter("", "FHeight", distance, number, 30,250,80)
+           parameter("", "FWidth", distance, number, 260,360,80)
+           parameter("", "FEExt", distance, number, 460,170,80)
+           parameter("", "FTExt", distance, number, 150,50,80)
+           parameter("", "FBHeight", distance, number, 440,360,80)
+           parameter("", "FProf5", profile, text, 250,300,100)
+       }
+   }
+}

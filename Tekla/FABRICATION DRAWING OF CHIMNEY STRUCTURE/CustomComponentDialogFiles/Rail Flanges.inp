@@ -1,0 +1,75 @@
+page("TeklaStructures","")
+{
+   detail(1, "Rail Flanges")
+   {
+       helpurl("cchelp_usa_rail_flanges")
+       tab_page("", " Parameters ", 1)
+       {
+
+           picture("usa_rail_flange0",320,180,100,120)
+           picture("usa_rail_flange1",320,180,100,120)
+           picture("usa_rail_flange2",160,180,100,120)
+           picture("usa_rail_flange3",320,190,100,120)
+
+           attribute("LABEL1", "Flange Type", label, "%s", no, none, "0.0", "0.0", 20,0)
+           attribute("P5", "", option, "%s", no, none, "0.0", "0.0", 320,0,100,"toggle_field:!P30=0,1,3;!usa_rail_flange0=1,2,3;!usa_rail_flange1=0,2,3;!usa_rail_flange2=0,1,3;!usa_rail_flange3=0,1,2;!P22=0,1,2;!P29=0,1,2;!P28=0,3;!P8=2;!P20=0,3;!LABEL10=0,1,2;!LABEL20=0,1,2;!P26_diameter=0;!P26_screwdin=0;!P27=0;!XX1=0,1,2,3")
+                {
+                     value("usa_rail_flange_opt0.xbm",1)
+                     value("usa_rail_flange_opt1.xbm",0)
+                     value("usa_rail_flange_opt2.xbm",0)
+                     value("usa_rail_flange_opt3.xbm",0)
+                }
+
+           picture("usa_rail_flange2_2b",160,180,307,120)
+           picture("usa_rail_flange2_3b",160,180,307,120)
+
+           attribute("P30", "", option, "%s", no, none, "0.0", "0.0", 450,0,100,"toggle_field:!usa_rail_flange2_2b=1;!usa_rail_flange2_3b=0")
+                {
+                     value("usa_rail_flange_opt2_2b.xbm",1)
+                     value("usa_rail_flange_opt2_3b.xbm",0)
+                }
+           parameter("", "P2", distance, number, 84,282,60)
+
+           parameter("", "P20", distance, number, 112,115,60)
+
+           parameter("", "P8", distance, number, 235,92,60)
+
+           parameter("", "P3", distance, number, 390,364,60)
+
+           parameter("", "P28", distance, number, 565,120,60)
+
+           attribute("LABEL10", "* If you enter 0'' for the offset value then", label, "%s", no, none, "0.0", "0.0", 20,400)
+           attribute("LABEL20", "the post will be located at mid-radius point.", label, "%s", no, none, "0.0", "0.0", 20,424)
+           parameter("", "P22", distance, number, 600,162,60)
+           parameter("", "P29", distance, number, 600,262,60)
+       }
+       tab_page("", " Part Bolt Weld ", 2)
+       {
+	   profile("Rail Flange", XX1  ,P13 , P10 ,  , ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P11", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P12", integer, number, 940,26,40)
+
+	    attribute("LABEL3", "Item Name\Catalog Numer", label2, "%s", no, none, "0.0", "0.0", 20, 50) 
+           parameter("", "P15", string, text, 398,50,160)
+
+           picture("usa_horz_line2", 720, 5, 20, 94)
+
+           parameter("Bolt Size", "P26_diameter", bolt_size, number, 5)
+           parameter("Bolt Standard", "P26_screwdin", bolt_standard, text, 6)
+           parameter("Bolt Tolerance", "P27", distance, number, 7)
+
+           picture("usa_horz_line2", 720, 5, 20, 208)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,220)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,220)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,245)
+           parameter("", "P23", distance, number, 64,245,60)
+           parameter("", "P24", weld_type, number, 160,245,100)
+           parameter("", "P25", welding_site, number, 395,245,60)
+
+       }
+   }
+}

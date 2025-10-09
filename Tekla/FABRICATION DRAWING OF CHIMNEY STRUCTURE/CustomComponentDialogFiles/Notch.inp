@@ -1,0 +1,48 @@
+page("TeklaStructures","")
+{
+   joint(1, "Notch")
+   {
+       helpurl("cchelp_usa_notch")
+       tab_page("", " Notch ", 1)
+       {
+           picture("usa_pic_notch_angle",197,233,150, 50)
+
+           parameter("", "P1", distance, number, 310,40,70)
+           parameter("", "P2", distance, number, 93,98,70)
+
+	attribute("P3", "", option, "%s", no, none, "0.0", "0.0", 214,102,150,"dia_enable_field_ocb:P22=1;P23=1;P24=1")
+                {
+                     value("usa_pic_notch_angle_opt2.xbm",1)
+                     value("usa_pic_notch_angle_opt1.xbm",0)
+                }
+
+           parameter("", "P22", chamfer_type, number, 110,170,80,"dia_enable_field_ocb:P23=1,5;P24=1,3,4,5")
+           parameter("", "P23", distance, number, 110,195,60)
+           attribute("LABEL1", "x:", label, "%s", no, none, "0.0", "0.0", 175,195)
+           parameter("", "P24", distance, number, 110,220,60)
+           attribute("LABEL2", "y:", label, "%s", no, none, "0.0", "0.0", 175,220)
+
+           parameter("", "P18", chamfer_type, number, 390,170,80,"dia_enable_field_ocb:P19=1,5;P20=1,3,4,5")
+           parameter("", "P19", distance, number, 390,195,60)
+           attribute("LABEL1", "x:", label, "%s", no, none, "0.0", "0.0", 455,195)
+           parameter("", "P20", distance, number, 390,220,60)
+           attribute("LABEL2", "y:", label, "%s", no, none, "0.0", "0.0", 455,220)
+       }
+       tab_page("", " Welds", 2)
+       {
+	   picture("usa_pic_notch_angleB", 197,233,150,100)
+           
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,0)
+	
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "P11", distance, number, 64,30,60)
+           parameter("", "P13", distance, number, 64,56,60)
+           parameter("", "P12", weld_type, number, 160,30,100)
+           parameter("", "P14", weld_type, number, 160,56,100)
+           parameter("", "P10", distance, number, 294,30,60)
+           parameter("", "P21", distance, number, 294,56,60)
+           parameter("", "P15", welding_site, number, 395,43,60)
+       }
+   }
+}

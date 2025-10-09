@@ -1,0 +1,25 @@
+page("TeklaStructures","")
+{
+   joint(1, "Chevron Bottom")
+   {
+       helpurl("cchelp_usa_chevron_bracing_components")
+       tab_page("", " Parameters ", 1)
+       {
+          profile ("Vertical. Braces",   P2, P6 , P3 ,P8 ,P1 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P4", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P5", integer, number, 940,26,40)
+		   
+	   picture("usa_chevron_bm_ff",400, 360, 150, 150)
+
+		   attribute("O1", "Custom Part?", option, "%s", no, none, "0.0", "0.0", 371,623,159, "dia_enable_field_ocb:P2=1;prefix_P6=1;startno_P6=1;P3=1;prefix_P8=1;startno_P8=1;P1=1;P4=1;P5=1;P7_name=0;P7_attrfile") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+			} 	
+           parameter("Component", "P7_name", ComponentName, text, 371, 651, 159)
+           parameter("Component Attribute", "P7_attrfile", ComponentAttributeFile, text, 371, 679, 159)					 
+       }
+   }
+}

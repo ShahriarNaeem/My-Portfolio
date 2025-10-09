@@ -1,0 +1,16 @@
+page("TeklaStructures", "")
+{
+    macro(1, "Formwork Panel")
+    {
+       helpurl("cchelp_usa_formwork_panel_items")	
+        tab_page("", " Parameters ", 1)
+        {
+            picture("usa_panel_elevation", 0, 0, 116, 29)
+            attribute("", "Note:  Component uses shapes from the shape catalog", label, "%s", none, none, "0", "0", 354, 75)
+            attribute("", "Panel Height [ft] 4 to 10", label, "%s", none, none, "0", "0", 302, 162)
+            parameter("", "P2", integer, number, 298, 187, 160)
+            attribute("", "Panel Width [ft] 2 to  4", label, "%s", none, none, "0", "0", 120, 356)
+            parameter("", "P1", integer, number, 116, 380, 160)
+        }
+    }
+}

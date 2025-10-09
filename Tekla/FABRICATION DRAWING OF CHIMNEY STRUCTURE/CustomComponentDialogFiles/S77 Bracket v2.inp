@@ -1,0 +1,53 @@
+page("TeklaStructures","")
+{
+   joint(1, "S77 Bracket v2")
+   {
+
+       helpurl("cchelp_usa_s77_bracket")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_grab_rail_bracket2", 311,185,180,30)
+           parameter("", "P1", distance, number, 540,185,60)
+           parameter("", "P34", distance, number, 235,185,60)
+           attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 50,40,100,"toggle_field:!LABEL1=2;!LABEL2=2;!LABEL3=2;!LABEL4=2;!LABEL5=2;!LABEL6=2")
+                {
+                     value("usa_rail_bracket_opt0.xbm",1)
+                     value("usa_rail_bracket_opt1.xbm",0)
+                     value("usa_rail_bracket_opt2.xbm",0)
+                     value("usa_rail_bracket_opt2b.xbm",0)
+                }
+           parameter("", "P6", angle, number, 50,110,100)
+
+           attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 50,140,100)
+                {
+                     value("usa_rail_bracket_opt3.xbm",1)
+                     value("usa_rail_bracket_opt4.xbm",0)
+                }
+       }
+       tab_page("", " Parts & Welds ", 2)
+	 {
+	   profile("Bracket",   P2,B5 , B2 ,  ,B1 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "B3", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "B4", integer, number, 940,26,40)
+
+           picture("usa_horz_line", 200, 5, 25, 107)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,120)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,120)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,145)
+           parameter("", "W1", distance, number, 64,145,60)
+           parameter("", "W2", weld_type, number, 160,145,100)
+           parameter("", "W3", welding_site, number, 395,145,60)
+
+	attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",20,170)
+           parameter("", "W4", distance, number, 64,170,60)
+           parameter("", "W5", weld_type, number, 160,170,100)
+           parameter("", "W6", welding_site, number, 395,170,60)
+
+           picture("usa_rail_bracket_weld", 204,180,50,220)
+       }
+   }
+}

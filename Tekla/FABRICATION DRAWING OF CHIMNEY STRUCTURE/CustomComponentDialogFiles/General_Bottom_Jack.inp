@@ -1,0 +1,33 @@
+page("TeklaStructures","")
+{
+   macro(1, "General_Bottom_Jack")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("Tekla_Bottom_Jack", 300,300,100,50)
+           profile("j_profile", , GBJMark, GBJMat, , GBJName,21)
+           attribute(" ","j_parameters",label,"%s",none,none,"0","0", 20,502)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 840,482)
+           parameter("", "GBJClass", integer, number, 840,502,80)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 20,532)
+           parameter("", "GBJFinish", string, text, 397,532,235)
+           attribute(" ","j_Assembly_Prefix",label,"%s",none,none,"0","0", 20,562)
+           parameter("", "GBJAss_Prefix", string, text, 397,562,235)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 20,592)
+           parameter("", "GBJAss_Startno", integer, number, 397,592,235)
+           attribute(" ","j_d_j_diameter_of_holes",label,"%s",none,none,"0","0", 20,622)
+           parameter("", "GBJHoleDia", distance, number, 397,622,235)
+           parameter("", "GBJPProf", profile, text, 250,30,100)
+           parameter("", "GBJThk", distance, number, 300,370)
+           parameter("", "GBJLength", distance, number, 30,270,80)
+           parameter("", "GBJWidth", distance, number, 170,170,80)
+           parameter("", "GBJHeight", distance, number, 520,200,80)
+           parameter("", "GBJEdgeDist", distance, number, 520,360,80)
+           parameter("", "GBJCrBlt1", YesNo, number, 80,360,60)
+           parameter("", "GBJCrBlt2", YesNo, number, 80,180,60)
+           parameter("", "GBJCrBlt3", YesNo, number, 310,180,60)
+           parameter("", "GBJCrBlt4", YesNo, number, 310,250,60)
+       }
+   }
+}

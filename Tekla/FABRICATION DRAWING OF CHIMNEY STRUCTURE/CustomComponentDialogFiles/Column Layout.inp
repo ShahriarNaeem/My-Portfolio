@@ -1,0 +1,52 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Column Layout")
+    {
+        helpurl("cchelp_usa_layout_components")
+        tab_page("", "Layout Parameters", 1)
+        {
+            attribute("", "Name", label, "%s", none, none, "0", "0", 15, 375)
+            attribute("", "Group Name", label, "%s", none, none, "0", "0", 470, 375)
+            parameter("", "P1", string, text, 605, 375, 200)
+            parameter("", "P2", string, text, 225, 375, 200)
+            attribute("", "Description", label, "%s", none, none, "0", "0", 15, 405)
+            parameter("", "P3", string, text, 225, 405, 200)
+            attribute("", "Color", label, "%s", none, none, "0", "0", 15, 435)
+            attribute("P4", "", option, "%s", none, none, "0.0", "0.0", 225, 435, 125)
+            {
+                value("class1.xbm", 1)
+                value("class2.xbm", 0)
+                value("class3.xbm", 0)
+                value("class4.xbm", 0)
+                value("class5.xbm", 0)
+                value("class6.xbm", 0)
+                value("class7.xbm", 0)
+                value("class8.xbm", 0)
+                value("class9.xbm", 0)
+                value("class10.xbm", 0)
+                value("class11.xbm", 0)
+                value("class12.xbm", 0)
+                value("class13.xbm", 0)
+                value("class14.xbm", 0)
+            }
+            attribute("", "Size", label, "%s", none, none, "0", "0", 15, 465)
+            parameter("", "P5", distance, number, 225, 465, 125)
+            attribute("", "Shape", label, "%s", none, none, "0", "0", 15, 495)
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 225, 495, 125)
+            {
+                value("LayoutPointSPHERE.xbm", 1)
+                value("LayoutPointROD.xbm", 0)
+                value("LayoutPointELD.xbm", 0)
+            }
+            parameter("", "P12", YesNo, number, 310, 75, 75)
+            parameter("", "P13", YesNo, number, 475, 225, 75)
+            parameter("", "P14", YesNo, number, 310, 290, 75)
+            parameter("", "P15", YesNo, number, 75, 225, 75)
+            attribute("", "Offset (xy, z)", label, "%s", none, none, "0", "0", 470, 405)
+            parameter("", "P16", distance, number, 605, 405, 75)
+            parameter("", "P17", distance, number, 730, 405, 75)
+            attribute("", "Choose which offset points to create.", label, "%s", none, none, "0", "0", 179, 0)
+            picture("usa_cc_Column_Layout", 277, 278, 107, 29)
+        }
+    }
+}

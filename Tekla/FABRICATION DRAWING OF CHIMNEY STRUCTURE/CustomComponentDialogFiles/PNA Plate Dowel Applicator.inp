@@ -1,0 +1,24 @@
+page("TeklaStructures", "")
+{
+    joint(1, "PNA Plate Dowel Applicator")
+    {
+        helpurl("cchelp_usa_pna_construction_technologies")	
+        tab_page("", " Parameters ", 1)
+        {
+            attribute("", "Dowel Size", label, "%s", none, none, "0", "0", 52, 22)
+            attribute("P100", "", option, "%s", none, none, "0.0", "0.0", 235, 22, 167)
+            {
+                value("1/4'' Dowel", 1)
+                value("3/8'' Dowel", 0)
+                value("3/4'' Dowel", 0)
+            }
+            picture("usa_pna_app", 532, 479, 108, 70)
+            parameter("", "P1", distance, number, 100, 371, 100)
+            attribute("", "Number of Copies", label, "%s", none, none, "0", "0", 52, 575)
+            parameter("", "P2", integer, number, 235, 575, 167)
+            attribute("", "Copy Spacing", label, "%s", none, none, "0", "0", 52, 611)
+            parameter("", "P3", distance_list, text, 235, 611, 167)
+            picture("usa_pna_logo", 268, 78, 440, 558)
+        }
+    }
+}

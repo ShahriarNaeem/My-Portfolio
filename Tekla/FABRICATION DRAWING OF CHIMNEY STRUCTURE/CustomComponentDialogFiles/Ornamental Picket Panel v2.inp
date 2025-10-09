@@ -1,0 +1,82 @@
+page("TeklaStructures","")
+{
+   joint(1, "Ornamental Picket Panel v2")
+   {
+       helpurl("cchelp_usa_ornamental_picket_panel")
+       tab_page("", " Parameters ", 1)
+       {
+	   profile("Top Rail",   P30,TR1 , P31 , ,P29 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P32", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P33", integer, number, 940,26,40)
+
+	   profile("Bottom Rail",   P22,BR1 , P23 , ,P21 ,2)
+           parameter("", "P26", string, text, 830,50,80)
+           parameter("", "P27", integer, number, 940,50,40)
+
+	   profile("Picket #1",   P3,PK1 , P11 , , ,3)
+           parameter("", "P12", string, text, 830,74,80)
+           parameter("", "P13", integer, number, 940,74,40)
+
+	   profile("Picket #2",   P9,  ,  , , ,4)
+
+         attribute("LABEL3", "Picket Thickness", label, "%s", no, none, "0.0", "0.0", 19,122) 
+         parameter("", "P17", distance, number, 398,122,120)
+
+         attribute("LABEL4", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,146) 
+         attribute("P14", "", option, "%s", no, none, "0.0", "0.0", 398,146,120) 
+              { 
+                   value("",1) 
+                   value("Yes",0) 
+              } 
+         attribute("P24", "", option, "%s", no, none, "0.0", "0.0", 550,146,120) 
+              { 
+                   value("",1) 
+                   value("Yes",0) 
+              } 
+         attribute("LABEL5", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,170) 
+         parameter("", "P15", string, text, 398,170,120)
+         parameter("", "P25", string, text, 550,170,120)
+
+         attribute("LABEL6", "Alternating Pickets", label, "%s", no, none, "0.0", "0.0", 19,194) 
+	attribute("P8", "", option, "%s", no, none, "0.0", "0.0", 398,194,120,"dia_enable_field_ocb:P9=0;!usa_picket_panel_opt1=1;!P24=0;!P25=0")
+                {
+                     value("No",1)
+                     value("Yes",0)
+                }
+
+ 	attribute("LABEL7", "Create Top Rail", label, "%s", no, none, "0.0", "0.0", 19,218) 
+	attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 398,218,120,"dia_enable_field_ocb:!usa_picket_panel_no_top=1;!usa_picket_panel=0;P29=0;P30=0;P31=0;P32=0;P33=0;prefix_TR1=0;startno_TR1=0;!P28=0")
+                {
+                     value("No",1)
+                     value("Yes",0)
+                }
+
+         picture("usa_picket_panel_opt1", 157,98,293,370)
+         picture("usa_picket_panel", 320,280,200,285)
+         picture("usa_picket_panel_no_top", 320,280,200,285)
+
+         parameter("", "P28", distance, number, 150,335,60)
+         parameter("", "D6", distance, number, 230,270,80)
+         attribute("LABEL8", "# Pickets", label, "%s", no, none, "0.0", "0.0", 342,245) 
+         parameter("", "P2", integer, number, 340,270,80)
+         parameter("", "P16", distance, number, 625,320,80)
+         parameter("", "P18", distance, number, 620,410,80)
+         parameter("", "P19", distance, number, 625,510,80)
+
+	 attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 475,595,120,"dia_enable_field_ocb:P20_name=0,1;P20_attrfile=0,1")
+                {
+                     value("Post CL",1)
+                     value("Post Face",0)
+                     value("Component",0)
+                }
+
+            attribute("", "Component", label, "%s", none, none, "0", "0", 620, 595)
+            attribute("", "Attribute", label, "%s", none, none, "0", "0", 620, 620)
+            parameter("", "P20_name", ComponentName, text, 750, 595, 120)
+            parameter("", "P20_attrfile", ComponentAttributeFile, text, 750, 620, 120)
+
+       }
+   }
+}

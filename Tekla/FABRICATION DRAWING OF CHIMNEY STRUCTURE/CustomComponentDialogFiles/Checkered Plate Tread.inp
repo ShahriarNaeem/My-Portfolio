@@ -1,0 +1,67 @@
+page("TeklaStructures","")
+{
+   joint(1, "Checkered Plate Tread")
+   {
+       helpurl("cchelp_usa_checkered_plate")   
+       tab_page("", " Picture ", 1)
+       {
+         picture("usa_checkered_plate_tread",350, 300, 150, 50)
+         picture("usa_checkered_plate_tread1",350, 300, 150, 50)
+         picture("usa_checkered_plate_tread2",350, 300, 150, 50)
+         picture("usa_checkered_plate_tread3",350, 300, 150, 50)		 
+	     attribute("O1", "Tread Type", option, "%s", no, none, "0.0", "0.0", 370,5,120,"toggle_field:!FP1=0,1,3;!P5=0,2;!P4=2;!usa_checkered_plate_tread=1,2,3;!usa_checkered_plate_tread1=0,2,3;!usa_checkered_plate_tread2=0,1,3;!usa_checkered_plate_tread3=0,1,2")
+                {
+                     value("Type 1",1)
+                     value("Type 2",0)
+                     value("Type 3",0)
+                     value("Type 4",0)					 
+                }
+	   
+           parameter(" Tread Width", "P2", distance, number, 355,175,100)
+           parameter(" Distance Down", "P3", distance, number, 585,250,80)
+           parameter(" Distance Up", "P4", distance, number, 145,195,80)
+           parameter(" Lip", "P5", distance, number, 265,35,80)
+           parameter(" End Plate Length", "P6", distance, number, 330,380,100)
+           parameter(" Bolt Edge H", "HB1", distance, number, 510,309,80)
+           parameter(" Bolt Spacing", "HB2", distance, number, 345,325,80)
+           parameter(" Bolt Edge V", "VB1", distance, number, 145,270,80)
+           parameter(" Flap Length", "FP1", distance, number, 95,192,80)		   
+           parameter(" End Plate Thickness", "P7", distance, number, 140,330,80)
+		   attribute("LABEL_T", "End Plate Thickness", label2, "%s", no, none, "0.0", "0.0", 120, 355)		   
+
+	   }
+       tab_page("", " Parts ", 2)
+       {
+	   part("Profile",P1, , ,TR5 , TR2 ,TR6 ,TR1 ,1)
+
+		attribute("LABEL_F", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+		parameter("", "TR3", string, text, 830,26,80)
+		attribute("LABEL_C", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+		parameter("", "TR4", integer, number, 940,26,40)
+
+           attribute("P8", "Bought Out Item?", option, "%s", yes, none, "0.0","0.0", 4)
+	     {
+                     value("",1)
+                     value("Yes",0)
+	     }
+           parameter("BOI Name", "P9", string, text, 5)
+
+		picture("usa_horz_line2", 720, 5, 25, 160)
+
+	  	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",20,180)
+	 	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",20,205)
+	  	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",20,230)
+	  	parameter("","BLT4_diameter", bolt_size, number,180,180,125)
+	 	parameter("","BLT4_screwdin", bolt_standard, text,180,205,125)
+ 	 	parameter("","BLT3", distance, number,180,230,125)
+		attribute("BLT2", "", option,"%s", none, none, "0.0", "0.0",180,255,125)
+		{
+		value("j_site", 1)
+		value("j_workshop", 0)
+		}
+
+		picture("usa_bolt_slots", 155, 155, 350, 175)
+		parameter("","BLT1", distance, number, 475,245,60)
+		}
+   }
+}

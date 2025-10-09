@@ -1,0 +1,14 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Stud punch out 4")
+    {
+        helpurl("cchelp_usa_metal_stud_punch_out_components")
+        tab_page("", "Location of cuts", 1)
+        {
+            picture("usa_ms_PO4", 285, 257, 87, 96)
+            attribute("", "Desired spacing", label, "%s", none, none, "0", "0", 422, 177)
+            parameter("", "P2", distance, number, 422, 201, 104)
+            parameter("", "P1", distance, number, 422, 303, 104)
+        }
+    }
+}

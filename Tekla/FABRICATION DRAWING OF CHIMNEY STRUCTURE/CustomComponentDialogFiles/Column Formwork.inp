@@ -1,0 +1,20 @@
+page("TeklaStructures","")
+{
+   detail(1, "Column Formwork")
+   {
+       helpurl("cchelp_usa_formwork_components")
+       tab_page("", " Column Form ", 1)
+       {
+           picture("usa_Column_Formwork", 400,400)
+		   parameter(" Top", "P1_name", ComponentName, text, 410,110,125)
+           parameter(" Top Attr", "P1_attrfile", ComponentAttributeFile, text, 410,140,125)
+           parameter(" Front", "P2_name", ComponentName, text, 585,210,125)
+           parameter(" Front Attr", "P2_attrfile", ComponentAttributeFile, text, 585,240,125)		   
+           parameter(" Below", "P3_name", ComponentName, text, 410,300,125)
+           parameter(" Below Attr", "P3_attrfile", ComponentAttributeFile, text, 410,330,125)		   
+		   parameter(" Back", "P4_name", ComponentName, text, 250,210,125)
+           parameter(" Back Attr", "P4_attrfile", ComponentAttributeFile, text, 250,240,125)           
+           parameter(" Bottom Dist", "P5", distance, number, 255,330,80)
+       }
+   }
+}

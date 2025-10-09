@@ -1,0 +1,27 @@
+page("TeklaStructures","")
+{
+   macro(1, "Double Angles (LLH)")
+    {
+        helpurl("cchelp_usa_double_angle_components")
+        tab_page("", " Design ", 1)
+        {
+            parameter("Part Design Name", "P6", string, text, 1)
+            parameter("Class", "P8", integer, number, 2)
+            parameter("Spacer gap", "P2", distance, number, 3)
+        }
+        tab_page("", " Detailing ", 2)
+        {
+            profile ("Plate profile",   P1, P9 , P7, P10,P4 ,1)
+            attribute("LABEL2", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+            parameter(" Finish", "P5", string, text, 830,26,80)
+
+/***** Profile parameters *************************************************
+ *       parameter(" Angle Profile", "P1", profile, text, 374, 0, 160)    *
+ *       parameter(" Pos prefix", "prefix_P9", string, text, 374, 28, 60) *
+ *       parameter(" Pos No", "startno_P9", integer, number, 472, 28, 60) *
+ *       parameter(" Material", "P7", material, text, 374, 112, 160)      *
+ *       parameter(" Part Name", "P4", string, text, 374, 0, 160)         *
+ **************************************************************************/
+        }
+    }
+}

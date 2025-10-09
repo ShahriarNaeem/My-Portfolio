@@ -1,0 +1,57 @@
+page("TeklaStructures","")
+{
+   macro(1, "Metal Stud Frame wDoor")
+   {
+       helpurl("cchelp_usa_metal_stud_frames")
+       tab_page("", " Frame Parameters ", 1)
+       {
+       
+           picture("usa_metalstudframe_w_Door.bmp", 0, 0, 100, 30)
+           
+           parameter("", "P1", distance, number, 50, 175, 50)
+           parameter("", "P4", distance, number, 370, 175, 50)
+           parameter("", "P5", distance, number, 370, 0, 50)
+           parameter("", "P6", distance, number, 215, 0, 50)
+
+           attribute("_", "Stud Spacing", label, "%s" , no, none, "0.0", "0.0", 20, 330, 75)
+           attribute("P13", "", option, "%s" , no, none, "0.0", "0.0", 180, 330, 75)
+           {
+                     value("12 in",1)
+                     value("16 in",0)
+                     value("24 in",0)
+           }
+           attribute("P33", "", option, "%s" , no, none, "0.0", "0.0", 375, 330, 75)
+           {
+                     value("12 in",1)
+                     value("16 in",0)
+                     value("24 in",0)
+           }
+           attribute("P20", "", option, "%s" , no, none, "0.0", "0.0", 550, 330, 75)
+           {
+                     value("12 in",1)
+                     value("16 in",0)
+                     value("24 in",0)
+           }
+           parameter("Spacing Tolerance", "P29", distance, number, 375, 360, 75)
+        
+           parameter("Base Runner Profile", "P22", profile, text, 375, 400, 125)
+           parameter(" Base Runner Matl", "P39", material, text, 550, 400, 100)		   
+           parameter("Head Runner Profile", "P23", profile, text, 375, 430, 125)
+           parameter(" Head Runner Matl", "P40", material, text, 550, 430, 100)		   
+           parameter("Stud Profile", "P24", profile, text, 375, 460, 125)
+           parameter(" Stud Matl", "P41", material, text, 550, 460, 100)		   
+           parameter("Lintel Profile", "P25", profile, text, 375, 490, 125)
+           parameter(" Lintel Matl", "P42", material, text, 550, 490, 100)		   
+           parameter("Jamb Profile", "P27", profile, text, 375, 520, 125)
+           parameter(" Jamb Matl", "P43", material, text, 550, 520, 100)		   
+           parameter("King Stud Profile", "P38", profile, text, 375, 550, 125)
+           parameter(" King Stud Matl", "P44", material, text, 550, 550, 100)		   
+           parameter("Create King Studs?", "P37", YesNo, number, 375, 580, 150) 
+           attribute("OPT1", "Assembled or Not?", option, "%s" , no, none, "0.0", "0.0", 375, 610, 150)		   
+           {
+                     value("Not Assembled",1)
+                     value("Assembled",0)
+           }		   
+       }
+   }
+}

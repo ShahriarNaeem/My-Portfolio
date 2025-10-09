@@ -1,0 +1,37 @@
+page("TeklaStructures", "")
+{
+    joint(1, "Stud wall infill")
+    {
+        helpurl("cchelp_usa_metal_stud_framing_components")
+        tab_page("", "Picture", 1)
+        {
+            picture("usa_ms_infill", 535, 463, 378, 42)
+            parameter("", "P11", distance, number, 268, 76, 102)
+            attribute("", "Stud length adjustment", label, "%s", none, none, "0", "0", 187, 263)
+            parameter("", "P12", distance, number, 262, 293, 104)
+            parameter("", "P1", distance, number, 431, 515, 104)
+            parameter("", "P2", distance, number, 620, 515, 104)
+        }
+        tab_page("", "Parts", 2)
+        {
+            attribute("", "Profile", label, "%s", none, none, "0", "0", 145, 51)
+            attribute("", "Pos_No", label, "%s", none, none, "0", "0", 362, 51)
+            attribute("", "Material", label, "%s", none, none, "0", "0", 544, 51)
+            attribute("", "Name", label, "%s", none, none, "0", "0", 693, 51)
+            attribute("", "Finish", label, "%s", none, none, "0", "0", 841, 51)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 990, 51)
+            attribute("", "Design name", label, "%s", none, none, "0", "0", 1100, 51)
+            attribute("", "Infill studs", label, "%s", none, none, "0", "0", 24, 81)
+            parameter("", "P7", profile, text, 145, 81, 132)
+            parameter("", "P15", string, text, 362, 81, 51)
+            parameter("", "P16", string, text, 450, 81, 51)
+            parameter("", "P8", material, text, 544, 81, 78)
+            parameter("", "P6", string, text, 693, 81, 105)
+            parameter("", "P10", string, text, 841, 81, 105)
+            parameter("", "P9", integer, number, 990, 81, 64)
+            parameter("", "P23", string, text, 1100, 81, 105)
+            parameter("", "P17", string, text, 362, 111, 51)
+            parameter("", "P18", string, text, 450, 111, 51)
+        }
+    }
+}

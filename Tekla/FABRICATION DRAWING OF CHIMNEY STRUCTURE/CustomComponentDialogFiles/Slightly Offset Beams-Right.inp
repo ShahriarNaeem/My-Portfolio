@@ -1,0 +1,219 @@
+page("TeklaStructures","")
+{
+   joint(1, "Slightly Offset Beams-Right")
+   {
+    helpurl("cchelp_usa_offset_beams")
+	tab_page("", " Picture ", 1)
+       {
+           picture("usa_pic_slight_offset_pic",370,300,150,0)
+
+           parameter("", "BM2Setback", distance, number, 295,15,60)
+           parameter("", "BM1Setback", distance, number, 455,15,60)
+		   
+           parameter("", "Cope1FlgClear", distance, number, 215,65,60)
+           parameter("", "Cope1NotchDepth", distance, number, 100,110,60)
+           parameter("", "Cope2FlgClear", distance, number, 530,65,60)
+           parameter("", "Cope2NotchDepth", distance, number, 650,110,60)
+
+           parameter("", "Cope1NotchBotDepth", distance, number, 100,285,60)
+           parameter("", "Cope1FlgBotClear", distance, number, 215,330,60)
+           parameter("", "Cope2NotchBotDepth", distance, number, 650,285,60)
+           parameter("", "Cope2FlgBotClear", distance, number, 530,330,60)   
+       }
+    tab_page("", " Parts ", 2)
+       {
+	     profile ("Sec1 outer angle",   P33,P35 , P34 ,P37 ,P246 ,1)
+	     attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+         parameter("", "P248", string, text, 830,26,80)
+	     attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+         parameter("", "P247", integer, number, 940,26,40)
+
+	     profile ("Sec1 inner angle",   P39,P41 , P40 ,P43 ,P249 ,3)
+         parameter("", "P251", string, text, 830,74,80)
+         parameter("", "P250", integer, number, 940,74,40)
+
+	     profile ("Sec2 inner angle",   P51,P53 , P52 ,P55 ,P255 ,5)
+         parameter("", "P257", string, text, 830,122,80)
+         parameter("", "P256", integer, number, 940,122,40)
+
+	     profile ("Sec2 outer angle",   P45,P47 , P46 ,P49 ,P252 ,7)
+         parameter("", "P254", string, text, 830,170,80)
+         parameter("", "P253", integer, number, 940,170,40)
+       }       
+	tab_page("", " Copes ", 3)
+       {
+         picture("usa_pic_slight_offset_cope",370,255,200,45)
+
+         parameter("", "P23", chamfer_type, number, 130,40,80,"dia_enable_field_ocb:P24=1,5;P25=1,3,4,5")
+         parameter("", "P24", distance, number, 130,64,60)
+	     attribute("LABEL1", "x:", label, "%s", no, none, "0.0", "0.0", 193,64)
+         parameter("", "P25", distance, number, 130,89,60)
+	     attribute("LABEL2", "y:", label, "%s", no, none, "0.0", "0.0", 193,89)
+
+         parameter("", "P26", chamfer_type, number, 595,40,80,"dia_enable_field_ocb:P27=1,5;P28=1,3,4,5")
+         parameter("", "P27", distance, number, 595,64,60)
+	     attribute("LABEL3", "x:", label, "%s", no, none, "0.0", "0.0", 660,64)
+         parameter("", "P28", distance, number, 595,89,60)
+	     attribute("LABEL4", "y:", label, "%s", no, none, "0.0", "0.0", 660,89)
+
+         parameter("", "P145", chamfer_type, number, 130,335,80,"dia_enable_field_ocb:P146=1,5;P147=1,3,4,5")
+         parameter("", "P146", distance, number, 130,360,60)
+	     attribute("LABEL5", "x:", label, "%s", no, none, "0.0", "0.0", 193,360)
+         parameter("", "P147", distance, number, 130,385,60)
+	     attribute("LABEL6", "y:", label, "%s", no, none, "0.0", "0.0", 193,385)
+
+         parameter("", "P154", chamfer_type, number, 595,335,80,"dia_enable_field_ocb:P155=1,5;P156=1,3,4,5")
+         parameter("", "P155", distance, number, 595,360,60)
+	     attribute("LABEL7", "x:", label, "%s", no, none, "0.0", "0.0", 660,360)
+         parameter("", "P156", distance, number, 595,385,60)
+	     attribute("LABEL8", "y:", label, "%s", no, none, "0.0", "0.0", 660,385)
+	   }
+    tab_page("", " Bolts", 5)
+       {
+	     attribute("Sec2 Web Bolts", "Secondary Bolts", label, "%s", no, none, "0.0", "0.0",20,5)
+	     attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",20,30)
+	     attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",20,55)
+	     attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",20,80)
+	     attribute("thread_in_material_lb", "j_thread_in_material", label3,"%s",  none, none, "0.0", "0.0",20,105)
+	     parameter("","P205_diameter", bolt_size, number,160,30,90)
+	     parameter("","P205_screwdin", bolt_standard, text,160,55,90)
+	     parameter("","P204", distance, number,160,80,90)
+	     attribute("P287", "", option,"%s",  none, none, "0.0", "0.0",160,105,90)
+	       {
+	         value("j_no", 0)
+		     value("j_yes", 1)
+	       }
+         attribute("LABEL2", "Cut Length", label, "%s", no, none, "0.0", "0.0", 20,130)
+	     parameter("","P288", distance, number,160,130,90)
+	  
+         picture("jnt_bpic_long_holes2", 155,110,40,160) 
+         parameter("", "P290", distance, number, 70,180,60) 
+         parameter("", "P291", distance, number, 160,240,60) 
+	     attribute("OPT2", "", option,"%s",  none, none, "0.0", "0.0",160,266,80)
+	       {
+	         value("None", 1)
+	         value("Beams", 0)
+	         value("Angles",0)
+	       }	  
+
+	     attribute("P292", "", option,"%s",  none, none, "0.0", "0.0",530,275,90)
+	       {   
+	         value("j_site", 1)
+		     value("j_workshop", 0)
+	       }	  
+	     attribute("P285", "", option,"%s",  none, none, "0.0", "0.0",690,275,90)
+	       {
+	         value("j_site", 1)
+		     value("j_workshop", 0)
+	       }
+
+	     picture("jnt_bpic_bolt_parts_in_modify",100,100,290,20) /*picture_bolt_structure*/
+         toggle_group(325,125,
+		  "P293",100,-75,"1",
+		  "P195",-20,-20,"0",
+		  "P196",  7,-20,"0",
+		  "P200", 32,-20,"1",
+		  "P201", 57,-20,"1",
+		  "P202",102,-40,"0")
+	  
+	     picture("jnt_bpic_extra_length",100,100,290,160) /*picture_extra_length*/
+	     attribute("P289", "", distance, "%s", none, none, "0.0", "0.0",345,210,50)    	
+	       { 
+	         value("", 0.0)
+	       }
+	  
+	     attribute("OPT1", "", option,"%s",  none, none, "0.0", "0.0",290,250,150,"toggle_field:P223=1;P224=1;P225=1;P226=1;P227=1;P204=1;P205_diameter=1;P205_screwdin=1;P285=1;P287=1;P288=1;P290=1;P291=1;P292=1;P293=1;P195=1;P196=1;P200=1;P201=1;P202=1;P289=1;BM1WebEdge=1;BM2WebEdge=1;P81=0;P82=0;P83=0;P84=0;P17=0;P18=0;P85=0;P126=0;P127=0;P128=0;P129=0;P191=0;P192=0;P130=0;OPT2=1")
+	       {
+	         value("usa_pic_offset_opt_bolted.xbm", 0)
+	         value("usa_pic_offset_opt_welded.xbm", 1)
+	       }
+	  
+	     attribute("Sec1 Outer Bolts", "Primary Bolts", label, "%s", no, none, "0.0", "0.0",20,355)
+	     attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",20,380)
+	     attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",20,405)
+	     attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",20,430)
+	     attribute("thread_in_material_lb", "j_thread_in_material", label3,"%s",  none, none, "0.0", "0.0",20,455)
+	     parameter("","P60_diameter", bolt_size, number,160,380,90)
+	     parameter("","P60_screwdin", bolt_standard, text,160,405,90)
+	     parameter("","P161", distance, number,160,430,90)
+	     attribute("P258", "", option,"%s",  none, none, "0.0", "0.0",160,455,90)
+	       {
+	         value("j_no", 0)
+		     value("j_yes", 1)
+	       }
+         attribute("LABEL3", "Cut Length", label, "%s", no, none, "0.0", "0.0", 20,480)
+	     parameter("","P259", distance, number,160,480,90)
+	  
+         picture("jnt_bpic_long_holes2", 155,110,40,510) 
+         parameter("", "P269", distance, number, 70,530,60) 
+         parameter("", "P270", distance, number, 160,590,60) 
+	     attribute("OPT3", "", option,"%s",  none, none, "0.0", "0.0",160,616,80)
+	       {
+	         value("None", 1)
+	         value("Beam", 0)
+	         value("Angles",0)
+	       }	 	  
+	  
+	     picture("jnt_bpic_bolt_parts_in_modify",100,100,290,370) /*picture_bolt_structure*/
+         toggle_group(325,470,
+		  "P264",100,-75,"1",
+		  "P136",-20,-20,"0",
+		  "P148",  7,-20,"0",
+		  "P157", 32,-20,"1",
+		  "P158", 57,-20,"1",
+		  "P159",102,-40,"0")
+	  
+	     picture("jnt_bpic_extra_length",100,100,290,510) /*picture_extra_length*/
+	     attribute("P260", "", distance, "%s", none, none, "0.0", "0.0",345,560,50)    	
+	       {
+	         value("", 0.0)
+	       }
+
+	     attribute("P263", "", option,"%s",  none, none, "0.0", "0.0",610,305,90)
+	       {
+	         value("j_site", 1)
+		     value("j_workshop", 0)
+	       }	  
+
+         picture("usa_pic_slight_offset_bolts4",290,175,450,60)
+
+         parameter("", "BoltVertTo1st", distance, number, 725,80,60)
+         parameter("", "BoltQty", integer, number, 860,175,40)
+         parameter("", "BoltSpacing", distance, number, 930,175,60)
+         parameter("", "BoltBotEdge", distance, number, 860,220,60)
+         parameter("", "BoltTopEdge", distance, number, 860,135,60)
+		   
+         picture("usa_pic_slight_offset_bolts2",280,185,560,390) 
+
+         parameter("", "Bolt1stHDist", distance, number, 510,475,60)
+         parameter("", "BM1WebEdge", distance, number, 745,380,60)
+         parameter("", "BM2WebEdge", distance, number, 660,650,60)
+         parameter("", "Bolt2ndHDist", distance, number, 920,550,60)		      
+       }
+    tab_page("", " Welds ", 6)
+       {
+	     picture("usa_pic_offset_welded4", 360,230,150,210)
+           
+	     attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	     attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,0)
+           
+	     attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+         parameter("", "P81", distance, number, 69,30,60)
+         parameter("", "P82", distance, number, 69,56,60)
+         parameter("", "P83", weld_type, number, 165,30,100)
+         parameter("", "P84", weld_type, number, 165,56,100)
+         parameter("", "P17", distance, number, 299,30,60)
+         parameter("", "P18", distance, number, 299,56,60)
+         parameter("", "P85", welding_site, number, 400,43,60)
+           
+	     attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+         parameter("", "P126", distance, number, 69,85,60)
+         parameter("", "P127", distance, number, 69,111,60)
+         parameter("", "P128", weld_type, number, 165,85,100)
+         parameter("", "P129", weld_type, number, 165,111,100)
+         parameter("", "P191", distance, number, 299,85,60)
+         parameter("", "P192", distance, number, 299,111,60)
+         parameter("", "P130", welding_site, number, 400,98,60)     
+       }
+   }
+}

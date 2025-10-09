@@ -1,0 +1,34 @@
+page("TeklaStructures","")
+{
+   macro(1, "Roof Frame 2-Sided")
+   {
+       helpurl("cchelp_usa_roof_frame_components")
+       tab_page("", " Parameters ", 1)
+       {
+	   profile ("Frame Profile",   P2,A1 , P6,A2 ,P5,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P7", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P8", integer, number, 940,26,40)
+
+           picture("usa_roofframe2", 400,360,120,100)
+
+           parameter("", "D3", distance, number, 350,100,80)
+           parameter("", "D4", distance, number, 200,140,80)
+           parameter("", "D6", distance, number, 200,300,70)
+
+
+       }
+       tab_page("", " Welds ", 3)
+       {
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,0)
+
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "P9", distance, number, 64,30,60)
+           parameter("", "P10", weld_type, number, 160,30,100)
+           parameter("", "P11", welding_site, number, 395,30,60)
+
+       }
+   }
+}

@@ -1,0 +1,59 @@
+page("TeklaStructures","")
+{
+   joint(1, "Angle Rail-Angle Conx")
+   {
+       helpurl("cchelp_usa_angle_rail_components")
+       tab_page("", " Picture ", 1)
+       {
+           attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 50,0,170,"dia_enable_field_ocb:P22=2,3")
+                {
+                     value("usa_anglerail_angleconx_opt0.xbm",1)
+                     value("usa_anglerail_angleconx_opt1.xbm",0)
+                     value("usa_anglerail_angleconx_opt2.xbm",0)
+                     value("usa_anglerail_angleconx_opt3.xbm",0)
+                }
+           attribute("LABEL_R", "Rail Rotation", label, "%s", no, none, "0.0", "0.0", 260, 0)
+           attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 260,24,110)
+                {
+                     value("usa_anglerail_angleconx_below.xbm",1)
+                     value("usa_anglerail_angleconx_back.xbm",0)
+                }
+          picture("usa_anglerail_angleconx",320, 370, 200, 50)
+           parameter("", "P4", distance, number, 170,175,60)
+           parameter("", "P22", distance, number, 470,120,60)
+           parameter("", "P5", distance, number, 517,175,60)
+           parameter("", "P1", distance, number, 337,286,60)
+           parameter("", "P2", distance, number, 630,335,60)
+           parameter("", "P3", distance, number, 643,405,60)
+       }
+       tab_page("", " Angle and Bolts ", 2)
+       {
+	   profile("Angle Profile",   P10, N14 , P11 , ,P9 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P12", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P13", integer, number, 940,26,40)
+
+           picture("usa_horz_line2", 720, 5, 20, 70)
+
+ 	attribute("Primary Bolts ", "PRIMARY BOLTS", label, "%s", no, none, "0.0", "0.0",20,85)
+  	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",20,110)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",20,135)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",20,160)
+	parameter("","P16_diameter", bolt_size, number,160,110,120)
+	parameter("","P16_screwdin", bolt_standard, text,160,135,120)
+	parameter("","P17", distance, number,160,160,120)
+	parameter("", "P18", bolt_type, number, 160,185,120)
+
+ 	attribute("Secondary Bolts ", "SECONDARY BOLTS", label, "%s", no, none, "0.0", "0.0",337,85)
+  	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",337,110)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",337,135)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",337,160)
+	parameter("","P19_diameter", bolt_size, number,487,110,120)
+	parameter("","P19_screwdin", bolt_standard, text,487,135,120)
+	parameter("","P20", distance, number,487,160,120)
+	parameter("", "P21", bolt_type, number, 487,185,120)
+
+       }
+   }
+}

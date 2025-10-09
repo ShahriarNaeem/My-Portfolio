@@ -1,0 +1,34 @@
+page("TeklaStructures","")
+{
+   macro(1, "Material Idler")
+   {
+   helpurl("cchelp_usa_material_handling_components")
+   tab_page("", "Design", 1)
+        {
+            attribute("", "B Dimension", label, "%s", none, none, "0", "0", 235, 0)
+            parameter("", "P7", distance, number, 400, 0, 120)
+            attribute("", "D Dimension", label, "%s", none, none, "0", "0", 235, 30)
+            parameter("", "P2", distance, number, 400, 30, 120)
+            attribute("", "C Dimension", label, "%s", none, none, "0", "0", 75, 80)
+            parameter("", "P1", distance, number, 75, 110, 120)
+            attribute("", "A Dimension", label, "%s", none, none, "0", "0", 75, 140)
+            parameter("", "P3", distance, number, 75, 170, 120)
+            attribute("", "Roller Diameter", label, "%s", none, none, "0", "0", 720, 60)
+            parameter("", "P8", distance, number, 720, 90, 120)
+            attribute("", "E Dimension", label, "%s", none, none, "0", "0", 235, 270)
+            parameter("", "P4", distance, number, 400, 270, 120)
+            attribute("", "F Dimension", label, "%s", none, none, "0", "0", 720, 210)
+            parameter("", "P20", distance, number, 720, 240, 120)
+            parameter("", "P11", string, text, 275, 340, 160)
+            attribute("", "Idler pitch (degree)", label, "%s", none, none, "0", "0", 700, 310)
+            parameter("", "P32", angle, number, 700, 340, 80)
+            picture("usa_IdlerPic", 332, 172, 220, 52)
+            parameter("", "P22", string, text, 275, 380, 160)
+            parameter("", "P23", string, text, 275, 420, 50)
+            attribute("", "Design Name", label, "%s", none, none, "0", "0", 95, 380)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 160, 420)
+            attribute("", "Pitch used for reference.", label, "%s", none, none, "0", "0", 700, 370)
+            attribute("", "Bought out part ID", label, "%s", none, none, "0", "0", 65, 340)
+        }
+    }
+}

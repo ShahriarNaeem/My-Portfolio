@@ -1,0 +1,47 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Weld Prep Scallop")
+    {
+        helpurl("cchelp_usa_weld_preps_and_backing_bars")
+        tab_page("", "j_rat_holes", 1)
+        {
+            attribute("", "j_Rat_Hole_At_Top", label, "%s", none, none, "0", "0", 500, 65)
+            parameter("", "ScallopTopCreate", YesNo, number, 500, 95, 100)
+            picture("TJ_BeamScallop_General", 270, 150, 150, 100)
+            parameter("", "UflgOffset", distance, number, 565, 160, 60)
+            attribute("ScallopShape", "", option, "%s", none, none, "0.0", "0.0", 221, 172, 160, "toggle_field:R_radius1=0,1,2;r_radius2=0,1,2,3,4;x_PrepBot=0,1,2,3,5;x_PrepTop=0,1,2,3,5;y_PrepBot=0,1,2,3,5;y_PrepTop=0,1,2,3,5")
+            {
+                value("TJ_BeamScallop_Round.xbm", 1)
+                value("TJ_BeamScallop_Square.xbm", 0)
+                value("TJ_BeamScallop_Snip.xbm", 0)
+                value("TJ_BeamScallop_Radius.xbm", 0)
+                value("TJ_BeamScallop_xR.xbm", 0)
+                value("TJ_BeamScallop_rR.xbm", 0)
+            }
+            parameter("", "ScallopSize", distance, number, 80, 195, 60)
+            parameter("", "LflgOffset", distance, number, 565, 235, 60)
+            parameter("", "ScallopBottomCreate", YesNo, number, 500, 300, 100)
+            attribute("", "j_Rat_Hole_At_Bottom", label, "%s", none, none, "0", "0", 500, 330)
+            attribute("", "1.", label2, "%s", none, none, "0", "0", 79, 350)
+            attribute("", "prompt_Pick_main_part", label, "%s", none, none, "0", "0", 100, 350)
+            parameter("", "R_radius1", distance, number, 510, 372, 80)
+            attribute("", "2.", label2, "%s", none, none, "0", "0", 79, 375)
+            attribute("", "prompt_Pick_position", label, "%s", none, none, "0", "0", 100, 375)
+            attribute("", "R", label, "%s", none, none, "0", "0", 460, 375)
+            parameter("", "r_radius2", distance, number, 510, 401, 80)
+            attribute("", "r", label, "%s", none, none, "0", "0", 460, 402)
+            
+            attribute("", "Top Prep", label, "%s", none, none, "0", "0", 460, 438)
+            attribute("", "x", label, "%s", none, none, "0", "0", 460, 464)
+            parameter("", "x_PrepTop", distance, number, 510, 464, 80)
+            attribute("", "y", label, "%s", none, none, "0", "0", 618, 464)
+            parameter("", "y_PrepTop", distance, number, 664, 464, 80)
+            
+            attribute("", "Bottom Prep", label, "%s", none, none, "0", "0", 460, 498)
+            attribute("", "x", label, "%s", none, none, "0", "0", 460, 523)
+            parameter("", "x_PrepBot", distance, number, 510, 522, 80)
+            attribute("", "y", label, "%s", none, none, "0", "0", 621, 523)
+            parameter("", "y_PrepBot", distance, number, 664, 522, 80)
+        }
+    }
+}

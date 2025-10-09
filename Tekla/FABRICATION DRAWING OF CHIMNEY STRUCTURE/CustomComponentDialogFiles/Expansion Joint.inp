@@ -1,0 +1,47 @@
+page("TeklaStructures","")
+{
+   joint(1, "Expansion Joint")
+    {
+        helpurl("cchelp_usa_expansion_joint")
+        tab_page("", "Design", 1)
+        {
+            attribute("", "Framing profile", label, "%s", none, none, "0", "0", 20, 0)
+            parameter("", "P1", profile, text, 250, 0, 160)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 20, 30)
+            parameter("", "P10", integer, number, 250, 30, 160)
+            attribute("", "Stiffener design name", label, "%s", none, none, "0", "0", 20, 60)
+            parameter("", "P13", string, text, 250, 60, 160)
+            attribute("", "Flange plate thickness", label, "%s", none, none, "0", "0", 20, 90)
+            parameter("", "P6", profile, text, 250, 90, 160)
+            attribute("", "Flange plate class", label, "%s", none, none, "0", "0", 20, 120)
+            parameter("", "P12", integer, number, 250, 120, 160)
+            picture("usa_ExpJointPickOrder", 247, 235, 30, 160)
+            parameter("", "P3", distance, number, 475, 160, 100)
+            attribute("", "Cope depth", label, "%s", none, none, "0", "0", 590, 160)
+            parameter("", "P4", distance, number, 475, 195, 100)
+            attribute("", "Fillet radius", label, "%s", none, none, "0", "0", 590, 195)
+            picture("usa_ExpCope", 176, 169, 430, 230)
+        }
+        tab_page("", "Detailing", 2)
+        {
+            attribute("", "Numbering series", label, "%s", none, none, "0", "0", 16, 0)
+            attribute("", "Prefix:", label, "%s", none, none, "0", "0", 170, 30)
+            attribute("", "Start number:", label, "%s", none, none, "0", "0", 380, 30)
+            attribute("", "Stiffener", label, "%s", none, none, "0", "0", 20, 60)
+            parameter("", "P16", string, text, 170, 60, 160)
+            parameter("", "P17", string, text, 380, 60, 160)
+            attribute("", "Flange plate", label, "%s", none, none, "0", "0", 20, 90)
+            parameter("", "P18", string, text, 170, 90, 160)
+            parameter("", "P19", string, text, 380, 90, 160)
+            attribute("", "Assembly", label, "%s", none, none, "0", "0", 20, 120)
+            parameter("", "P14", string, text, 170, 120, 160)
+            parameter("", "P15", string, text, 380, 120, 160)
+    picture("usa_horz_line", 432, 2, 0, 175)
+            attribute("", "Attributes", label, "%s", none, none, "0", "0", 16, 190)
+            attribute("", "Stiffener name", label, "%s", none, none, "0", "0", 20, 220)
+            parameter("", "P11", string, text, 205, 220, 375)
+            attribute("", "Plate name", label, "%s", none, none, "0", "0", 20, 250)
+            parameter("", "P20", string, text, 205, 250, 375)
+        }
+    }
+}

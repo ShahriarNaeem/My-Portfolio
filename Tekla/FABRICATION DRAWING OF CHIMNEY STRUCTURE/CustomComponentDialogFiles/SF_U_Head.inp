@@ -1,0 +1,25 @@
+page("TeklaStructures","")
+{
+   macro(1, "SF_U_Head")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("SF_UHead", 200,200,100,100)
+           profile("j_part", SFPProf, SFPHMark, SFPHMat, , SFPHName,16)
+           parameter("", "SFPHWidth", distance, number, 200,80,80)
+           parameter("", "SFPHDepth", distance, number, 30,265,80)
+           parameter("", "SFPWidth", distance, number, 30,150,80)
+           parameter("", "SFPThk", distance, number, 340,225,80)
+           parameter("", "SFPHHeight", distance, number, 30,215,80)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 500,20)
+           parameter("", "SFPHClass", integer, number, 500,40,200)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 500,70)
+           parameter("", "SFPHFinish", string, text, 500,90,200)
+           attribute(" ","j_d_j_Assembly_Prefix",label,"%s",none,none,"0","0", 500,110)
+           parameter("", "AssPrefix", string, text, 500,130,200)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 500,160)
+           parameter("", "AssStartno", integer, number, 500,190,200)
+       }
+   }
+}

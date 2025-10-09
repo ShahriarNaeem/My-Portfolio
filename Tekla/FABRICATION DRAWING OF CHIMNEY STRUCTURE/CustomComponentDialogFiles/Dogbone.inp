@@ -1,0 +1,15 @@
+page("TeklaStructures","")
+{
+   detail(1, "Dogbone")
+   {
+       helpurl("cchelp_usa_dogbone")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("", "P4", distance, number, 92,60,80)
+           parameter("", "P17", distance, number, 380,175,80)
+           parameter("", "P10", distance, number, 320,60,80)
+
+           picture("usa_dogbone", 499,300,40,50)
+       }
+   }
+}

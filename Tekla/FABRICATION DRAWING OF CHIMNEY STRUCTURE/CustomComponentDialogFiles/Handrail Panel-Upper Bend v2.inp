@@ -1,0 +1,52 @@
+page("TeklaStructures","")
+{
+   joint(1, "Handrail Panel-Upper Bend v2")
+   {
+       helpurl("cchelp_usa_handrail_panels")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_handrail_panel_ubend",333,314,100,50)
+
+	   parameter("", "P2", distance, number, 137,30,60)
+           parameter("", "P3", distance, number, 250,30,80)
+
+           attribute("LABEL9", "Surface Pattern Type", label, "%s", no, none, "0.0", "0.0", 450,30)
+	   attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 450,55,200,"dia_enable_field_ocb:P173=0;P113=1;P148=1;P172=1;P114=1;P115=1;P138=1;P139=1;P140=1;P141=1;P142=1;P188=1;P184=1;P185=1;P186=1;P904=1;P905=1")
+                {
+                     value("usa_handrail_panel0.xbm",1)
+                     value("usa_handrail_panel1.xbm",0)
+                     value("usa_handrail_panel2.xbm",0)
+                }
+       }
+	tab_page("", " Panel & Weld ", 2)
+       {
+	   part("Panel Profile",   P29, , ,P31 , P28 ,P33 , P26 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P30", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P27", integer, number, 940,26,40)
+
+           picture("usa_horz_line2", 720, 5, 25, 80)
+
+      attribute("LABEL5", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,95)
+	attribute("P36", "", option, "%s", no, none, "0.0", "0.0", 398,95,160)
+                {
+                     value("",1)
+                     value("Yes",0)
+                }
+           attribute("LABEL6", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,120)
+           parameter("", "P35", string, text, 398,120,160)
+
+           picture("usa_horz_line2", 720, 5, 25, 158)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,180)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,180)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,205)
+           parameter("", "P37", distance, number, 64,205,60)
+           parameter("", "P38", weld_type, number, 160,205,100)
+           parameter("", "P39", welding_site, number, 398,205,60)
+
+      }
+   }
+}

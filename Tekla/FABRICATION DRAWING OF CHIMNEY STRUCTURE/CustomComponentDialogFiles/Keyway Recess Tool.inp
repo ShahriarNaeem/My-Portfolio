@@ -1,0 +1,38 @@
+page("TeklaStructures", "")
+{
+    joint(1, "Keyway Recess Tool")
+    {
+        helpurl("cchelp_usa_keyway_recess_tool")        
+		tab_page("", "Key Info ", 1)
+        {
+            picture("usa_key_dialog", 227, 171, 217, 28)
+            attribute("", "Create Keyway", label, "%s", none, none, "0", "0", 12, 22)
+            parameter("", "P100", YesNo, number, 159, 22, 77)
+            attribute("", "Create Waterstop", label, "%s", none, none, "0", "0", 458, 22)
+            parameter("", "P101", YesNo, number, 632, 22, 77)
+            attribute("", "Keyway Name", label, "%s", none, none, "0", "0", 12, 52)
+            parameter("", "P102", string, text, 159, 52, 132)
+            attribute("", "Waterstop Profile", label, "%s", none, none, "0", "0", 458, 112)
+            parameter("", "P202", profile, text, 632, 112, 132)
+            attribute("", "Keyway Class", label, "%s", none, none, "0", "0", 12, 82)
+            parameter("", "P103", string, text, 159, 82, 132)
+            attribute("", "Waterstop Name", label, "%s", none, none, "0", "0", 458, 52)
+            parameter("", "P104", string, text, 632, 52, 132)
+            attribute("", "Waterstop Class", label, "%s", none, none, "0", "0", 458, 82)
+            parameter("", "P105", string, text, 632, 82, 132)
+            attribute("", "Part Offset", label, "%s", none, none, "0", "0", 12, 275)
+            attribute("", "Start", label, "%s", none, none, "0", "0", 163, 305)
+            attribute("", "End", label, "%s", none, none, "0", "0", 723, 305)
+            attribute("", "Waterstop ", label, "%s", none, none, "0", "0", 31, 327)
+            parameter("", "D1", distance, number, 159, 327, 60)
+            parameter("", "D2", distance, number, 720, 327, 60)
+            attribute("", "Key Material ", label, "%s", none, none, "0", "0", 31, 360)
+            parameter("", "D3", distance, number, 159, 360, 60)
+            parameter("", "D4", distance, number, 720, 360, 60)
+            attribute("", "Keyway ", label, "%s", none, none, "0", "0", 31, 390)
+            parameter("", "D5", distance, number, 159, 390, 60)
+            parameter("", "D6", distance, number, 720, 390, 60)
+            picture("usa_key_dialog2", 338, 91, 230, 310)
+        }
+    }
+}

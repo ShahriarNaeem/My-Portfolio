@@ -1,0 +1,12 @@
+page("TeklaStructures","")
+{
+   joint(1, "Angle Rail Cut")
+   {
+       helpurl("cchelp_usa_angle_rail_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_angle_rail_cut", 230, 215, 100, 40)
+           parameter("", "P2", distance, number, 330,266,60)
+       }
+   }
+}

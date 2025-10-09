@@ -1,0 +1,22 @@
+page("TeklaStructures","")
+{
+   macro(1, "SF_Screw_Handle")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("SF_Handle", 100,100,100,100)
+           profile("j_part", SJHProf, SJHMark, SJHMat, , SJHName,10)
+           parameter("", "SJHLength", distance, number, 80,110,80)
+           parameter("", "SJHWidth", distance, number, 30,200,80)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 500,20)
+           parameter("", "SJHClass", integer, number, 500,40,200)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 500,70)
+           parameter("", "SJHFinish", string, text, 500,90,200)
+           attribute(" ","j_d_j_Assembly_Prefix",label,"%s",none,none,"0","0", 500,110)
+           parameter("", "AssPrefix", string, text, 500,130,200)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 500,160)
+           parameter("", "AssStartno", integer, number, 500,190,200)
+       }
+   }
+}

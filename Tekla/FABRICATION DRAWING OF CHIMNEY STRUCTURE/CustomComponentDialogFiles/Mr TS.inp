@@ -1,0 +1,17 @@
+page("TeklaStructures", "")
+{
+    macro(1, "Mr TS")
+    {
+	   helpurl("cchelp_usa_index")
+	   tab_page("", "Mr TS", 1)
+        {
+            attribute("", "Body position", label, "%s", none, none, "0", "0", 265, 5)
+            attribute("P1", "", option, "%s", none, none, "0.0", "0.0", 265, 35, 160)
+            {
+                value("usa_MrTS_Stand.xbm", 1)
+                value("usa_MrTS_Arms.xbm", 0)
+                value("usa_MrTS_Sit.xbm", 0)
+            }
+        }
+    }
+}

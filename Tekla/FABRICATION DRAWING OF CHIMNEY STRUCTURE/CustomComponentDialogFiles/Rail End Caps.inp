@@ -1,0 +1,46 @@
+page("TeklaStructures","")
+{
+   detail(1, "Rail End Caps")
+   {
+       helpurl("cchelp_usa_rail_end_caps")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_rail_end_caps0",185,135,200,80)
+           picture("usa_rail_end_caps1",185,135,200,80)
+           picture("usa_rail_end_caps2",185,135,200,80)
+           picture("usa_rail_end_caps3",185,135,200,80)
+
+           attribute("LABEL1", "End Cap Type", label, "%s", no, none, "0.0", "0.0", 20,0)
+           attribute("P1", "", option, "%s", no, none, "0.0", "0.0", 374,0,100,"toggle_field:!P6=1,3;!D1=0,1,3;!usa_rail_end_caps0=1,2,3;!usa_rail_end_caps1=0,2,3;!usa_rail_end_caps2=0,1,3;!usa_rail_end_caps3=0,1,2;!XX1=0,1,2,3")
+                {
+                     value("usa_rail_end_cap_opt0.xbm",1)
+                     value("usa_rail_end_cap_opt1.xbm",0)
+                     value("usa_rail_end_cap_opt2.xbm",0)
+                     value("usa_rail_end_cap_opt3.xbm",0)
+                }
+
+           parameter("", "P6", distance, number, 320,60,60)
+           parameter("", "D1", distance, number, 400,60,40)
+
+	   profile("End Cap", XX1  ,P20 , P19 ,  , ,12)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 269)   
+           parameter("", "P16", string, text, 830,293,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 269)   
+           parameter("", "P15", integer, number, 940,293,40)
+
+	    attribute("LABEL3", "Item Name\Catalog Numer", label2, "%s", no, none, "0.0", "0.0", 20, 314)  
+           parameter("", "P17", string, text, 398,314,160)
+
+           picture("usa_horz_line2", 720, 5, 25, 350)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,372)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,372)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,397)
+           parameter("", "P23", distance, number, 64,397,60)
+           parameter("", "P24", weld_type, number, 160,397,100)
+           parameter("", "P25", welding_site, number, 395,397,60)
+
+       }
+   }
+}

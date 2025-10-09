@@ -1,0 +1,18 @@
+page("TeklaStructures","")
+{
+   detail(1, "Lifting Holes-Beam")
+   {
+       helpurl("cchelp_usa_lifting_holes")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("A - Distance", "L1", distance, number, 1)
+           parameter("B - Edge (0 = Gage line)", "L3", distance, number, 2)
+           parameter("Switch Location", "SW", YesNo, number, 3)
+           parameter("Bolt Size", "P2_diameter", bolt_size, number, 4)
+           parameter("Bolt Standard", "P2_screwdin", bolt_standard, text, 5)
+           parameter("Tolerance", "P3", distance, number, 6)
+
+           picture("usa_LiftingHolesBeam",200,100,200,200)
+       }
+   }
+}

@@ -1,0 +1,68 @@
+page("TeklaStructures","")
+{
+   joint(1, "Rail Splice")
+   {
+       helpurl("cchelp_usa_handrail_splice")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_pic_pipe_splice", 311,185,120,40)
+           parameter("", "P1", distance, number, 295,25,60)
+           parameter("", "P4", distance, number, 205,64,80)
+           parameter("", "P5", distance, number, 385,64,80)
+
+           attribute("O2", "Gap Type", option, "%s", no, none, "0.0", "0.0", 398,300,160)
+                {
+                     value("usa_center_fit.xbm",1)
+                     value("usa_offset_fit.xbm",0)
+                     value("usa_offset_fit2.xbm.",0)
+                }
+
+           picture("usa_horz_line2", 720, 5, 25, 350)    
+
+           attribute("O1", "Override Parametric Rod with Profile below", option, "%s", no, none, "0.0", "0.0", 398,362,160,"toggle_field:!P12=0")
+                {
+                     value("No",1)
+                     value("Yes",0)
+                }
+
+           picture("usa_horz_line2", 720, 5, 25, 397)    
+
+	   profile ("Inserted Profile",     P12, PI17 , P16, PI19 ,P17 ,18)
+	
+	attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 411) 
+	attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 411) 
+	parameter("", "P18", string, text, 830,432,80) 
+	parameter("", "P19", integer, number, 940,432,40) 
+
+         attribute("LABEL5", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,490) 
+         attribute("P20", "", option, "%s", no, none, "0.0", "0.0", 398,490,160) 
+              { 
+                   value("",1) 
+                   value("Yes",0) 
+              } 
+         attribute("LABEL6", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,515) 
+         parameter("", "P30", string, text, 398,515,160) 
+       }
+tab_page("", " Weld ", 2)
+       {
+	     picture("usa_pic_pipe_spliceB", 308,167,120,200)
+           
+	     attribute("header", "No        Size                   Type                  Wshop/site", label, "%s", no, none, "0.0", "0.0")
+	     attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+
+           parameter("", "P21", weld_type, number, 160,30,100)
+           parameter("", "P22", weld_type, number, 160,56,100)
+           parameter("", "P23", welding_site, number, 300,43,60)
+           parameter("", "P14", distance, number, 64,30,60)
+           parameter("", "P15", distance, number, 64,56,60)
+
+	     attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+
+           parameter("", "P26", weld_type, number, 160,85,100)
+           parameter("", "P27", weld_type, number, 160,111,100)
+           parameter("", "P28", welding_site, number, 300,98,60)
+           parameter("", "P24", distance, number, 64,85,60)
+           parameter("", "P25", distance, number, 64,111,60)
+       }
+   }
+}

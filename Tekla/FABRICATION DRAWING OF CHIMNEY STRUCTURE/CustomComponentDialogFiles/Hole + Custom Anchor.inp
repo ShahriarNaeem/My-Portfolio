@@ -1,0 +1,16 @@
+page("TeklaStructures","")
+{
+   detail(1, "Hole + Custom Anchor")
+   {
+       helpurl("cchelp_usa_hole_anchors")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Hole Diameter", "H1_diameter", bolt_size, number, 1)
+           parameter("Hole Standard", "H1_screwdin", bolt_standard, text, 2)
+           parameter("Hole Tolerance", "H2", distance, number, 3)
+	   
+           parameter("Custom Anchor Rod", "CC1_name", ComponentName, text, 5)
+           parameter("Attribute Name", "CC1_attrfile", ComponentAttributeFile, text, 6)	   
+       }
+   }
+}

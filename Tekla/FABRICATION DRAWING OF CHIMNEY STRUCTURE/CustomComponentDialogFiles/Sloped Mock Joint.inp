@@ -1,0 +1,24 @@
+page("TeklaStructures","")
+{
+   joint(1, "Sloped Mock Joint")
+   {
+       helpurl("cchelp_usa_joint_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_hs_mock_joint", 300,400)
+           parameter("", "P1", distance, number, 40,40,80)
+           parameter("", "P2", distance, number, 320,60,80)
+           parameter("", "P3", distance, number, 520,10,80)
+           parameter("", "P4", distance, number, 320,160,80)
+           parameter("", "P5", distance, number, 520,320,80)
+           parameter("", "P6", distance, number, 320,260,80)
+           parameter("", "P7", distance, number, 520,215,80)
+	   attribute ("P11", "", option, "%s", none, none, "0.0", "0.0", 160,50,90,"toggle_field:P2=1,2;P3=1,2;P4=0,2;P5=0,1;P6=0,1;P7=0,1")
+	{
+	   value ("usa_square.xbm", 1)
+	   value ("usa_round.xbm", 0)
+	   value ("usa_pyramid.xbm", 0)
+        }
+	    parameter("Length offset", "P13", distance, number, 15)
+   }
+}

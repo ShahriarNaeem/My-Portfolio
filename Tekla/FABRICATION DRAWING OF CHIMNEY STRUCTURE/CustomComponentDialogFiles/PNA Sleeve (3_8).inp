@@ -1,0 +1,10 @@
+page("TeklaStructures","")
+{
+   macro(1, "PNA Sleeve (3_8)")
+   {
+        helpurl("cchelp_usa_pna_construction_technologies")	
+       tab_page("", " Parameters ", 1)
+       {
+       }
+   }
+}

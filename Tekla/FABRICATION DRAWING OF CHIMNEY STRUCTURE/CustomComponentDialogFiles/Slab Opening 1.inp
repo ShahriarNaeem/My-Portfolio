@@ -1,0 +1,57 @@
+page("TeklaStructures","")
+{
+   joint(1, "Slab Opening 1")
+   {
+       helpurl("cchelp_usa_slab_opening")
+       tab_page("", " Design ", 1)
+       {
+           parameter(" Opening Width", "P1", distance, number, 146, 171)
+           parameter(" Slab Edge 1", "P2", distance, number, 146, 60)
+           parameter(" Slab Edge 2", "P3", distance, number, 205, 300)
+           parameter(" Slab Edge 3", "P4", distance, number, 225, 14)
+           parameter(" Slab Edge 4", "P5", distance, number, 575, 14)
+           picture("usa_slabOpening1_dims", 555, 242, 50,38)
+           attribute("", "Note: To ease selection of opening corners, snap to reference objects showing opening.", label, "%s", no, none, "0.0", "0.0", 25, 350)
+           attribute("", "Instructions for use (Slab spanning in X-dir): ", label, "%s", no, none, "0.0", "0.0", 25, 390)
+           attribute("", "1. Pick slab ", label, "%s", no, none, "0.0", "0.0", 50, 410)
+           attribute("", "2. Pick lower girder ", label, "%s", no, none, "0.0", "0.0", 50, 430)
+           attribute("", "3. Pick upper girder, then press middle button ", label, "%s", no, none, "0.0", "0.0", 50, 450)
+           attribute("", "4. Pick lower left corner of shaft opening ", label, "%s", no, none, "0.0", "0.0", 50, 470)
+           attribute("", "5. Pick upper left corner of shaft opening ", label, "%s", no, none, "0.0", "0.0", 50, 490)
+           attribute("", "Instructions for use (Slab spanning in Y-dir): ", label, "%s", no, none, "0.0", "0.0", 475, 390)
+           attribute("", "1. Pick slab ", label, "%s", no, none, "0.0", "0.0", 500, 410)
+           attribute("", "2. Pick left girder ", label, "%s", no, none, "0.0", "0.0", 500, 430)
+           attribute("", "3. Pick right girder, then press middle button ", label, "%s", no, none, "0.0", "0.0", 500, 450)
+           attribute("", "4. Pick upper left corner of shaft opening ", label, "%s", no, none, "0.0", "0.0", 500, 470)
+           attribute("", "5. Pick upper right corner of shaft opening ", label, "%s", no, none, "0.0", "0.0", 500, 490)
+       }
+       tab_page("", " Detailing", 2)
+       {
+           attribute("LABEL2", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+           attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+           profile ("Purlin Beams",   P7, P9 , P11 , P10, P8 ,1)
+           parameter(" Purlin Finish", "P12", string, text, 830,26, 80)
+           parameter(" Purlin Class", "P13", integer, number, 940,26, 40)
+           profile ("Filler Beams",   P6, P14, P16, P15, P19, 3)
+           parameter(" Filler Finish", "P17", string, text, 830,74, 80)
+           parameter(" Filler Class", "P18", integer, number, 940,74, 40)
+
+/***** Profile parameters ************************************************************
+ *         parameter("Filler Profile", "P6", profile, text, 6)                       *
+ *         parameter("Purlin Profile", "P7", profile, text, 7)                       *
+ *         parameter("Purlin Name", "P8", string, text, 8)                           *
+ *         parameter("Purlin Series", "prefix_P9", string, text, 9)                  *
+ *         parameter("Purlin Start No", "startno_P9", integer, number, 10)           *
+ *         parameter("Purlin Assy Series", "prefix_P10", string, text, 11)           *
+ *         parameter("Purlin Assy Start No", "startno_P10", integer, number, 12)     *
+ *         parameter("Purlin Material", "P11", material, text, 13)                   *
+ *         parameter("Filler Series", "prefix_P14", string, text, 16)                *
+ *         parameter("Filler Start No", "startno_P14", integer, number, 17)          *
+ *         parameter("Filler Assy Series", "prefix_P15", string, text, 18)           *
+ *         parameter("Filler Assy Start No", "startno_P15", integer, number, 19)     *
+ *         parameter("Filler Material", "P16", material, text, 20)                   *
+ *         parameter("Filler Name", "P19", string, text, 23)                         *
+ *************************************************************************************/
+       }
+   }
+}

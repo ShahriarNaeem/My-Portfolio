@@ -1,0 +1,233 @@
+page("TeklaStructures", "")
+{
+    detail(1, "CMU Wall Support Angle")
+    {
+        helpurl("cchelp_usa_cmu_wall_support_angle")
+		tab_page("", "Parts", 1)
+        {
+        /* ----- LEFT SIDE ----- */
+			profile("Left Angle",P2,A35,P5,A36,P34, 2)
+			attribute("", "Finish", label3, "%s", none, none, "0", "0", 848, 27)
+			parameter("", "P6", string, text, 844, 48, 135)
+            attribute("", "Class", label3, "%s", none, none, "0", "0", 1014, 27)
+			parameter("", "P7", integer, number, 1013, 48, 40)
+            
+        /* ----- RIGHT SIDE ----- */   
+            profile("Right Angle",P37,A41,P38,A42,P36, 5)			
+            parameter("", "P39", string, text, 844, 117, 135)
+            parameter("", "P40", integer, number, 1013, 117, 40)
+            
+		/* ----- Section View Images ----- */
+            picture("usa_cmu_wall_clip_5", 229, 425, 364, 196) /* Left Side */
+			picture("usa_cmu_wall_clip_1", 229, 425, 364, 196) /* Right Side */
+            picture("usa_cmu_wall_clip_3", 229, 425, 364, 196) /* Both Sides */
+            attribute("P31", "", option, "%s", none, none, "0.0", "0.0", 353, 386, 270, "toggle_field:P39=0;P40=0;P6=1;P7=1;!usa_cmu_wall_clip_1=1,2;!usa_cmu_wall_clip_3=0,2;!usa_cmu_wall_clip_5=0,1;!P4=1;!P3=0;P2=1;prefix_A35=1;startno_A35=1;P5=1;prefix_A36=1;startno_A36=1;P34=1;P37=0;prefix_A41=0;startno_A41=0;P38=0;prefix_A42=0;startno_A42=0;P36=0;P32=1;X12=0;X1=1;P33=0")
+            {
+                value("usa_cmu_wall_clip_2.xbm", 1)
+                value("usa_cmu_wall_clip_4.xbm", 0)
+                value("usa_cmu_wall_clip_6.xbm", 0)
+            }
+            parameter("", "P4", distance, number, 421, 671, 50) /* Left Dim */
+            parameter("", "P3", distance, number, 516, 671, 50) /* Right Dim */            
+        }
+		
+		
+        tab_page("", "Bolts", 2)
+        {
+		/* ----- LEFT SIDE ----- */
+			attribute("", "Bolt, Weld, or Both?", label3, "%s", none, none, "0", "0", 20, 15)
+			attribute("P32", "", option, "%s", none, none, "0.0", "0.0", 210, 15, 159, "toggle_field:D21=1;P1=0,2;P13=1;P17=1;P23=1;P24=1;P25=1;P25z=1;P8_diameter=1;P8_screwdin=1;P9=1;W2=0;W4=0;W6=0;W7=0")
+            {
+                value("Bolt", 1)
+                value("Weld", 0)
+                value("Both", 0)
+            }
+			attribute("", "Bolt Size", label, "%s", none, none, "0", "0", 20, 40)
+			parameter("", "P8_diameter", bolt_size, number, 210, 40, 159)
+			attribute("", "Bolt Standard", label, "%s", none, none, "0", "0", 20, 65)
+			parameter("", "P8_screwdin", bolt_standard, text, 210, 65, 159)
+			attribute("", "Bolt Type", label, "%s", none, none, "0", "0", 20, 90)
+			parameter("", "P9", bolt_type, number, 210, 90, 159)
+			attribute("", "Tolerance", label, "%s", none, none, "0", "0", 20, 115)
+			parameter("", "P17", distance, number, 210, 115, 159)
+			attribute("", "Parts with slots", label3, "%s", none, none, "0", "0", 20, 140)
+			attribute("P13", "", option, "%s", none, none, "0.0", "0.0", 210, 140, 159, "toggle_field:P19=0")
+            {
+                value("None", 1)
+                value("Angle", 0)
+                value("Beam", 0)
+                value("Both", 0)
+            }
+			attribute("", "Slot Length", label, "%s", none, none, "0", "0", 20, 165)
+			parameter("", "P19", distance, number, 210, 165, 159)
+			
+			/* --- Left Side Welds --- */
+			attribute("", "Weld Size", label, "%s", none, none, "0", "0", 20, 600)
+            parameter("", "W2", distance, number, 170, 600, 125)
+			attribute("", "Weld Length", label, "%s", none, none, "0", "0", 20, 625)
+            parameter("", "W4", distance, number, 170, 625, 125)
+			attribute("", "Weld Type", label, "%s", none, none, "0", "0", 20, 650)
+            parameter("", "W6", weld_type, number, 170, 650, 125)
+			attribute("", "Weld Site", label, "%s", none, none, "0", "0", 20, 675)
+            parameter("", "W7", welding_site, number, 170, 675, 125)
+			
+		/* ----- RIGHT SIDE ----- */	
+			attribute("", "Bolt, Weld, or Both?", label3, "%s", none, none, "0", "0", 710, 15)            
+            attribute("P33", "", option, "%s", none, none, "0.0", "0.0", 900, 15, 159, "toggle_field:W9=0;W11=0;W13=0;W14=0;P11_diameter=1;P11_screwdin=1;P12=1;P18=1;P15=1;P27=1;P28=1;P35=0,2;P29=1;P29z=1;D23=1")
+            {
+                value("Bolt", 1)
+                value("Weld", 0)
+                value("Both", 0)
+            }
+            attribute("", "Bolt Size", label, "%s", none, none, "0", "0", 710, 40)                        
+            parameter("", "P11_diameter", bolt_size, number, 900, 40, 159)
+			attribute("", "Bolt Standard", label, "%s", none, none, "0", "0", 710, 65)
+            parameter("", "P11_screwdin", bolt_standard, text, 900, 65, 159)
+            attribute("", "Bolt Type", label, "%s", none, none, "0", "0", 710, 90)
+			parameter("", "P12", bolt_type, number, 900, 90, 159)
+			attribute("", "Tolerance", label, "%s", none, none, "0", "0", 710, 115)
+			parameter("", "P18", distance, number, 900, 115, 159)
+			attribute("", "Parts with slots", label3, "%s", none, none, "0", "0", 710, 140)
+            attribute("P15", "", option, "%s", none, none, "0.0", "0.0", 900, 140, 159, "toggle_field:P21=0")
+            {
+                value("None", 1)
+                value("Angle", 0)
+                value("Beam", 0)
+                value("Both", 0)
+            }
+            attribute("", "Slot Length", label, "%s", none, none, "0", "0", 710, 165)
+            parameter("", "P21", distance, number, 900, 165, 159)
+			
+			/* --- Right Side Welds --- */
+			attribute("", "Weld Size", label, "%s", none, none, "0", "0", 784, 600)
+            parameter("", "W9", distance, number, 934, 600, 125)            
+            attribute("", "Weld Length", label, "%s", none, none, "0", "0", 784, 625)
+            parameter("", "W11", distance, number, 934, 625, 125)
+            attribute("WTR", "Weld Type", label, "%s", none, none, "0", "0", 784, 650)
+            parameter("", "W13", weld_type, number, 934, 650, 125)            
+            attribute("", "Weld Site", label, "%s", none, none, "0", "0", 784, 675)
+            parameter("", "W14", welding_site, number, 934, 675, 125)
+			
+		/* ----- Plan View Image ----- */		
+            picture("usa_cmu_wall_clip_7", 391, 360, 347, 258)
+			
+			/* ----- Left Side ----- */ 
+			parameter("", "P23", integer, number, 143, 390, 47)			
+            parameter("", "P24", distance_list, text, 223, 390, 121)
+			parameter("", "P1", distance, number, 249, 430, 94)
+			parameter("", "P25", distance, number, 280, 508, 94)
+			parameter("", "P25z", distance, number, 280, 338, 94)			
+			parameter("", "D21", distance, number, 422, 558, 67)
+
+			/* ----- Right Side ----- */
+            parameter("", "P27", integer, number, 768, 390, 47)
+            parameter("", "P28", distance_list, text, 848, 390, 121)            
+            parameter("", "P35", distance, number, 768, 430, 94)            
+            parameter("", "P29", distance, number, 732, 508, 94)
+            parameter("", "P29z", distance, number, 732, 338, 94)			
+            parameter("", "D23", distance, number, 616, 558, 67) 
+        }
+		
+		
+        tab_page("", "Anchors", 3)
+        {
+		/* ----- LEFT SIDE ----- */
+            attribute("", "Create Anchors?", label, "%s", none, none, "0", "0", 20, 15)
+            attribute("X1", "", option, "%s", none, none, "0.0", "0.0", 225, 15, 175, "toggle_field:D41=0;P41=0,1;P42_attrfile=0,1;P42_name=0,1;X10=0;X10z=0;X2_diameter=0,2;X2_screwdin=0,2;X23=0,2;X3=0,2;X4=0,2;X5=0;X8=0;X9=0")
+            {
+                value("No Anchors", 1)
+                value("As Bolts", 0)
+                value("Nested Component", 0)
+            }
+			attribute("LABELSHL", "Slotted Hole in Angle?", label3, "%s", none, none, "0", "0", 20, 40)
+			attribute("X5", "", option, "%s", none, none, "0.0", "0.0", 225, 40, 175, "toggle_field:X6=0")
+            {
+                value("No", 1)
+                value("Vertical", 0)
+                value("Horizontal", 0)
+            }
+			attribute("LABELSLTL", "Slot Length", label, "%s", none, none, "0", "0", 20, 65)
+			parameter("", "X6", distance, number, 225, 65, 175)
+			
+			attribute("LABEL1", "Bolt Size", label, "%s", none, none, "0", "0", 20, 90)
+			parameter("", "X2_diameter", bolt_size, number, 225, 90, 175)
+			attribute("LABEL2", "Bolt Standard", label, "%s", none, none, "0", "0", 20, 115)
+			parameter("", "X2_screwdin", bolt_standard, text, 225, 115, 175)
+			attribute("LABEL3", "Hole Tolerance", label, "%s", none, none, "0", "0", 20, 140)
+			parameter("", "X4", distance, number, 225, 140, 175)
+			attribute("LABEL4", "Anchor Length", label, "%s", none, none, "0", "0", 20, 165)
+			parameter("", "X3", distance, number, 225, 165, 175)
+			attribute("LABEL5", "Bolt Type", label, "%s", none, none, "0", "0", 20, 190)
+			parameter("", "X23", bolt_type, number, 225, 190, 175)
+			
+			/* ----- Left Side Anchors ----- */
+			attribute("LABEL8", "Comp Name", label, "%s", none, none, "0", "0", 30, 600)
+			parameter("", "P42_name", ComponentName, text, 30,625, 150)
+            attribute("LABEL9", "Comp Attribute", label, "%s", none, none, "0", "0", 30, 650)
+            parameter("", "P42_attrfile", ComponentAttributeFile, text, 30, 675, 150)
+			attribute("LABEL10", "Hole dia. in Angle", label, "%s", none, none, "0", "0", 30, 700)
+			parameter("", "P41", distance, number, 30, 725, 60)
+			
+		/* ----- RIGHT SIDE ----- */
+	        attribute("", "Create Anchors?", label, "%s", none, none, "0", "0", 695, 15)
+            attribute("X12", "", option, "%s", none, none, "0.0", "0.0", 900, 15, 175, "toggle_field:D47=0;P43_attrfile=0,1;P43_name=0,1;P44=0,1;X13_diameter=0,2;X13_screwdin=0,2;X14=0,2;X15=0,2;X16=0;X19=0;X20=0;X21=0;;X21z=0;X24=0,2")
+            {
+                value("No Anchors", 1)
+                value("As Bolts", 0)
+                value("Nested Component", 0)
+            }
+			attribute("LABELSHR", "Slotted Hole in Angle?", label3, "%s", none, none, "0", "0", 695, 40)
+			attribute("X16", "", option, "%s", none, none, "0.0", "0.0", 900, 40, 175, "toggle_field:X17=0")
+            {
+                value("No", 1)
+                value("Vertical", 0)
+                value("Horizontal", 0)
+            }
+			attribute("LABELSLTR", "Slot Length", label, "%s", none, none, "0", "0", 695, 65)
+			parameter("", "X17", distance, number, 900, 65, 175)			
+			attribute("LABEL11", "Bolt Size", label, "%s", none, none, "0", "0", 695, 90)
+			parameter("", "X13_diameter", bolt_size, number, 900, 90, 175) 
+			attribute("LABEL12", "Bolt Standard", label, "%s", none, none, "0", "0", 695, 115)
+            parameter("", "X13_screwdin", bolt_standard, text, 900, 115, 175)
+			attribute("LABEL13", "Hole Tolerance", label, "%s", none, none, "0", "0", 695, 140)
+			parameter("", "X15", distance, number, 900, 140, 175)
+            attribute("LABEL14", "Anchor Length", label, "%s", none, none, "0", "0", 695, 165)
+            parameter("", "X14", distance, number, 900, 165, 175)
+            attribute("LABEL15", "Bolt Type", label, "%s", none, none, "0", "0", 695, 190)
+            parameter("", "X24", bolt_type, number, 900, 190, 175)
+			
+			/* ----- Right Side Anchors ----- */
+			attribute("LABEL18", "Comp Name", label, "%s", none, none, "0", "0", 915, 600)
+			parameter("", "P43_name", ComponentName, text, 915, 625, 150)
+			attribute("LABEL19", "Comp Attribute", label, "%s", none, none, "0", "0", 915, 650)
+			parameter("", "P43_attrfile", ComponentAttributeFile, text, 915, 675, 150)
+			attribute("LABEL20", "Hole dia. in Angle", label, "%s", none, none, "0", "0", 915, 700)			
+            parameter("", "P44", distance, number, 915, 725, 60)
+			
+		/* ----- Plan View Image ----- */ 
+			picture("usa_cmu_wall_clip_11", 472, 288, 301, 271)
+            
+			/* ----- Left Side ----- */   
+			parameter("", "X10z", distance, number, 252, 368, 81)
+			parameter("", "X8", integer, number, 143, 434, 47)
+            parameter("", "X9", distance_list, text, 223, 434, 121)
+			parameter("", "X10", distance, number, 252, 505, 81)
+			
+			/* ----- Right Side ----- */
+			parameter("", "X21z", distance, number, 759, 368, 81)
+            parameter("", "X19", integer, number, 759, 434, 47)
+            parameter("", "X20", distance_list, text, 839, 434, 121)
+			parameter("", "X21", distance, number, 759, 505, 81)
+			
+		/* ----- Section View Image ----- */ 	
+			picture("usa_cmu_wall_clip_10", 406, 144, 336, 590)
+			
+			/* ----- Left Side ----- */
+			parameter("", "D41", distance, number, 265, 635, 75)
+			
+			/* ----- Right Side ----- */
+			parameter("", "D47", distance, number, 760, 635, 75)
+			                        
+        }
+    }
+}

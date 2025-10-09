@@ -1,0 +1,44 @@
+page("TeklaStructures","")
+{
+   macro(1, "Framing Tower")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("SF_Tower", 430,320,100,100)
+           parameter("", "SFTWidth", distance, number, 260,120,80)
+           parameter("", "SFTHeight", distance, number, 30,310,80)
+           parameter("", "SFTLength", distance, number, 500,120,80)
+           parameter("", "SFTFrame1BtmExt", distance, number, 420,470,80)
+           parameter("", "SFTFrame2BtmExt", distance, number, 600,470,80)
+           parameter("", "SFTFrame1TopExt", distance, number, 380,90,80)
+           parameter("", "SFTFrame2TopExt", distance, number, 630,90,80)
+	       attribute ("SFBtmConType", "", option, "%s", none, none, "0.0", "0.0", 100,460,90)
+			{
+	         value ("SF_BT0.xbm", 1)
+	         value ("SF_BT1.xbm", 0)
+	         value ("SF_BT2.xbm", 0)
+			}
+	       attribute ("SFTopConType", "", option, "%s", none, none, "0.0", "0.0", 100,100,90)
+			{
+	         value ("SF_TT0.xbm", 1)
+	         value ("SF_TT1.xbm", 0)
+	         value ("SF_TT2.xbm", 0)
+	         value ("SF_TT3.xbm", 0)
+			}
+           attribute ("OPT1", "", option, "%s", none, none, "0.0", "0.0", 230,230,125)
+		   	{
+	         value ("SF_Frame_1", 1)
+	         value ("SF_Frame_2", 0)
+			}
+           parameter("", "SFBrHeight", distance, number, 280,470,80)
+
+	   }
+       tab_page("", " Parts ", 2)
+       {
+           parameter("SF Column", "SFColumn", profile, text, 1)
+           parameter("SF Horz Bracing", "SFBeam", profile, text, 2)
+           parameter("SF Material", "SFMatl", material, text, 3)	   
+		   }	   
+   }
+}

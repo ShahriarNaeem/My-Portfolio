@@ -1,0 +1,14 @@
+macro_attributes.saveas_file "HR3"
+macro_attributes.get_menu "HR3"
+macro_attributes.KickCreate 0
+macro_attributes.GrabCreate 0
+macro_attributes.RailCreate 1
+macro_attributes.StCreate 1
+macro_attributes.KickAttr_attrfile "PL6x75"
+macro_attributes.KickAttr_name "1000075"
+macro_attributes.GrabAttr_attrfile ""
+macro_attributes.GrabAttr_name "1000077"
+macro_attributes.RailAttr_attrfile "PIPE42.7x2(HR3)"
+macro_attributes.RailAttr_name "1000077"
+macro_attributes.StAttr_attrfile "L50x50x5(FOR HR3)"
+macro_attributes.StAttr_name "1000076"

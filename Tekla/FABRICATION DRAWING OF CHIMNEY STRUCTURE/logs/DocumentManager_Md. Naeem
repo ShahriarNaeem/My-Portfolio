@@ -1,0 +1,39 @@
+Sat 24.06.2023 22:02:29	Document Manager logging initialized.
+Sat 24.06.2023 22:02:29	Loaded column layout settings from file: C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerDataGridSettings.xml
+Sat 24.06.2023 22:02:29	Loaded the column sort order settings from file: C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerDataGridSettings.xml
+Sat 24.06.2023 22:02:29	Extensions paths to search for DocumentManagerUDAs files: C:\ProgramData\Trimble\Tekla Structures\2023.0\\environments\common\extensions
+Sat 24.06.2023 22:02:29	Seconds to find all DocumentManagerUDAs files: 0.000
+Sat 24.06.2023 22:02:29	Loading UDA settings file C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\UserDefined\DocumentManagerUDAs.txt
+Sat 24.06.2023 22:02:29	Settings file UDA 'comment' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_APPROVAL_DATE' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_APPROVAL_SENT' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_APPROVED_BY' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_ASSIGNED_BY' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_ASSIGNED_TO' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_CHECKED_BY' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_CHECKED_DATE' found in model.
+Sat 24.06.2023 22:02:29	Settings file UDA 'DR_DRAWN_BY' found in model.
+Sat 24.06.2023 22:02:29	Loading file documents settings file C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerFileDocumentSettings.txt
+Sat 24.06.2023 22:02:29	Loaded 16 document categories from file: C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerCategories.xml
+Sat 24.06.2023 22:40:32	Ending session - closing current log.
+Sat 24.06.2023 22:40:32	No errors were logged in this session.
+	
+Sat 24.06.2023 22:40:32	FileSystemWatcher completed 0 of 0 events in 00:38:02.7708067 seconds
+Sun 25.06.2023 09:42:34	Document Manager logging initialized.
+Sun 25.06.2023 09:42:34	Loaded the column sort order settings from file: C:\TeklaStructuresModels\FABRICATION DRAWING OF CHIMNEY STRUCTURE\DocumentManagerDataGridSettings_Md. Naeem.xml
+Sun 25.06.2023 09:42:34	Loaded column layout settings from file: C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerDataGridSettings.xml
+Sun 25.06.2023 09:42:34	Reading saved window placement and UI settings from file: C:\TeklaStructuresModels\FABRICATION DRAWING OF CHIMNEY STRUCTURE\DocumentManager_Md. Naeem.xml
+Sun 25.06.2023 09:42:34	Extensions paths to search for DocumentManagerUDAs files: C:\ProgramData\Trimble\Tekla Structures\2023.0\\environments\common\extensions
+Sun 25.06.2023 09:42:34	Seconds to find all DocumentManagerUDAs files: 0.000
+Sun 25.06.2023 09:42:34	Loading UDA settings file C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\UserDefined\DocumentManagerUDAs.txt
+Sun 25.06.2023 09:42:34	Settings file UDA 'comment' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_APPROVAL_DATE' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_APPROVAL_SENT' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_APPROVED_BY' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_ASSIGNED_BY' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_ASSIGNED_TO' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_CHECKED_BY' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_CHECKED_DATE' found in model.
+Sun 25.06.2023 09:42:34	Settings file UDA 'DR_DRAWN_BY' found in model.
+Sun 25.06.2023 09:42:34	Loading file documents settings file C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerFileDocumentSettings.txt
+Sun 25.06.2023 09:42:35	Loaded 16 document categories from file: C:\ProgramData\Trimble\Tekla Structures\2023.0\environments\usa\Common\General\DrawingSettings\DocumentManagerCategories.xml

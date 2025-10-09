@@ -1,0 +1,27 @@
+page("TeklaStructures","")
+{
+   detail(1, "Closed Reveal")
+   {
+       helpurl("cchelp_usa_reveal_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_closed_reveal", 465,280)
+           parameter("", "P1", distance, number, 40,40,80)
+           parameter("", "P2", distance, number, 40,140,80)
+           parameter("", "P3", distance, number, 300,280,80)
+           parameter("", "P4", distance, number, 550,60,80)
+           parameter("", "P5", distance, number, 740,10,80)
+           parameter("", "P7", distance, number, 550,160,80)
+           parameter("", "P9", distance, number, 750,215,80)
+           parameter("", "P10", distance, number, 750,320,80)
+           parameter("", "P11", distance, number, 550,260,80)
+           attribute(" ","SECTION 1-1",label,"%s",none,none,"0","0", 90, 420)
+	   attribute ("P13", "", option, "%s", none, none, "0.0", "0.0", 100,350,90,"toggle_field:P4=1,2;P5=1,2;P7=0,2;P9=0,1;P10=0,1;P11=0,1")
+	{
+	   value ("usa_square.xbm", 1)
+	   value ("usa_round.xbm", 0)
+	   value ("usa_pyramid.xbm", 0)
+        }
+       }
+   }
+}

@@ -1,0 +1,16 @@
+page("TeklaStructures","")
+{
+   joint(1, "Joist Pocket")
+   {
+       helpurl("cchelp_usa_joist_pocket")
+       tab_page("", " Parameters ", 1)
+       {
+	   picture("usa_joist_pocket",100, 75, 100, 50)
+
+           parameter("", "Depth_A", distance, number, 63,163,80)
+           parameter("", "Depth_B", distance, number, 63,210,80)
+           parameter("", "Width", distance, number, 430,60,80)
+           parameter("", "Thick", distance, number, 298,95,80)
+       }
+   }
+}

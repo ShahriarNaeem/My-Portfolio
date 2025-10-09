@@ -1,0 +1,14 @@
+page("TeklaStructures","")
+{
+   macro(1, "PT Anchor Pocket Former")
+   {
+       helpurl("cchelp_usa_post_tensioning_components")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Name", "P1", string, text, 1)
+           parameter("Class", "P2", integer, number, 2)
+           parameter("Finish", "P3", string, text, 3)
+           parameter("Sleeve Length", "D1", distance, number, 4)
+       }
+   }
+}

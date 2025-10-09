@@ -1,0 +1,14 @@
+page("TeklaStructures","")
+{
+   macro(1, "EA4")
+   {
+       helpurl("cchelp_usa_embed_angles")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Class", "P1", integer, number, 1)
+           parameter("Finish", "P2", string, text, 2)
+           parameter("Material", "P3", material, text, 3)
+           parameter("Profile", "P4", profile, text, 4)
+       }
+   }
+}

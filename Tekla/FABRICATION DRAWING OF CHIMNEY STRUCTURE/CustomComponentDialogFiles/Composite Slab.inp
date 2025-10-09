@@ -1,0 +1,41 @@
+page("TeklaStructures", "")
+{
+    joint(1, "Composite Slab3")
+    {
+        helpurl("cchelp_usa_composite_slab")
+        tab_page("", " Design ", 1)
+        {
+            attribute("", "Side 1 end offset", label, "%s", none, none, "0", "0", 563, 53)
+            parameter("", "P1", distance, number, 586, 83, 160)
+            attribute("", "Side 2 end offset", label, "%s", none, none, "0", "0", 568, 266)
+            parameter("", "P2", distance, number, 587, 300, 160)
+            attribute("P12", "", option, "%s", none, none, "0.0", "0.0", 191, 384, 100)
+            {
+                value("Up", 1)
+                value("Down", 0)
+            }
+            picture("usa_dcomp1", 370, 244, 50, 50)
+            attribute("", "Rounding", label, "%s", none, none, "0", "0", 46, 389)
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 191, 421, 100)
+            {
+                value("1.5VL", 0)
+                value("1.5VLR", 1)
+                value("1.5VLI", 0)
+                value("2VLI", 0)
+                value("3VLI", 0)
+            }
+            attribute("", "Deck Gauge", label, "%s", none, none, "0", "0", 45, 457)
+            parameter("", "P15", integer, number, 189, 456, 160)
+            attribute("", "Deck Type", label, "%s", none, none, "0", "0", 46, 420)
+            attribute("", "Only use 16, 18, 19, 20, 22", label, "%s", none, none, "0", "0", 369, 457)
+            attribute("", "Deck Name", label, "%s", none, none, "0", "0", 45, 493)
+            parameter("", "P17", string, text, 189, 491, 160)
+            attribute("", "Deck Class", label, "%s", none, none, "0", "0", 45, 527)
+            parameter("", "P18", integer, number, 188, 526, 160)
+            attribute("", "Deck Material", label, "%s", none, none, "0", "0", 45, 565)
+            parameter("", "P19", material, text, 187, 563, 160)
+            attribute("", "Deck Finish", label, "%s", none, none, "0", "0", 45, 599)
+            parameter("", "P20", string, text, 187, 596, 160)
+        }
+    }
+}

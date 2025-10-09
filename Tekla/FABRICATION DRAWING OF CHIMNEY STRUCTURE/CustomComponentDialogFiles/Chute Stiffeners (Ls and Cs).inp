@@ -1,0 +1,48 @@
+page("TeklaStructures","")
+{
+   detail(1, "Chute Stiffeners (Ls and Cs)")
+    {
+        helpurl("cchelp_usa_chute_stiffeners")
+        tab_page("", "Design", 1)
+        {
+            attribute("", "Stiffener parameters:", label, "%s", none, none, "0", "0", 0, 0)
+            attribute("", "(Use L and C shapes)", label, "%s", none, none, "0", "0", 12, 25)
+            attribute("", "Design name", label, "%s", none, none, "0", "0", 250, 0)
+            parameter("", "P29", string, text, 250, 25, 160)
+            attribute("", "Profile", label, "%s", none, none, "0", "0", 475, 0)
+            parameter("", "P26", profile, text, 475, 25, 120)
+            attribute("", "Material", label, "%s", none, none, "0", "0", 645, 0)
+            parameter("", "P27", material, text, 650, 25, 80)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 785, 0)
+            parameter("", "P28", integer, number, 785, 25, 80)
+            attribute("", "Create top stiffener?", label, "%s", none, none, "0", "0", 10, 75)
+            parameter("", "P2", YesNo, number, 230, 75, 80)
+            attribute("", "Top edge distance", label, "%s", none, none, "0", "0", 10, 105)
+            parameter("", "P1", distance, number, 230, 105, 100)
+            attribute("", "Intermediate Stiffener Qty", label, "%s", none, none, "0", "0", 10, 235)
+            attribute("", "(Max 10)", label, "%s", none, none, "0", "0", 20, 260)
+            parameter("", "P5", integer, number, 230, 235, 100)
+            attribute("", "Bottom edge distance", label, "%s", none, none, "0", "0", 10, 450)
+            parameter("", "P3", distance, number, 245, 450, 100)
+            attribute("", "Create bottom stiffener?", label, "%s", none, none, "0", "0", 10, 480)
+            parameter("", "P4", YesNo, number, 245, 480, 80)
+            picture("usa_Stiffener_location", 375, 393, 370, 70)
+        }
+        tab_page("", "Detailing", 2)
+        {
+            attribute("", "Numbering series", label, "%s", none, none, "0", "0", 16, 0)
+            attribute("", "Part", label, "%s", none, none, "0", "0", 50, 65)
+            attribute("", "Assembly no.", label, "%s", none, none, "0", "0", 50, 105)
+            attribute("", "Prefix:", label, "%s", none, none, "0", "0", 215, 30)
+            parameter("", "P32", string, text, 215, 65, 160)
+            parameter("", "P30", string, text, 215, 105, 160)
+            attribute("", "Start number:", label, "%s", none, none, "0", "0", 425, 30)
+            parameter("", "P33", string, text, 430, 65, 160)
+            parameter("", "P31", string, text, 430, 105, 160)
+    picture("usa_horz_line", 432, 2, 36, 150)
+            attribute("", "Attributes", label, "%s", none, none, "0", "0", 16, 186)
+            attribute("", "Name", label, "%s", none, none, "0", "0", 50, 215)
+            parameter("", "P34", string, text, 215, 215, 400)
+        }
+    }
+}

@@ -1,0 +1,145 @@
+page("TeklaStructures", "")
+{
+    joint(1, "1 Sided Beam to Column Flg MC")
+    {
+        helpurl("cchelp_usa_1_sided_beam_to_column_mc_components")
+
+        tab_page("", " Picture ", 1)
+        {
+            picture("usa_1sided_bm2col_flg_mc", 366, 208, 125, 50)
+            attribute("", "Connection #", label, "%s", none, none, "0", "0", 170, 325)
+            attribute("", "WEB CONNECTION", label, "%s", none, none, "0", "0", 170, 300)
+            attribute("", "Attribute", label, "%s", none, none, "0", "0", 170, 350)
+            parameter("", "P55_name", ComponentName, text, 320, 325, 90)
+            parameter("", "P55_attrfile", ComponentAttributeFile, text, 320, 350, 90)
+        }
+        tab_page("", " Plates ", 2)
+        {
+	attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+	attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+
+	part ("Cap Plate",     P15,  P16 ,   ,P200 , P81, ,P80 ,1)
+
+	parameter("", "P82", string, text, 830,25,80)
+	parameter("", "P83", integer, number, 940,25,40)
+
+	part ("Lower Plate",     P25,  P18 ,   ,P202 , P93, ,P92 ,3)
+
+	parameter("", "P94", string, text, 830,72,80)
+	parameter("", "P95", integer, number, 940,72,40)
+
+	part ("Filler Plate",  P41,   ,   ,P204 , P105, ,P104 ,5)
+
+	parameter("", "P106", string, text, 830,119,80)
+	parameter("", "P107", integer, number, 940,119,40)
+
+           attribute("P39", "", option, "%s", no, none, "0.0", "0.0", 120,270,250,"dia_enable_field_ocb:P110=1;P78=0;P41=0;P104=0;P105=0;P106=0;P107=0;P108=0;P109=0")
+                {
+                     value("usa_2sided_bm2col_flg_mc5.xbm",1)
+                     value("usa_2sided_bm2col_flg_mc5a.xbm",0)
+                }
+            parameter("", "P110", distance, number, 58, 330, 60)
+            parameter("", "P78", distance, number, 250, 375, 60)
+
+        picture("usa_1sided_bm2col_flg_mc5", 244, 139, 500, 220)
+        parameter("", "P5", distance, number, 790,210,40)
+        }
+        tab_page("", " Upper Bolts ", 5)
+        {
+            picture("usa_1sided_bm2col_flg_mc2", 319, 178, 120, 50)
+            parameter("", "P3", integer, number, 170, 265, 60)
+            parameter("", "P4", distance, number, 265, 265, 60)
+            parameter("", "P13", distance, number, 85, 130, 60)
+            parameter("", "P1", distance, number, 235, 30, 60)
+            parameter("", "P2", distance, number, 115, 225, 60)
+
+
+ 	attribute("Upper Bolts ", "UPPER BOLTS", label, "%s", no, none, "0.0", "0.0",120,305)
+	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",120,330)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",120,355)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",120,380)
+	parameter("","P46_diameter", bolt_size, number,260,330,90)
+	parameter("","P46_screwdin", bolt_standard, text,260,355,90)
+	parameter("","P48", distance, number,260,380,90)
+	parameter("", "P47", bolt_type, number, 260, 405, 90)
+
+		         picture("jnt_bpic_long_holes2", 155,110,390,310) 
+         parameter("", "XTOP2", distance, number, 420,330,60) 
+         parameter("", "XTOP1", distance, number, 510,390,60) 
+	     attribute("XTOP3", "", option,"%s",  none, none, "0.0", "0.0",510,416,80)
+	       {
+	         value("None", 1)
+	         value("Beam", 0)
+	         value("Plate",0)
+	       }
+        }
+
+        tab_page("", "Lower Bolts", 6)
+        {
+            picture("usa_1sided_bm2col_flg_mc3", 319, 173, 120, 55)
+            parameter("", "P21", integer, number, 165, 265, 60)
+            parameter("", "P22", distance, number, 255, 265, 60)
+            parameter("", "P26", distance, number, 90, 135, 60)
+            parameter("", "P19", distance, number, 235, 40, 60)
+            parameter("", "P20", distance, number, 115, 225, 60)
+
+ 	attribute("Lower Bolts ", "LOWER BOLTS", label, "%s", no, none, "0.0", "0.0",120,305)
+	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",120,330)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",120,355)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",120,380)
+	parameter("","P52_diameter", bolt_size, number,260,330,90)
+	parameter("","P52_screwdin", bolt_standard, text,260,355,90)
+	parameter("","P54", distance, number,260,380,90)
+	parameter("", "P53", bolt_type, number, 260, 405, 90)
+
+	         picture("jnt_bpic_long_holes2", 155,110,390,310) 
+         parameter("", "XBOT2", distance, number, 420,330,60) 
+         parameter("", "XBOT1", distance, number, 510,390,60) 
+	     attribute("XBOT3", "", option,"%s",  none, none, "0.0", "0.0",510,416,80)
+	       {
+	         value("None", 1)
+	         value("Beam", 0)
+	         value("Plate",0)
+	       }
+        }
+        tab_page("", "Welds", 7)
+        {
+            picture("usa_1sided_bm2col_flg_mc4", 216, 124, 300, 230)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	attribute("header2", "Wshop/site        Angle           Root Face", label, "%s", no, none, "0.0", "0.0",395,0)
+
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+	parameter("", "P57", distance, number, 64,30,60)
+	parameter("", "P61", distance, number, 64,56,60)
+	parameter("", "P58", weld_type, number, 160,30,100)
+	parameter("", "P62", weld_type, number, 160,56,100)
+	parameter("", "P60", distance, number, 294,30,60)
+	parameter("", "P63", distance, number, 294,56,60)
+	parameter("", "P59", welding_site, number, 395,43,60)
+
+	attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+	parameter("", "P71", distance, number, 64,85,60)
+	parameter("", "P75", distance, number, 64,111,60)
+	parameter("", "P72", weld_type, number, 160,85,100)
+	parameter("", "P76", weld_type, number, 160,111,100)
+	parameter("", "P74", distance, number, 294,85,60)
+	parameter("", "P77", distance, number, 294,111,60)
+	parameter("", "P73", welding_site, number, 395,98,60)
+	parameter("", "A2", angle, number, 496, 98, 60)
+            parameter("", "P300", distance, number, 597, 98, 60)
+
+	 attribute("weldprep", "Plate Prep", label, "%s", no, none, "0.0", "0.0",90,145)
+         attribute("P301", "", option, "%s", no, none, "0.0", "0.0", 65,175,170)
+            {
+                value("usa_2sided_bm2bm_mc20.xbm",1)
+                value("usa_2sided_bm2bm_mc21.xbm",0)
+                value("usa_2sided_bm2bm_mc22.xbm",0)
+                value("usa_2sided_bm2bm_mc23.xbm",0)
+            }
+
+
+
+        }
+    }
+}

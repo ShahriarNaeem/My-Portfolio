@@ -1,0 +1,14 @@
+page("TeklaStructures","")
+{
+   macro(1, "C_FORM_24x96")
+   {
+       helpurl("cchelp_usa_formwork_panels")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Panel Thickness", "E1", distance, number, 1)
+           parameter("Panel Material", "P1", material, text, 2)
+           parameter("Support Profile", "P2", profile, text, 3)
+           parameter("Support Material", "P3", material, text, 4)
+       }
+   }
+}

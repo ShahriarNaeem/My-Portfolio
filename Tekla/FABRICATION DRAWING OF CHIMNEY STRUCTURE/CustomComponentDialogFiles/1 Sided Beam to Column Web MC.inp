@@ -1,0 +1,78 @@
+page("TeklaStructures", "")
+{
+    joint(1, "1 Sided Beam to Column Web MC")
+    {
+        helpurl("cchelp_usa_1_sided_beam_to_column_mc_components")
+
+        tab_page("", " Picture ", 1)
+        {
+            picture("usa_1sided_bm2col_web_mc", 366, 208, 125, 50)
+            attribute("", "Connection #", label, "%s", none, none, "0", "0", 170, 325)
+            attribute("", "WEB CONNECTION", label, "%s", none, none, "0", "0", 170, 300)
+            attribute("", "Attribute", label, "%s", none, none, "0", "0", 170, 350)
+            parameter("", "P55_name", ComponentName, text, 320, 325, 90)
+            parameter("", "P55_attrfile", ComponentAttributeFile, text, 320, 350, 90)
+        }
+        tab_page("", " Plates ", 2)
+        {
+	attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+	attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+
+	part ("Cap Plate",     P15,  P16 ,   ,P200 , P81, ,P80 ,1)
+
+	parameter("", "P82", string, text, 830,25,80)
+	parameter("", "P83", integer, number, 940,25,40)
+        }
+        tab_page("", " Upper Bolts ", 5)
+        {
+            picture("usa_1sided_bm2col_web_mc2", 319, 178, 120, 50)
+            parameter("", "P3", integer, number, 170, 265, 60)
+            parameter("", "P4", distance, number, 265, 265, 60)
+            parameter("", "P13", distance, number, 85, 130, 60)
+            parameter("", "P1", distance, number, 235, 30, 60)
+            parameter("", "P2", distance, number, 115, 225, 60)
+
+
+ 	attribute("Upper Bolts ", "UPPER BOLTS", label, "%s", no, none, "0.0", "0.0",120,305)
+	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",120,330)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",120,355)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",120,380)
+	parameter("","P46_diameter", bolt_size, number,260,330,90)
+	parameter("","P46_screwdin", bolt_standard, text,260,355,90)
+	parameter("","P48", distance, number,260,380,90)
+	parameter("", "P47", bolt_type, number, 260, 405, 90)
+
+		         picture("jnt_bpic_long_holes2", 155,110,390,310) 
+         parameter("", "XTOP2", distance, number, 420,330,60) 
+         parameter("", "XTOP1", distance, number, 510,390,60) 
+	     attribute("XTOP3", "", option,"%s",  none, none, "0.0", "0.0",510,416,80)
+	       {
+	         value("None", 1)
+	         value("Beam", 0)
+	         value("Plate",0)
+	       }
+
+        }
+
+
+        tab_page("", "Welds", 7)
+        {
+            picture("usa_1sided_bm2col_web_mc3", 216, 124, 150, 150)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	attribute("header2", "Wshop/site        Angle           Root Face", label, "%s", no, none, "0.0", "0.0",395,0)
+
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+	parameter("", "P57", distance, number, 64,30,60)
+	parameter("", "P61", distance, number, 64,56,60)
+	parameter("", "P58", weld_type, number, 160,30,100)
+	parameter("", "P62", weld_type, number, 160,56,100)
+	parameter("", "P60", distance, number, 294,30,60)
+	parameter("", "P63", distance, number, 294,56,60)
+	parameter("", "P59", welding_site, number, 395,43,60)
+
+
+
+        }
+    }
+}

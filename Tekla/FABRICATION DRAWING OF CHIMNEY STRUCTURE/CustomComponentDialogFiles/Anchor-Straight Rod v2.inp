@@ -1,0 +1,52 @@
+page("TeklaStructures","")
+{
+   macro(1, "Anchor-Straight Rod v2")
+   {
+       helpurl("cchelp_usa_anchor_rods")
+       tab_page("", " Parameters ", 1)
+       {
+	       part ("Anchor Rod", R1, , P1, R6, R3, R7, R2, 1) 
+		   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+		   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+		   parameter("", "R4", string, text, 830,26,80) 
+		   parameter("", "R6", integer, number, 940,26,40) 
+		   
+		   part ("Plate Washer", PW1, PW2, PW3, PW8, PW6, , PW4, 3)
+		   parameter("", "PW7", string, text, 830,74,80) 
+		   parameter("", "PW5", integer, number, 940,74,40) 
+
+		   part ("Lower Plate", P15, P7, P8, P16, P6, , P5, 4)
+		   parameter("", "P13", string, text, 830,99,80) 
+		   parameter("", "P14", integer, number, 940,99,40) 
+
+		   attribute("LABEL4", "Plate Washer?", label2, "%s", no, none, "0.0", "0.0", 20, 124) 
+		   attribute("PWO1", "", option, "%s", no, none, "0.0", "0.0", 398,124,93,"toggle_field:!usa_anchor_straight3_v2=1;!usa_anchor_straight4_v2=0;PW1=0;PW2=0;PW3=0;PW4=0;PW5=0;PW6=0;PW7=0;prefix_PW8=0;startno_PW8=0;PW_Tol=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+        	} 			   
+		   attribute("LABEL5", "Underside Nut and Washer?", label2, "%s", no, none, "0.0", "0.0", 20, 149) 
+		   attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 398,149,93,"toggle_field:!usa_anchor_straight_v2=1;!usa_anchor_straight2_v2=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+        	} 
+
+			picture("usa_anchor_frame",255, 100, 575, 205)				
+		   attribute("LABEL6", "HOLE TOLERANCES", label2, "%s", no, none, "0.0", "0.0", 670, 212) 			
+		   attribute("LABEL7", "Plate Washer", label2, "%s", no, none, "0.0", "0.0", 600, 236) 
+		   parameter("", "PW_Tol", distance, number, 760, 236, 90)			
+		   attribute("LABEL8", "Lower Plate", label2, "%s", no, none, "0.0", "0.0", 600, 262) 			
+           parameter("", "Plate_Tol", distance, number, 760, 262, 90)
+			
+	       picture("usa_anchor_straight_v2",175, 175, 208, 297)
+		   picture("usa_anchor_straight2_v2",175, 175, 208, 297)			
+		   picture("usa_anchor_straight3_v2",175, 175, 208, 237)	
+		   picture("usa_anchor_straight4_v2",175, 175, 208, 237)		   
+           parameter("", "Z1", distance, number, 453, 280, 90)		   
+           parameter("", "P3", distance, number, 150, 230, 90)
+           parameter("", "P4", distance, number, 453, 375, 90)
+
+       }
+   }
+}

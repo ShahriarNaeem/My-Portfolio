@@ -1,0 +1,50 @@
+page("TeklaStructures","")
+{
+   joint(1, "X Angle Brace - Beam to Beam")
+   {
+       helpurl("cchelp_usa_x_angle_bracing_components")
+	   tab_page("", " Picture ", 1)
+       {
+	   
+	   /* --- Cont Brace --- */
+			profile("Cont Brace",CB_Profile,CB,CB_Material,CBA,CB_Name, 1)
+			attribute("", "Finish", label3, "%s", none, none, "0", "0", 830, 4)			
+            parameter("", "CB_Finish", string, text, 830, 26, 80)
+			attribute("", "Class", label3, "%s", none, none, "0", "0", 940, 4)
+            parameter("", "CB_Class", integer, number, 940, 26, 40)
+			attribute("", "Design Group Name", label3, "%s", none, none, "0", "0", 1010, 4)
+            parameter("", "CB_DGN", string, text, 1010, 26, 160)
+			
+		/* --- Upper Brace --- */
+            profile("Upper Brace",UB_Profile,UB,UB_Material,UBA,UB_Name, 4)
+			parameter("", "UB_Finish", string, text, 830, 96, 80)
+            parameter("", "UB_Class", integer, number, 940, 96, 40)
+            parameter("", "UB_DGN", string, text, 1010, 96, 160)
+			
+		/* --- Lower Brace --- */
+			profile("Lower Brace",LB_Profile,LB,LB_Material,LBA,LB_Name, 7)
+			parameter("", "LB_Finish", string, text, 830, 167, 80)
+            parameter("", "LB_Class", integer, number, 940, 167, 40)
+            parameter("", "LB_DGN", string, text, 1010, 167, 160)   
+
+			picture("usa_cc_XAngleBracingBmToBm_Dialog", 354, 337, 26, 250)
+			picture("usa_cc_XAngleBracingBmToBm_NoConn", 354, 337, 26, 250)
+			parameter("", "D2", distance, number, 525, 256, 100)  /* --- Top of beam to Top WP --- */
+			parameter("", "D14", distance, number, 525, 545, 100)  /* --- Top of beam to Low WP --- */
+			
+            attribute("", "Bracing Offset from CL", label3, "%s", none, none, "0", "0", 600, 330)
+            parameter("", "D4", distance, number, 794, 330, 100)
+			
+            attribute("", "Create Component?", label3, "%s", none, none, "0", "0", 600, 390)
+			attribute("P1", "", option, "%s", none, none, "0.0", "0.0", 794, 390, 100, "toggle_field:P2_attrfile=0;P2_name=0;!usa_cc_XAngleBracingBmToBm_Dialog=0;!usa_cc_XAngleBracingBmToBm_NoConn=1")
+            {
+                value("No", 0)
+                value("Yes", 1)
+            }
+            attribute("", "Component Name", label3, "%s", none, none, "0", "0", 600, 420)
+            parameter("", "P2_name", ComponentName, text, 794, 420, 160)
+            attribute("", "Component Attribute", label3, "%s", none, none, "0", "0", 600, 450)
+            parameter("", "P2_attrfile", ComponentAttributeFile, text, 794, 450, 160)
+       }
+   }
+}

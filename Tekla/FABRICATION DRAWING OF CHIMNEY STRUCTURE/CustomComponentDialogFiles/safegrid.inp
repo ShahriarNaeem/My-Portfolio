@@ -1,0 +1,23 @@
+page("TeklaStructures", "")
+{
+    macro(1, "safegrid")
+    {
+        tab_page("", " decking ", 1)
+        {
+            picture("safegrid1", 455, 420, 135, 50)
+            parameter("", "P1", distance, number, 30, 280, 100)
+            parameter("", "P2", distance, number, 350, 20, 100)
+            parameter("", "P3", distance, number, 735, 335, 100)
+            parameter("", "P5", distance, number, 270, 565, 100)
+            parameter("", "P7", profile, text, 705, 150, 100)
+            parameter("", "P8", profile, text, 580, 560, 100)
+            parameter("", "P11", profile, text, 720, 440, 100)
+            parameter("", "P12", material, text, 270, 625, 150)
+            attribute("material", "albl_Material", label, "%s", none, none, "0", "0", 80, 625)
+            attribute("Yaxis", "j_y_axis", label, "%s", none, none, "0", "0", 715, 562)
+            attribute("Xaxis", "j_x_axis", label, "%s", none, none, "0", "0", 850, 443)
+            attribute("edge", "albl_Edge", label, "%s", none, none, "0", "0", 845, 150)
+        }
+    }
+}
+

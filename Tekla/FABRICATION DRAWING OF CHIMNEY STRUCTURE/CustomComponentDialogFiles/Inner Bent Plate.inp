@@ -1,0 +1,47 @@
+page("TeklaStructures","")
+{
+   joint(1, "Inner Bent Plate")
+    {
+        helpurl("cchelp_usa_inner_bent_plate")
+        tab_page("", "Design", 1)
+        {
+            attribute("", "Bent plate parameters:", label, "%s", none, none, "0", "0", 10, 35)
+            attribute("", "Design name", label, "%s", none, none, "0", "0", 235, 5)
+            parameter("", "P13", string, text, 242, 35, 150)
+            attribute("", "Grade", label, "%s", none, none, "0", "0", 435, 5)
+            parameter("", "P8", material, text, 440, 35, 80)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 580, 5)
+            parameter("", "P10", integer, number, 585, 35, 80)
+            picture("usa_InnerBentPlate1", 273, 303, 15, 77)
+            attribute("", "Pull back", label, "%s", none, none, "0", "0", 440, 85)
+            parameter("", "P6", distance, number, 585, 80, 80)
+            attribute("", "Top offset", label, "%s", none, none, "0", "0", 440, 130)
+            parameter("", "P1", distance, number, 585, 130, 80)
+            picture("usa_TopPlate", 170, 166, 685, 55)
+            attribute("", "Bent plate leg lgth", label, "%s", none, none, "0", "0", 390, 185)
+            parameter("", "P11", distance, number, 585, 185, 80)
+            picture("usa_BentPlateSect", 170, 145, 400, 220)
+            attribute("", "Bent plate thk.", label, "%s", none, none, "0", "0", 410, 400)
+            parameter("", "P4", distance, number, 585, 400, 80)
+            attribute("", "Bottom offset", label, "%s", none, none, "0", "0", 410, 448)
+            parameter("", "P2", distance, number, 585, 445, 80)
+            picture("usa_BottomPlate", 170, 187, 685, 260)
+        }
+        tab_page("", "Detailing", 2)
+        {
+            attribute("", "Numbering series", label, "%s", none, none, "0", "0", 16, 5)
+            attribute("", "Part", label, "%s", none, none, "0", "0", 95, 60)
+            attribute("", "Assembly", label, "%s", none, none, "0", "0", 95, 100)
+            attribute("", "Prefix:", label, "%s", none, none, "0", "0", 235, 30)
+            parameter("", "P16", string, text, 240, 60, 160)
+            parameter("", "P14", string, text, 240, 100, 160)
+            attribute("", "Start number:", label, "%s", none, none, "0", "0", 505, 30)
+            parameter("", "P17", string, text, 480, 60, 160)
+            parameter("", "P15", string, text, 480, 100, 160)
+    picture("usa_horz_line", 432, 2, 36, 150)
+            attribute("", "Attributes", label, "%s", none, none, "0", "0", 16, 175)
+            attribute("", "Name", label, "%s", none, none, "0", "0", 95, 205)
+            parameter("", "P9", string, text, 240, 205, 400)
+        }
+    }
+}

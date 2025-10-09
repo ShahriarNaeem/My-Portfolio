@@ -1,0 +1,23 @@
+page("TeklaStructures","")
+{
+   macro(1, "SF_Frame_1")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("SF_Frame1", 210,260,100,100)
+           parameter("j_width", "SFrameWidth", distance, number, 250,80,80)
+           parameter("j_height", "SFrameHeight", distance, number, 30,260,80)
+           profile("j_bracing", SFrame1Prof, SFrame1Mark, SFrame1Mat, , SFrame1Name,20)
+           profile("j_column", SFrame2Prof, , , , ,21)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 500,150)
+           parameter("", "SFrameClass", integer, number, 500,170,200)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 500,200)
+           parameter("", "SFrameFinish", string, text, 500,220,200)
+           attribute(" ","j_d_j_Assembly_Prefix",label,"%s",none,none,"0","0", 500,250)
+           parameter("", "SFASSPrefix", string, text, 500,270,200)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 500,300)
+           parameter("", "SFASSStartno", integer, number, 500,320,200)
+       }
+   }
+}

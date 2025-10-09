@@ -1,0 +1,51 @@
+page("TeklaStructures","")
+{
+   detail(1, "Reducing Studs")
+   {
+       helpurl("cchelp_usa_reducing_stud")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_reducing_stud",100, 75, 170, 100)
+
+      attribute("LABEL1", "Stud Spacing Option", label, "%s", no, none, "0.0", "0.0", 19,2)
+	attribute("P3", "", option, "%s", no, none, "0.0", "0.0", 374,2,160,"toggle_field:!mspa=0;!P2=1;!LABEL2=1;!LABEL3=0;!LABEL4=1;!LABEL5=0")
+                {
+                     value("Number of Studs",1)
+                     value("Exact Spacing",0)
+                     value("Linear",0)
+                }
+           parameter("Site/Workshop", "W1", welding_site, number, 2)
+
+      attribute("LABEL2", "Exactly", label, "%s", no, none, "0.0", "0.0", 185,90)
+      attribute("LABEL3", "Minimum", label, "%s", no, none, "0.0", "0.0", 185,90)
+           parameter("", "min_start", distance, number, 190,115,50)
+           parameter("", "P2", integer, number, 270,115,40)
+      attribute("LABEL4", "# Studs", label, "%s", no, none, "0.0", "0.0", 270,90)
+           parameter("", "mspa", distance, number, 340,115,80)
+      attribute("LABEL5", "Spacing", label, "%s", no, none, "0.0", "0.0", 350,90)
+
+           parameter("", "stud_gage", distance_list, text, 455,115,60)
+           parameter("", "offset", distance, number, 625,115,60)
+
+           parameter("", "SD1", distance, number, 535,210,80)
+           parameter("", "DD1", distance, number, 715,175,80)
+		   
+	   part("Stud Diameter",   NS2, , ,P19 , P16 ,P20  ,P14 ,17)
+	    attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 389)   
+           parameter("", "P17", string, text, 830,410,80)
+	    attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 389)   
+           parameter("", "P18", integer, number, 940,410,40)
+/*	   profile("Nut",   RS2,RS6 , RS3 ,  ,RS1 ,19)
+           parameter("", "RS4", string, text, 830,458,80)
+           parameter("", "RS5", integer, number, 940,458,40)
+*/		   
+           attribute("P12", "Bought Out Item?", option, "%s", yes, none, "0.0","0.0", 18)
+	     {
+                     value("",1)
+                     value("Yes",0)
+	     }
+           parameter("BOI Name", "P11", string, text, 19)
+
+       }
+   }
+}

@@ -1,0 +1,294 @@
+
+
+ ETABS Ultimate 64-bit 19.1.0 Build 2420 (Analysis Build 9853/64)               
+ File: D:\P 2105 CWASA\NEW\P-2...1120\TPS.01.B00.G3.P 2105 105.211120.R00.XX.OUT
+                                                                     
+                                                                       
+
+ 1, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+           51.455113   51.455113     .000000     .000000     .000000  5.0579E+08
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17750.000   17750.000   17750.000
+     Y     12768.021   12768.021   12737.970
+     Z     16500.000   16500.000   16500.000
+
+ 2, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+           52.557985   52.557985     .000000     .000000     .000000  5.2308E+08
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17750.000   17750.000   17750.000
+     Y     12768.430   12768.430   12737.976
+     Z     14700.000   14700.000   14700.000
+
+ 3, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+           71.978565   71.978565     .000000     .000000     .000000  1.1611E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17750.000   17750.000   17746.523
+     Y     10337.795   10337.795   10346.837
+     Z     13000.000   13000.000   13000.000
+
+ 4, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          494.336191  494.336191     .000000     .000000     .000000  6.3220E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17818.446   17818.446   17750.162
+     Y     10669.046   10669.046   10513.638
+     Z     12000.000   12000.000   12000.000
+
+ 5, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          443.047304  443.047304     .000000     .000000     .000000  5.6432E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17697.277   17697.277   17749.875
+     Y     10678.165   10678.165   10513.660
+     Z      9000.000    9000.000    9000.000
+
+ 6, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          435.171082  435.171082     .000000     .000000     .000000  5.6293E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17696.130   17696.130   17749.873
+     Y     10622.115   10622.115   10513.527
+     Z      6000.000    6000.000    6000.000
+
+ 7, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          480.922881  480.922881     .000000     .000000     .000000  5.9097E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     17684.821   17684.821   17749.863
+     Y      9937.544    9937.544    9544.838
+     Z      3000.000    3000.000    3000.000
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+     731               A   A   A   A   A   A
+     730               -   -   -   A   A   A
+    1772 TO    1761    +   +   A   A   A   +
+    1744               A   A   A   A   A   A
+    1741               +   +   A   A   A   +
+    1459               A   A   A   A   A   A
+    1458 TO    1293    +   +   A   A   A   +
+    1276               A   A   A   A   A   A
+    1273               +   +   A   A   A   +
+     991               A   A   A   A   A   A
+     990 TO     825    +   +   A   A   A   +
+     808               A   A   A   A   A   A
+     805               +   +   A   A   A   +
+     795               A   A   A   A   A   A
+     794 TO     793    +   +   A   A   A   +
+     329 TO     305    -   -   -   A   A   A
+      44 TO      33    +   +   A   A   A   +
+      16               A   A   A   A   A   A
+      13               +   +   A   A   A   +
+       3               A   A   A   A   A   A
+       2 TO    2606    +   +   A   A   A   +
+     744               A   A   A   A   A   A
+    1809 TO    1754    +   +   A   A   A   +
+    1746               A   A   A   A   A   A
+    1462 TO    1286    +   +   A   A   A   +
+    1278               A   A   A   A   A   A
+     994 TO     818    +   +   A   A   A   +
+     810 TO     806    A   A   A   A   A   A
+     798 TO     796    +   +   A   A   A   +
+     332 TO     330    -   -   -   A   A   A
+      81 TO      26    +   +   A   A   A   +
+      18               A   A   A   A   A   A
+       6 TO    2609    +   +   A   A   A   +
+     748               A   A   A   A   A   A
+    1860 TO    1749    +   +   A   A   A   +
+    1743               A   A   A   A   A   A
+    1465 TO    1281    +   +   A   A   A   +
+    1275               A   A   A   A   A   A
+     997 TO     813    +   +   A   A   A   +
+     807               A   A   A   A   A   A
+     801 TO     799    +   +   A   A   A   +
+     377 TO     333    -   -   -   A   A   A
+     195 TO      21    +   +   A   A   A   +
+      15               A   A   A   A   A   A
+       9 TO    1752    +   +   A   A   A   +
+    1747               A   A   A   A   A   A
+    1468 TO    1284    +   +   A   A   A   +
+    1279               A   A   A   A   A   A
+    1000 TO     816    +   +   A   A   A   +
+     811               A   A   A   A   A   A
+     804 TO     802    +   +   A   A   A   +
+     380 TO     378    -   -   -   A   A   A
+     268 TO      24    +   +   A   A   A   +
+      19               A   A   A   A   A   A
+      12 TO    2602    +   +   A   A   A   +
+    2601               A   A   A   A   A   A
+    2600 TO     780    +   +   A   A   A   +
+     763 TO     725    A   A   A   A   A   A
+    1904 TO    1485    +   +   A   A   A   +
+    1475               A   A   A   A   A   A
+    1454 TO     456    +   +   A   A   A   +
+     441               A   A   A   A   A   A
+     437 TO     185    +   +   A   A   A   +
+     167               A   A   A   A   A   A
+     158               +   +   A   A   A   +
+     157 TO     130    -   -   -   A   A   A
+     129               +   +   A   A   A   +
+     128               -   -   -   A   A   A
+     127               +   +   A   A   A   +
+     126               -   -   -   A   A   A
+     125 TO     464    +   +   A   A   A   +
+    1931 TO    1934    +   +   -   -   -   +
+   ~2374 TO    2599    +   +   A   A   A   +
+    2598               A   A   A   A   A   A
+    2597 TO     777    +   +   A   A   A   +
+     753               A   A   A   A   A   A
+    1659 TO    1484    +   +   A   A   A   +
+    1474               A   A   A   A   A   A
+    1451 TO    1016    +   +   A   A   A   +
+    1006               A   A   A   A   A   A
+     983 TO     178    +   +   A   A   A   +
+     166               A   A   A   A   A   A
+     156               +   +   A   A   A   +
+     155 TO     124    -   -   -   A   A   A
+     123               +   +   A   A   A   +
+     122               -   -   -   A   A   A
+     121               +   +   A   A   A   +
+     120               -   -   -   A   A   A
+     119 TO    2594    +   +   A   A   A   +
+     762 TO     750    A   A   A   A   A   A
+     723               -   -   -   A   A   A
+    1651 TO     453    +   +   A   A   A   +
+     448               A   A   A   A   A   A
+     396 TO     176    +   +   A   A   A   +
+     170               A   A   A   A   A   A
+     118               -   -   -   A   A   A
+     117               +   +   A   A   A   +
+     116               -   -   -   A   A   A
+     115               +   +   A   A   A   +
+     114               -   -   -   A   A   A
+     113 TO    1479    +   +   A   A   A   +
+    1471               A   A   A   A   A   A
+    1445 TO    1011    +   +   A   A   A   +
+    1003               A   A   A   A   A   A
+     977 TO     450    +   +   A   A   A   +
+     442               A   A   A   A   A   A
+     393 TO     172    +   +   A   A   A   +
+     112               -   -   -   A   A   A
+     111               +   +   A   A   A   +
+     110               -   -   -   A   A   A
+     109               +   +   A   A   A   +
+     108               -   -   -   A   A   A
+     107 TO    1486    +   +   A   A   A   +
+    1476 TO    1470    A   A   A   A   A   A
+    1442 TO    1018    +   +   A   A   A   +
+    1008 TO    1002    A   A   A   A   A   A
+     974 TO     457    +   +   A   A   A   +
+     447               A   A   A   A   A   A
+     390 TO     186    +   +   A   A   A   +
+     169 TO     160    A   A   A   A   A   A
+     106               -   -   -   A   A   A
+     105               +   +   A   A   A   +
+     104               -   -   -   A   A   A
+     103               +   +   A   A   A   +
+     102               -   -   -   A   A   A
+     101 TO    3032    +   +   A   A   A   +
+     439 TO     438    A   A   A   A   A   A
+    1524 TO    1513    +   +   A   A   A   +
+    1472               A   A   A   A   A   A
+    1469               +   +   A   A   A   +
+    1439               A   A   A   A   A   A
+    1438 TO    1045    +   +   A   A   A   +
+    1004               A   A   A   A   A   A
+    1001               +   +   A   A   A   +
+     971               A   A   A   A   A   A
+     970 TO     509    +   +   A   A   A   +
+     443               A   A   A   A   A   A
+     440               +   +   A   A   A   +
+     387               A   A   A   A   A   A
+     386 TO     240    +   +   A   A   A   +
+     164               A   A   A   A   A   A
+     159               +   +   A   A   A   +
+     100               -   -   -   A   A   A
+      99               A   A   A   A   A   A
+      98               -   -   -   A   A   A
+      97               +   +   A   A   A   +
+      96               -   -   -   A   A   A
+      95               +   +   A   A   A   +
+    NULL                                    
+
+  CONSTRAINTS         U1  U2  U3  R1  R2  R3
+ 1       TO 7          A   A               A

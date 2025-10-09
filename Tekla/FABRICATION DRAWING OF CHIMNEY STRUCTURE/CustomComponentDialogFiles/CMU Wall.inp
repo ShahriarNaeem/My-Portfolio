@@ -1,0 +1,16 @@
+page("TeklaStructures","")
+{
+   macro(1, "CMU Wall")
+   {
+       helpurl("cchelp_usa_masonry")
+       tab_page("", " Design ", 1)
+       {
+           parameter("Wall height", "P2", distance, number, 1)
+           parameter("Start point offset", "P15", distance, number, 2)
+           parameter("Name", "P11", string, text, 4)
+           parameter("Profile", "P12", profile, text, 5)
+           parameter("Material", "P13", material, text, 6)
+           parameter("Class", "P16", integer, number, 7)
+       }
+   }
+}

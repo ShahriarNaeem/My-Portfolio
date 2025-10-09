@@ -1,0 +1,138 @@
+page("TeklaStructures","")
+{
+   detail(1, "Outrigger (Angles) v2")
+   {
+       helpurl("cchelp_usa_outrigger_components")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_pic_outrig1",333,314,100,25)
+		   
+           parameter(" CL to End of Outrigger", "HD1", distance, number, 310,40,80)
+	       parameter(" CL to Top of Sloping Angle", "HD2", distance, number, 290,76,80)
+           parameter(" Length of Horz Angle", "HD3", distance, number, 385,109,60)
+           parameter(" Horz Notch", "NTH1", distance, number, 285,109,40)
+           parameter(" Vert Notch", "NTV1", distance, number, 80,157,60)
+           parameter(" Upper Vert Distance", "VD1", distance, number, 545,157,60)        
+           parameter(" Lower Sloping Horz Distance", "HD4", distance, number, 230,360,60)
+           parameter(" Lower Vert Distance", "VD2", distance, number, 90,295,60)
+
+	attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 143,134,330,"dia_enable_field_ocb:HD3=0;CFR3=1;CFR1=1;CFR2=1;HAW1=1;HAW2=1;HAW3=1;HAW4=1;HAW5=1;O1=1;CPN3=1;CPN1=1;CPN2=1;NTH1=1;NTV1=1")
+                {
+                     value("usa_pic_outrig1_opt1.xbm",1)
+                     value("usa_pic_outrig1_opt2.xbm",0)
+                }
+
+	   parameter("", "CFR3", chamfer_type, number, 400,257,80,"dia_enable_field_ocb:CFR1=1,5;CFR2=1,3,4,5")
+	   parameter("", "CFR1", distance, number, 400,282,60)
+	   attribute("LABEL7", "x:", label, "%s", no, none, "0.0", "0.0", 465,282)
+	   parameter("", "CFR2", distance, number, 400,307,60)
+	   attribute("LABEL8", "y:", label, "%s", no, none, "0.0", "0.0", 465,307)
+
+           attribute("LABEL16", "Horz. Angle Rotation", label, "%s", no, none, "0.0", "0.0", 650,134)	   
+	attribute("LR1", "", option, "%s", no, none, "0.0", "0.0", 650,164,160)	   
+                {
+                     value("usa_out_angle_left.xbm",1)
+                     value("usa_out_angle_right.xbm",0)
+                }
+	attribute("HV1", "", option, "%s", no, none, "0.0", "0.0", 650,234,160)				
+                {
+                     value("usa_out_angle_LLH.xbm",1)
+                     value("usa_out_angle_LLV.xbm",0)
+                }		   
+	   
+           picture("usa_horz_line2", 720, 5, 25, 410)
+ 
+	attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 125,445,200,"dia_enable_field_ocb:CPN3=1;CPN1=1;CPN2=1")
+                {
+                     value("usa_pic_outrig1b_opt2.xbm",1)
+                     value("usa_pic_outrig1b.xbm",0)
+                }
+
+           parameter("", "CPN3", chamfer_type, number, 60,515,80,"dia_enable_field_ocb:CPN1=1,5;CPN2=1,3,4,5")
+           parameter("", "CPN2", distance, number, 60,540,60)
+           attribute("LABEL1", "x:", label, "%s", no, none, "0.0", "0.0", 125,540)
+           parameter("", "CPN1", distance, number, 60,565,60)
+           attribute("LABEL2", "y:", label, "%s", no, none, "0.0", "0.0", 125,565)
+
+           picture("usa_pic_outrig1a",108,94,400,445)
+
+           parameter("", "FPCF3", chamfer_type, number, 350,535,80,"dia_enable_field_ocb:FPCF1=1,5;FPCF2=1,3,4,5")
+           parameter("", "FPCF2", distance, number, 350,560,60)
+           attribute("LABEL3", "x:", label, "%s", no, none, "0.0", "0.0", 415,560)
+           parameter("", "FPCF1", distance, number, 350,585,60)
+           attribute("LABEL4", "y:", label, "%s", no, none, "0.0", "0.0", 415,585)
+
+           parameter("", "NPCF3", chamfer_type, number, 540,535,80,"dia_enable_field_ocb:NPCF1=1,5;NPCF2=1,3,4,5")
+           parameter("", "NPCF1", distance, number, 540,560,60)
+           attribute("LABEL5", "x:", label, "%s", no, none, "0.0", "0.0", 605,560)
+           parameter("", "NPCF2", distance, number, 540,585,60)
+           attribute("LABEL6", "y:", label, "%s", no, none, "0.0", "0.0", 605,585)
+       }
+       tab_page("", " Parts ", 2)
+       {
+	   profile("Horz. Angle Profile",   HAP1,HAP6 , HAP2 ,HAP7 ,HAP3 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "HAP4", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "HAP5", integer, number, 940,26,40)
+
+	   profile("Slop. Angle Profile",   SAP1, SAP6, SAP2 ,SAP7 ,SAP3 ,3)
+           parameter("", "SAP4", string, text, 830,74,80)
+           parameter("", "SAP5", integer, number, 940,74,40)
+
+	   part("NS Tab Plate",     NSP1,  NSP2, NSP3 ,NSP8 , NSP4,NSP9 ,NSP5 ,5)
+           parameter("", "NSP6", string, text, 830,122,80)
+           parameter("", "NSP7", integer, number, 940,122,40)
+
+	   part("FS Tab Plate",     FSP1,  FSP2 , FSP3  ,FSP8 , FSP4,FSP9 ,FSP5 ,7)
+           parameter("", "FSP6", string, text, 830,170,80)
+           parameter("", "FSP7", integer, number, 940,170,40)
+
+           picture("usa_horz_line2", 720, 5, 25, 225)
+		   
+           attribute("LABEL15", "Create FS Tab Plate", label, "%s", no, none, "0.0", "0.0", 19,240)
+           parameter("", "FS1", YesNo, number, 525,240,160)
+       }
+tab_page("", " Welds ", 3)
+       {
+	   picture("usa_pic_outrig1c", 261,225,100,310)
+           
+	attribute("header1", "No       Size                 Type                         Wshop/site", label, "%s", no, none, "0.0", "0.0")
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "HAW1", distance, number, 64,30,60)
+           parameter("", "HAW2", distance, number, 64,56,60)
+           parameter("", "HAW3", weld_type, number, 160,30,100)
+           parameter("", "HAW4", weld_type, number, 160,56,100)
+           parameter("", "HAW5", welding_site, number, 294,43,60)
+
+	attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+           parameter("", "SATW1", distance, number, 64,85,60)
+           parameter("", "SATW2", distance, number, 64,111,60)
+           parameter("", "SATW3", weld_type, number, 160,85,100)
+           parameter("", "SATW4", weld_type, number, 160,111,100)
+           parameter("", "SATW5", welding_site, number, 294,98,60)
+
+	attribute("weld", "3", label, "%s", no, none, "0.0", "0.0",6)
+           parameter("", "SABW1", distance, number, 64,140,60)
+           parameter("", "SABW2", distance, number, 64,166,60)
+           parameter("", "SABW3", weld_type, number, 160,140,100)
+           parameter("", "SABW4", weld_type, number, 160,166,100)
+           parameter("", "SABW5", welding_site, number, 294,153,60)
+
+	attribute("weld", "4", label, "%s", no, none, "0.0", "0.0",8)
+           parameter("", "NSPW1", distance, number, 64,195,60)
+           parameter("", "NSPW2", distance, number, 64,221,60)
+           parameter("", "NSPW3", weld_type, number, 160,195,100)
+           parameter("", "NSPW4", weld_type, number, 160,221,100)
+           parameter("", "NSPW5", welding_site, number, 294,208,60)
+
+	attribute("weld", "5", label, "%s", no, none, "0.0", "0.0",10)
+           parameter("", "FSPW1", distance, number, 64,250,60)
+           parameter("", "FSPW2", distance, number, 64,276,60)
+           parameter("", "FSPW3", weld_type, number, 160,250,100)
+           parameter("", "FSPW4", weld_type, number, 160,276,100)
+           parameter("", "FSPW5", welding_site, number, 294,263,60)
+       }	   
+   }
+}

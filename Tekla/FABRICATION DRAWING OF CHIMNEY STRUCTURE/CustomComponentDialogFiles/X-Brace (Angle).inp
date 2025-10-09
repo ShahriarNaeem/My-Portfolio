@@ -1,0 +1,30 @@
+page("TeklaStructures", "")
+{
+    joint(1, "X-Brace (Angle)")
+    {
+        helpurl("cchelp_usa_material_handling_components")
+        tab_page("", "Design", 1)
+        {
+            attribute("", "Name", label, "%s", none, none, "0", "0", 700, 0)
+            parameter("", "P1", string, text, 700, 30, 150)
+            attribute("", "Profile", label, "%s", none, none, "0", "0", 20, 30)
+            parameter("", "P2", profile, text, 114, 30, 160)
+            attribute("", "Material", label, "%s", none, none, "0", "0", 550, 0)
+            parameter("", "P3", material, text, 550, 30, 100)
+            attribute("", "Finish", label, "%s", none, none, "0", "0", 255, 100)
+            parameter("", "P4", string, text, 365, 100, 160)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 255, 130)
+            parameter("", "P5", string, text, 365, 130, 160)
+            attribute("", "Prefix", label, "%s", none, none, "0", "0", 365, 0)
+            parameter("", "P6", string, text, 365, 30, 50)
+            attribute("", "No.", label, "%s", none, none, "0", "0", 455, 0)
+            parameter("", "P7", integer, number, 455, 30, 50)
+            parameter("", "P8", string, text, 365, 60, 50)
+            parameter("", "P9", integer, number, 455, 60, 50)
+            attribute("", "Gusset space", label, "%s", none, none, "0", "0", 685, 222)
+            parameter("", "P10", distance, number, 685, 252, 100)
+            picture("usa_materials_xbrace", 400, 360, 35, 180)
+            picture("usa_mat_Axbrace_space", 119, 58, 650, 294)
+        }
+    }
+}

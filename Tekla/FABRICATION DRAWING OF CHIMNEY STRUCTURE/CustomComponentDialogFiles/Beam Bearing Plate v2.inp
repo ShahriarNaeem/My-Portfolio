@@ -1,0 +1,73 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Beam Bearing Plate v2")
+    {
+        helpurl("cchelp_usa_beam_bearing_plate")
+		tab_page("", "Picture", 1)
+        {
+            part("Bearing Plate",P1,P2,,N18,P17,N20,P16, 2)			
+			attribute("", "Finish", label, "%s", none, none, "0", "0", 854, 26)
+            attribute("", "Class", label, "%s", none, none, "0", "0", 1044, 26)            
+            parameter("", "P22", string, text, 847, 48, 159)
+            parameter("", "P23", integer, number, 1039, 48, 54)
+			
+		/* --- Anchors Inside or Outside --- */
+			picture("usa_beam_bearing_plate_v2-2", 401, 379, 108, 121)
+            picture("usa_beam_bearing_plate_v2-3", 401, 379, 108, 121)            
+            attribute("O1", "", option, "%s", none, none, "0.0", "0.0", 185, 122, 263, "toggle_field:!D20=0;!D40=0;!D25=1;!D31=1;!usa_beam_bearing_plate_v2-3=0;!usa_beam_bearing_plate_v2-2=1")
+            {
+                value("usa_beam_bearing_plate_v2-1.xbm", 1)
+                value("usa_beam_bearing_plate_v2-4.xbm", 0)
+            }
+			parameter("", "D41", distance, number, 60, 328, 54)
+			parameter("", "D38", distance, number, 243, 448, 54)
+			parameter("", "D39", distance, number, 343, 448, 54)
+            parameter("", "P3", distance, number, 528, 320, 54)
+			parameter("", "P18", distance_list, text, 597, 286, 159)
+			parameter("", "P19", integer, number, 528, 286, 40)
+			
+		/* --- Inside Gages --- */
+			parameter("", "D25", distance, number, 201, 396, 54)
+            parameter("", "D31", distance, number, 382, 396, 54)
+			
+		/* --- Outside Gages --- */
+			parameter("", "D20", distance, number, 147, 396, 54)            
+            parameter("", "D40", distance, number, 436, 396, 54)			
+			
+        /* --- Bolt or CC --- */
+			attribute("O2", "", option, "%s", none, none, "0.0", "0.0", 577, 138, 175, "toggle_field:ACC1_attrfile=0;ACC1_name=0;ACC4_attrfile=0;ACC4_name=0;Bolt_diameter=1;Bolt_Length=1;Bolt_screwdin=1;Bolt_Tol=1;Bolt_UF5=1;Bolt_UF6=1;P4=0;LABEL7=0;LABEL8=0;LABEL9=0;LABEL10=0;LABEL11=0;LABEL12=0;LABEL13=0;LABEL1=1;LABEL2=1;LABEL3=1;LABEL4=1;LABEL5=1;LABEL6=1")
+            {
+                value("As Bolts", 1)
+                value("Nested Component", 0)
+            }
+            
+        /* --- Bolt Properties --- */
+            attribute("LABEL1", "Bolt diameter", label, "%s", none, none, "0", "0", 700, 350)
+            parameter("", "Bolt_diameter", bolt_size, number, 900, 350, 175)
+            attribute("LABEL2", "Bolt Standard", label, "%s", none, none, "0", "0", 700, 375)
+            parameter("", "Bolt_screwdin", bolt_standard, text, 900, 375, 175)            
+            attribute("LABEL3", "Bolt Length", label, "%s", none, none, "0", "0", 700, 400)
+            parameter("", "Bolt_Length", distance, number, 900, 400, 175)
+            attribute("LABEL4", "Bolt Tolerance", label, "%s", none, none, "0", "0", 700, 425)
+            parameter("", "Bolt_Tol", distance, number, 900, 425, 175)
+			
+		/* --- Nested Component Properties */
+            attribute("LABEL7", "Hole Diameter in Brg PL and Bm", label, "%s", none, none, "0", "0", 143, 525)
+			parameter("", "P4", distance, number, 395, 525, 54)
+			
+			/* --- Left Side --- */
+            attribute("LABEL8", "Component on Left Side:", label, "%s", none, none, "0", "0", 25, 575)
+            attribute("LABEL10", "Name", label, "%s", none, none, "0", "0", 28, 600)
+			parameter("", "ACC1_name", ComponentName, text, 110, 600, 159)
+            attribute("LABEL12", "Attr File", label3, "%s", none, none, "0", "0", 25, 625)            
+            parameter("", "ACC1_attrfile", ComponentAttributeFile, text, 110, 625, 159)
+
+			/* --- Right Side --- */
+            attribute("LABEL9", "Component on Right Side:", label, "%s", none, none, "0", "0", 420, 575)
+            attribute("LABEL11", "Name", label, "%s", none, none, "0", "0", 420, 600)
+			parameter("", "ACC4_name", ComponentName, text, 505, 600, 159)
+            attribute("LABEL13", "Attr File", label3, "%s", none, none, "0", "0", 420, 625)            
+            parameter("", "ACC4_attrfile", ComponentAttributeFile, text, 505, 625, 159)
+        }
+    }
+}

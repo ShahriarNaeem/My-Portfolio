@@ -1,0 +1,25 @@
+page("TeklaStructures","")
+{
+   macro(1, "General_Leg_Extension")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("Tekla_Leg_Extension", 200,300,100,50)
+           profile("j_profile", , GLEMark, GLEMat, , GLEName,18)
+           attribute(" ","j_parameters",label,"%s",none,none,"0","0", 20,432)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 840,412)
+           parameter("", "GLEClass", integer, number, 840,432,80)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 20,462)
+           parameter("", "GLEFinish", string, text, 397,462,235)
+           attribute(" ","j_Assembly_Prefix",label,"%s",none,none,"0","0", 20,492)
+           parameter("", "GLEAssPrefix", string, text, 397,492,235)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 20,522)
+           parameter("", "GLEStartno", integer, number, 397,522,235)
+           parameter("", "GLEProf", profile, text, 350,120,100)
+           parameter("", "GLEProfA", profile, text, 350,250,100)
+           parameter("", "GLEHeight1", distance, number, 70,120,80)
+           parameter("", "GLEHeight2", distance, number, 70,250,80)
+       }
+   }
+}

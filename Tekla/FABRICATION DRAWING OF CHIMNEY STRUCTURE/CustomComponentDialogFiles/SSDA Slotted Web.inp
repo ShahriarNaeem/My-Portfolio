@@ -1,0 +1,22 @@
+page("TeklaStructures","")
+{
+   detail(1, "SSDA Slotted Web")
+   {
+       helpurl("cchelp_usa_ssda_slotted_web")
+       tab_page("", " Parameters", 1)
+       {
+
+           picture("usa_web_slot", 250,184,120,20)
+           picture("usa_SSDA_slot", 250,263,110,260)
+
+           parameter("", "D1", distance, number, 245,10)
+           parameter("", "P4", distance, number, 160,45)
+       }
+
+       tab_page("", " Parameters 1 ", 2)
+       {
+           parameter("D1.Plane.YZ plane", "D1", distance, number, 1)
+           parameter("1/8'' slot length", "P4", distance, number, 2)
+       }
+   }
+}

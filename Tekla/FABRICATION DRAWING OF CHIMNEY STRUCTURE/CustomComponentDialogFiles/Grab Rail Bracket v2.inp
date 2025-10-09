@@ -1,0 +1,46 @@
+page("TeklaStructures","")
+{
+   detail(1, "Grab Rail Bracket v2")
+   {
+       helpurl("cchelp_usa_grab_rail_bracket")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_grab_rail_bracket_v2", 486,321,20,160)
+           picture("usa_grab_rail_bracket_v2b", 486,321,20,160)
+
+           parameter("Top Rail to Center of Grab Rail - A", "P2", distance, number, 1)
+           parameter("Vertical Distance - B", "P3", distance, number, 2)
+           parameter("Horizontal Distance - C", "P4", distance, number, 3)
+           parameter("Rotation Angle - D", "P7", angle, number, 4)
+           parameter("Railing Radius - E", "P5", distance, number, 5)
+           parameter("Bend Radius - F", "P14", distance, number, 6)
+
+           attribute("P12", "", option, "%s", no, none, "0.0", "0.0", 575,50,100,"toggle_field:!usa_grab_rail_bracket_v2=1;!usa_grab_rail_bracket_v2b=0")
+                {
+                     value("usa_grab_rail_bracket_opt0.xbm",1)
+                     value("usa_grab_rail_bracket_opt1.xbm",0)
+                }
+       }
+       tab_page("", " Parts & Welds ", 2)
+      {
+           profile("Bracket",   P1, B5 , B2 ,  ,B1 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "B3", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "B4", integer, number, 940,26,40)
+
+
+           picture("usa_horz_line2", 720, 5, 25, 107)
+
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0",20,120)
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,120)
+	   
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",20,145)
+           parameter("", "W1", distance, number, 64,145,60)
+           parameter("", "W2", weld_type, number, 160,145,100)
+           parameter("", "W3", welding_site, number, 395,145,60)
+
+           picture("usa_grab_rail_bracket_weld", 204,180,50,190)
+       }
+   }
+}

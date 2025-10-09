@@ -1,0 +1,44 @@
+page("TeklaStructures","")
+{
+   detail(1, "Layout Track")
+   {
+helpurl("cchelp_usa_layout_components")
+        tab_page("", " Parameters ", 1)
+        {
+            attribute("", "Name", label, "%s", none, none, "0", "0", 19, 6)
+            parameter("", "P2", string, text, 210, 6, 160)
+            attribute("", "Description", label, "%s", none, none, "0", "0", 19, 35)
+            parameter("", "P3", string, text, 210, 35, 160)
+            attribute("", "Size", label, "%s", none, none, "0", "0", 19, 65)
+            parameter("", "P5", distance, number, 210, 65, 160)
+            attribute("", "Color", label, "%s", none, none, "0", "0", 19, 98)
+            attribute("P4", "", option, "%s", none, none, "0.0", "0.0", 210, 98, 160)
+            {
+                value("class1.xbm", 1)
+                value("class2.xbm", 0)
+                value("class3.xbm", 0)
+                value("class4.xbm", 0)
+                value("class5.xbm", 0)
+                value("class6.xbm", 0)
+                value("class7.xbm", 0)
+                value("class8.xbm", 0)
+                value("class9.xbm", 0)
+                value("class10.xbm", 0)
+                value("class11.xbm", 0)
+                value("class12.xbm", 0)
+                value("class13.xbm", 0)
+                value("class14.xbm", 0)
+            }
+            attribute("", "Shape", label, "%s", none, none, "0", "0", 19, 130)
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 208, 130, 160)
+            {
+                value("LayoutPointSPHERE.xbm", 1)
+                value("LayoutPointROD.xbm", 0)
+                value("LayoutPointELD.xbm", 0)
+                value("LayoutPointPRMD.xbm", 0)
+            }
+            attribute("", "Group Name", label, "%s", none, none, "0", "0", 429, 4)
+            parameter("", "P1", string, text, 581, 4, 160)
+        }
+   }
+}

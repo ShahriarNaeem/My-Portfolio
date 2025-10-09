@@ -1,0 +1,44 @@
+page("TeklaStructures","")
+{
+   macro(1, "General_Beam_Form")
+   {
+       helpurl("cchelp_usa_additional_formwork_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("Tekla_Beam_Form", 450,150,100,70)
+           parameter("", "TBFSideSpacing", distance, number, 70,60,80)
+           parameter("", "TBF1stBSDist", distance, number, 80,250,80)
+           parameter("", "TBF1stBSSpacing", distance, number, 190,250,80)
+           parameter("", "TBFBSLength", distance, number, 540,250,100)
+		   
+           profile("Bottom Profile", TBFBProf, TBFBMark, TBFBMat, , TBFBName,13)
+           profile("Side Profile", TBFSProf, TBFSMark, TBFSMat, , TBFSName,14)
+           profile("Bottom Support", TBFBSProf, TBFBSMark, TBFBSMat, , TBFBSName,15)
+           profile("Side Support", TBFSSProf, TBFSSMark, TBFSSMat, , TBFSSName,16)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 840,290)
+           parameter("", "TBFBClass", integer, number, 840,310,80)
+           parameter("", "TBFSClass", integer, number, 840,335,80)
+           parameter("", "TBFBSClass", integer, number, 840,360,80)
+           parameter("", "TBFSSClass", integer, number, 840,385,80)	
+           picture("line", 457,10,10,420)
+           attribute(" ","j_beam",label,"%s",none,none,"0","0", 20,465)
+           attribute(" ","j_name",label,"%s",none,none,"0","0", 150,440)
+           attribute(" ","j_prefix",label,"%s",none,none,"0","0", 350,440)
+           attribute(" ","j_Start_number",label,"%s",none,none,"0","0", 490,440)
+           parameter("", "TBFASSPrefix", string, text, 350,465,80)
+           parameter("", "TBFASSStartno", integer, number, 490,465,80)
+           parameter("", "TBFASSName", string, text, 150,465,150)		   
+		   
+           parameter(" Width", "TBFWidth", distance, number, 540,45,100)
+           parameter(" Beam Internal Height", "TBFHeight", distance, number, 720,140,100)
+           attribute(" ","Create Bottom Supports",label,"%s",none,none,"0","0", 700,210)
+           parameter(" Create Bottom Supports", "CR1st", YesNo, number, 730,235,100)
+       }
+       tab_page("", "j_input_example", 3)
+       {
+           picture("Tekla_Beam_Input", 450,100,100,50)
+           attribute(" ","1. Select Input point 1",label,"%s",none,none,"0","0", 20,300)
+           attribute(" ","2. Select Input point 2",label,"%s",none,none,"0","0", 20,320)
+       }	   
+   }
+}

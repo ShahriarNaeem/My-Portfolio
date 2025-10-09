@@ -1,0 +1,49 @@
+page("TeklaStructures","")
+{
+   joint(1, "Kick Plate-Angle Conx")
+   {
+       helpurl("cchelp_usa_kick_plate_angle_connection")
+       tab_page("", " Picture ", 1)
+       {
+           attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 50,0,170)
+                {
+                     value("usa_kick_plate_opt0.xbm",1)
+                     value("usa_kick_plate_opt1.xbm",0)
+                }
+          picture("usa_kick_plate",205, 205, 157, 128)
+           parameter("", "D7", distance, number, 145,160,60)
+           parameter("", "D13", distance, number, 445,160,60)
+           parameter("", "D6", distance, number, 580,295,60)
+           parameter("", "P1", distance, number, 593,365,60)
+       }
+       tab_page("", " Angle and Bolts ", 2)
+       {
+	   profile("Angle Profile",   P6,P10 , P7 , ,P5 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P8", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P9", integer, number, 940,26,40)
+
+           picture("usa_horz_line2", 720, 5, 20, 70)
+
+ 	attribute("Primary Bolts ", "PRIMARY BOLTS", label, "%s", no, none, "0.0", "0.0",20,85)
+  	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",20,110)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",20,135)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",20,160)
+	parameter("","P12_diameter", bolt_size, number,160,110,120)
+	parameter("","P12_screwdin", bolt_standard, text,160,135,120)
+	parameter("","P13", distance, number,160,160,120)
+	parameter("", "P14", bolt_type, number, 160,185,120)
+
+ 	attribute("Secondary Bolts ", "SECONDARY BOLTS", label, "%s", no, none, "0.0", "0.0",337,85)
+  	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",337,110)
+	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",337,135)
+	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",337,160)
+	parameter("","P15_diameter", bolt_size, number,487,110,120)
+	parameter("","P15_screwdin", bolt_standard, text,487,135,120)
+	parameter("","P16", distance, number,487,160,120)
+	parameter("", "P17", bolt_type, number, 487,185,120)
+
+       }
+   }
+}

@@ -1,0 +1,66 @@
+page("TeklaStructures","")
+{
+   joint(1, "US Stanchion curved")
+   {
+       helpurl("cchelp_usa_us_stanchion_curved")   
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_curved_post_base1",170,200,200,100)
+		   
+           parameter(" Distance Down", "P1", distance, number, 140,205,80)
+           parameter(" Elbow Up", "EL1", distance, number, 435,220,80)
+           parameter(" Elbow Left", "EL2", distance, number, 370,290,80)
+           parameter(" Radius", "R1", distance, number, 210,140,60)
+       }
+       tab_page("", " Parts and Bolts ", 2)
+       {
+	       part("Plate",     P2,  ,  ,PL7 , PL4,  ,PL3 ,1)
+	       attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "PL5", string, text, 830,26,80)
+	       attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "PL6", integer, number, 940,26,40)
+	       part("Small Horz Pipe",  XX1 ,,, PC1,  , ,PC2 ,2)
+	   
+           picture("usa_horz_line2", 720, 5, 15, 83)	   
+           part("Elbow",  XX2 ,,, EL4,  , ,EL3 ,4)		
+
+           attribute("LABEL4", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 19,123) 
+           attribute("BOI1", "", option, "%s", no, none, "0.0", "0.0", 398,123,120,"dia_enable_field_ocb:XX1=0,1;XX2=0,1") 
+             { 
+                   value("",1) 
+                   value("Yes",0) 
+             } 
+           attribute("LABEL5", "Item Name\Catalog Number", label, "%s", no, none, "0.0", "0.0", 19,148) 
+           parameter("", "BOI2", string, text, 398,148,120)			 
+		   
+           picture("usa_curved_post_base2",185,205,150,175)
+           parameter(" Vert Edge Dist", "P4", distance, number, 415,260,80)
+           parameter(" Bolt Spacing Vert", "BLT2", distance, number, 415,290,80)		   
+           parameter(" Bolt Spacing", "BLT1", distance, number, 205,415,80)		   
+           parameter(" Horz Edge Dist", "P3", distance, number, 335,395,80)
+
+           attribute("", "Bolt Size", label, "%s", none, none, "0", "0", 560, 265)                        
+           parameter("", "BLT3_diameter", bolt_size, number, 750, 265, 100)
+		   attribute("", "Bolt Standard", label, "%s", none, none, "0", "0", 560, 290)
+           parameter("", "BLT3_screwdin", bolt_standard, text, 750, 290, 100)
+		   attribute("", "Tolerance", label, "%s", none, none, "0", "0", 560, 315)
+		   parameter("", "BLT4", distance, number, 750, 315, 100)
+       }
+       tab_page("", " Welds ", 3)
+       {		   
+           picture("usa_curved_post_base3",170,200,150,150)	
+
+	       attribute("header1", "No       Size                 Type                         Wshop/site", label, "%s", no, none, "0.0", "0.0")
+	   
+	       attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "W4", distance, number, 64,30,60)
+           parameter("", "W5", weld_type, number, 160,30,100)
+           parameter("", "W6", welding_site, number, 294,30,60)		   
+		   
+	       attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+           parameter("", "W1", distance, number, 64,85,60)
+           parameter("", "W2", weld_type, number, 160,85,100)
+           parameter("", "W3", welding_site, number, 294,85,60)	   
+       }
+   }
+}

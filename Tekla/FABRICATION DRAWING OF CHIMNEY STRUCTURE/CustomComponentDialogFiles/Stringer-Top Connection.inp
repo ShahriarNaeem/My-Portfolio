@@ -1,0 +1,28 @@
+page("TeklaStructures","")
+{
+   joint(1, "Stringer-Top Connection")
+   {
+       helpurl("cchelp_usa_stringer_connections")
+       tab_page("", " Parameters ", 1)
+       {
+		part ("Top Plate",     P5,  ,  ,P13 ,P10 , ,P9 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P11", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P12", integer, number, 940,26,40)
+		part ("End Plate",     P6,  ,  ,P18 ,P15 , ,P14 ,3)
+           parameter("", "P16", string, text, 830,74,80)
+           parameter("", "P17", integer, number, 940,74,40)
+           parameter("Create Plates", "P8", YesNo, number, 5)
+		   
+	     picture("usa_stringer_top",150,155,250,180)	
+		   
+           parameter(" Weld Gap", "P19", distance, number, 190,175,65)
+           parameter(" Overlap past CL of support beam", "P1", distance, number, 410,175,65)
+           parameter(" Top Above Concrete", "P3", distance, number, 440,205,65)
+           parameter(" Concrete Thickness", "P2", distance, number, 440,235,65)
+           parameter(" Beam Clearance", "P4", distance, number, 290,337,65)
+
+       }
+   }
+}

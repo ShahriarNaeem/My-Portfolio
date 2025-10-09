@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   joint(1, "Slab Control Joint")
+   {
+       helpurl("cchelp_usa_slab_control_joint")
+       tab_page("", " Design ", 1)
+       {
+           picture("usa_Slab_CJ_dims", 139, 289, 200, 15)
+           parameter(" Thickness", "P1", distance, number, 420,20,60)
+           parameter(" Height", "P2", distance, number, 175, 148,60)
+       }
+   }
+}

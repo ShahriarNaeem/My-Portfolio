@@ -1,0 +1,22 @@
+page("TeklaStructures","")
+{
+   macro(1, "General_Clamp")
+   {
+       helpurl("cchelp_usa_additional_formwork_components")
+       tab_page("", "j_Parameters", 1)
+       {
+           picture("Tekla_Clamp", 300,300,100,50)
+           profile("Clamp Profile", TGCProf, TGCMark, TGCMat, , TGCName,20)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 840,460)
+           parameter("", "TGCClass", integer, number, 840,480,80)
+           parameter("", "TGCLength", distance, number, 40,200,80)
+           parameter("", "TGCCutProf", profile, text, 430,300,80)
+           parameter("", "TGCCutDist", distance, number, 200,390,80)
+           parameter("", "TGCCutSpacing", distance, number, 350,420,80)
+           parameter("", "TGCCutQty", integer, number, 350,390,50)
+           attribute(" ","Input:",label,"%s",none,none,"0","0", 400,30)
+           attribute(" ","1. Select Input point 1",label,"%s",none,none,"0","0", 400,50)
+           attribute(" ","2. Select Input point 2",label,"%s",none,none,"0","0", 400,70)
+       }
+   }
+}

@@ -1,0 +1,46 @@
+page("TeklaStructures","")
+{
+   detail(1, "Thru Bolt")
+   {
+       helpurl("cchelp_usa_thru_bolt")
+       tab_page("", " Parameters ", 1)
+       {
+	   part("Threaded Rod",   B1, ,P3 ,TR5 ,TR2 ,TR7 ,TR1 ,1)
+           attribute("LABEL_F", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)
+           parameter("", "TR3", string, text, 830,26,80)
+           attribute("LABEL_C", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)
+           parameter("", "TR4", integer, number, 940,26,40) 
+
+	   part("Nut*", P4  ,  , ,N5 , N2 , ,N1 ,3)
+           parameter("", "N3", string, text, 830,73,80) 
+           parameter("", "N4", integer, number, 940,73,40) 
+
+	   part("Washer*", P28  ,  , ,W5 , W2 , ,W1 ,4)
+           parameter("", "W3", string, text, 830,97,80)
+           parameter("", "W4", integer, number, 940,97,40) 
+
+           attribute("LABEL_A", "Bought Out Item?", label, "%s", no, none, "0.0", "0.0", 20, 124)
+           attribute("BOI1", "", option, "%s", yes, none, "0.0","0.0", 398,124,140)
+	     {
+                     value("",1)
+                     value("Yes",0)
+	     }
+           attribute("LABEL_B", "BOI Name", label, "%s", no, none, "0.0", "0.0", 20, 148)
+           parameter("", "BOI2", string, text, 398,148,140)    
+
+           picture("usa_thru_bolt_note", 635, 20, 15, 204)  
+           picture("usa_horz_line2", 720, 5, 25, 238)
+
+           attribute("LABEL_O", "Brace Rotation", label, "%s", no, none, "0.0", "0.0", 20, 262)
+           attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 50, 286, 110)
+                {
+                     value("usa_thru_bolt_front.xbm",1)
+                     value("usa_thru_bolt_top.xbm",0)
+	}
+          picture("usa_thru_bolt",205, 205, 300, 283)
+          parameter("", "E1", distance, number, 365,286,60)
+
+
+       }
+   }
+}

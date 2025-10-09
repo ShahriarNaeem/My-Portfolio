@@ -1,0 +1,15 @@
+page("TeklaStructures","")
+{
+   macro(1, "Panel Form")
+   {
+       helpurl("cchelp_usa_formwork_components")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Panel Height", "D1", distance, number, 1)
+           parameter("Panel Thickness", "A1", distance, number, 2)
+           parameter("Panel Material", "P3", material, text, 3)
+           parameter("Profile", "P4", profile, text, 4)
+           parameter("Material", "P5", material, text, 5)
+       }
+   }
+}

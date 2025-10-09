@@ -1,0 +1,94 @@
+page("TeklaStructures","")
+{
+   detail(1, "Outrigger (Plate)")
+   {
+       helpurl("cchelp_usa_outrigger_components")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_pic_outrig2",194,243,150, 60)
+ 
+           parameter("", "P3", distance, number, 223,48,60)
+           parameter("", "D12", distance, number, 210,332,60)
+           parameter("", "D9", distance, number, 348,72,60)
+           parameter("", "P4", distance, number, 415,210,60)
+
+	attribute("P8", "", option, "%s", no, none, "0.0", "0.0", 157,238,275,"dia_enable_field_ocb:P4=0;P16=1;P23=1;P24=1;P25=1;P32=1;P33=1;P34=1;P35=1;P36=1;P46=1;P47=1")
+                {
+                     value("usa_pic_outrig2_opt1.xbm",1)
+                     value("usa_pic_outrig2_opt2.xbm",0)
+                }
+       }
+       tab_page("", " Plate ", 2)
+       {
+	   part ("Plate Profile",   P26,  ,  ,P38 , P37,P40 ,P50,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P52", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P51", integer, number, 940,26,40)
+
+           picture("usa_horz_line2", 720, 5, 25, 80)
+
+           picture("usa_pic_outrig2a",200,110,200,113)
+  
+           parameter("", "P1", distance, number, 350,98,60)
+           parameter("", "P2", distance, number, 472,163,60)
+
+           parameter("", "P17", chamfer_type, number, 472,213,80,"dia_enable_field_ocb:P18=1,5;P19=1,3,4,5")
+           parameter("", "P18", distance, number, 472,238,60)
+           attribute("LABEL1", "x:", label, "%s", no, none, "0.0", "0.0", 537,238)
+           parameter("", "P19", distance, number, 472,263,60)
+           attribute("LABEL2", "y:", label, "%s", no, none, "0.0", "0.0", 537,263)
+
+           parameter("", "P20", chamfer_type, number, 123,193,80,"dia_enable_field_ocb:P21=1,5;P22=1,3,4,5")
+           parameter("", "P21", distance, number, 123,213,60)
+           attribute("LABEL3", "x:", label, "%s", no, none, "0.0", "0.0", 188,213)
+           parameter("", "P22", distance, number, 123,238,60)
+           attribute("LABEL4", "y:", label, "%s", no, none, "0.0", "0.0", 188,238)
+
+           picture("usa_horz_line2", 720, 5, 25, 298)    
+ 
+           picture("usa_pic_outrig2b",200,110,200,323) 
+  
+           parameter("", "P23", chamfer_type, number, 175,415,80,"dia_enable_field_ocb:P24=1,5;P25=1,3,4,5")
+           parameter("", "P24", distance, number, 175,440,60)
+           attribute("LABEL5", "x:", label, "%s", no, none, "0.0", "0.0", 240,440)
+           parameter("", "P25", distance, number, 175,465,60)
+           attribute("LABEL6", "y:", label, "%s", no, none, "0.0", "0.0", 240,465)
+           parameter("", "P16", distance, number, 470,373,60)
+       }
+       tab_page("", " Welds ", 3)
+       {
+	   picture("usa_pic_outrig2c", 134,151,150,250)
+           
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,0)
+
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "P10", distance, number, 64,30,60)
+           parameter("", "P11", distance, number, 64,56,60)
+           parameter("", "P12", weld_type, number, 160,30,100)
+           parameter("", "P13", weld_type, number, 160,56,100)
+           parameter("", "P44", distance, number, 294,30,60)
+           parameter("", "P45", distance, number, 294,56,60)
+           parameter("", "P14", welding_site, number, 395,43,60)
+
+	attribute("weld", "2", label, "%s", no, none, "0.0", "0.0",4)
+           parameter("", "P27", distance, number, 64,85,60)
+           parameter("", "P28", distance, number, 64,111,60)
+           parameter("", "P29", weld_type, number, 160,85,100)
+           parameter("", "P30", weld_type, number, 160,111,100)
+           parameter("", "P42", distance, number, 294,85,60)
+           parameter("", "P43", distance, number, 294,111,60)
+           parameter("", "P31", welding_site, number, 395,98,60)
+
+	attribute("weld", "3", label, "%s", no, none, "0.0", "0.0",6)
+           parameter("", "P32", distance, number, 64,140,60)
+           parameter("", "P33", distance, number, 64,166,60)
+           parameter("", "P34", weld_type, number, 160,140,100)
+           parameter("", "P35", weld_type, number, 160,166,100)
+           parameter("", "P46", distance, number, 294,140,60)
+           parameter("", "P47", distance, number, 294,166,60)
+           parameter("", "P36", welding_site, number, 395,153,60)
+       }
+   }
+}

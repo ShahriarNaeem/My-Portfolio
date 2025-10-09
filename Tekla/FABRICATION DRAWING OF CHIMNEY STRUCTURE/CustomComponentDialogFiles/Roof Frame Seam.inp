@@ -1,0 +1,37 @@
+page("TeklaStructures","")
+{
+   joint(1, "Roof Frame Seam")
+   {
+       helpurl("cchelp_usa_roof_frame_components")
+       tab_page("", " Parameters ", 1)
+       {
+	   profile ("Frame Profile",   P2,A1 , P9,A2 ,P8,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P10", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P11", integer, number, 940,26,40)
+
+           picture("usa_roofframec", 400,360,120,50)
+           picture("usa_roofframecend", 400,220,120,460)
+
+           
+           parameter("", "D5", distance, number, 200,90,60)
+           parameter("", "D7", distance, number, 360,90,60)
+           parameter("", "D6", distance, number, 170,250,60)
+           parameter("", "D3", distance, number, 140,500,60)
+           parameter("", "D4", distance, number, 630,500,60)
+           parameter("", "P5", distance, number, 550,465,60)
+       }
+       tab_page("", " Welds ", 3)
+       {
+	attribute("header1", "No       Size                 Type                         Length", label, "%s", no, none, "0.0", "0.0")
+	attribute("header2", "Wshop/site", label, "%s", no, none, "0.0", "0.0",395,0)
+
+	attribute("weld", "1", label, "%s", no, none, "0.0", "0.0",2)
+           parameter("", "P12", distance, number, 64,30,60)
+           parameter("", "P13", weld_type, number, 160,30,100)
+           parameter("", "P14", welding_site, number, 395,30,60)
+
+       }
+   }
+}

@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   detail(1, "Trapezoidal Footing")
+   {
+       helpurl("cchelp_usa_trapezoidal_footing")
+       tab_page("", " Trapezoidal Footing ", 1)
+       {
+           	picture("usa_Trapizoidal_Footing_CC",499,399,0,0)
+		    parameter("", "P1", distance, number, 510,339,75)
+          	parameter("", "P2", distance, number, 398,450,75)
+       }
+   }
+}

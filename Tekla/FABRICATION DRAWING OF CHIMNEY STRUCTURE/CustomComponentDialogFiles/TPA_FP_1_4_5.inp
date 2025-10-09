@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   macro(1, "TPA_FP_1_4_5")
+   {
+       helpurl("cchelp_usa_vendor_embeds")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Class", "P1", integer, number, 1)
+	       parameter("Finish", "P2", string, text, 2)
+           parameter("Material", "P3", material, text, 3)
+       }
+   }
+}

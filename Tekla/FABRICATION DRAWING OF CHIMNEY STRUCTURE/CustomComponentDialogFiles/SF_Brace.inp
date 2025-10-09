@@ -1,0 +1,24 @@
+page("TeklaStructures","")
+{
+   macro(1, "SF_Brace")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("SF_Brace", 210,100,100,100)
+           profile("j_bracing", SFBRProf, SFBRMark, SFBRMat, , SFBRName,12)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 500,20)
+           parameter("", "SFBRClass", integer, number, 500,40,200)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 500,70)
+           parameter("", "SFBRFinish", string, text, 500,90,200)
+           attribute(" ","j_d_j_Assembly_Prefix",label,"%s",none,none,"0","0", 500,120)
+           parameter("", "AssPrefix", string, text, 500,140,200)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 500,170)
+           parameter("", "AssStartno", integer, number, 500,190,200)
+           parameter("", "SFBREdge", distance, number, 30,90,80)
+           parameter("", "SFBRBoltCC", distance, number, 150,90,80)
+           parameter("j_d_j_diameter_of_holes", "SFBRHole", distance, number, 13)
+           parameter("", "SFBRBM", distance, number, 30,180,80)
+       }
+   }
+}

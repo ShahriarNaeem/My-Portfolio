@@ -1,0 +1,18 @@
+page("TeklaStructures","")
+{
+   joint(1, "Coiled strap")
+   {
+       helpurl("cchelp_usa_wood_connectors")
+       tab_page("", " Design ", 1)
+       {
+           parameter("Name / Design Name", "P11", string, text, 1)
+           parameter("Class", "P12", integer, number, 2)
+           parameter("Bought Out Item Name/Catalog Name", "P14", string, text, 3)
+
+         picture("usa_coiled_strap_elev",133,370,300,100)
+           parameter("", "P4", distance, number, 240, 430) /*End 1 Extension*/
+           parameter("", "P5", distance, number,240, 210) /*End 2 Extension*/
+
+       }
+   }
+}

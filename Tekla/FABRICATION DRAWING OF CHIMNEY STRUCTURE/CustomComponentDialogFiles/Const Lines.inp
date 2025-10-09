@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   detail(1, "Const Lines")
+   {
+       helpurl("cchelp_usa_construction_line_components")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Show Web K (Magenta) Lines", "P1", YesNo, number, 1)
+           parameter("Show Flange Gage (Yellow) Lines", "P2", YesNo, number, 2)
+           parameter("Show Flange K (Red) Lines", "P3", YesNo, number, 3)
+       }
+   }
+}

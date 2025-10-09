@@ -1,0 +1,81 @@
+page("TeklaStructures","")
+{
+   joint(1, "MC Col Flg-Std Web")
+   {
+       helpurl("cchelp_usa_mc_to_column_flange_standard_web")
+       tab_page("", " Picture ", 1)
+       {
+           picture("usa_mc-colflg_std-web_cont",100, 75, 25, 30)
+           parameter("", "c_root", distance, number, 69,153,60)
+           parameter("", "c_wroot", distance, number, 337,364,80)
+           parameter("", "c_clip", chamfer_type, number, 70,325,80)
+           parameter("", "c_clipx", distance, number, 187,355,60)
+           parameter("", "c_clipy", distance, number, 87,277,60) 
+
+         attribute("LABEL_ncc", "Create Flange Connection (3)", label, "%s", no, none, "0.0", "0.0", 19,422) 
+			attribute("NC1", "", option, "%s", no, none, "0.0", "0.0", 374,422,160,"toggle_field:NC2_name=0;NC2_attrfile=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 		   
+           parameter("Connection Component", "NC2_name", ComponentName, text, 17)
+           parameter("Connection Attributes", "NC2_attrfile", ComponentAttributeFile, text, 18)		   
+       }
+       tab_page("", " Picture 2 ", 2)
+       {
+           picture("usa_mc-colflg_std-web",470, 450, 1, 10)
+           parameter("", "s_clr", distance, number, 215,38,80)
+           parameter("", "s_bmed", distance, number, 400,38,80)
+           parameter("", "s_first", distance, number, 570,160,80)
+           parameter("", "s_num", integer, number, 570,250,40)
+           parameter("", "s_gage", distance, number, 640,250,80)
+           parameter("", "s_ved", distance, number, 570,335,80)
+           parameter("", "s_hed", distance, number, 430,440,80)
+
+           parameter("", "s_clip", chamfer_type, number, 50,262,80)
+           parameter("", "s_clipx", distance, number, 120,113,80)
+           parameter("", "s_clipy", distance, number, 70,155,80)
+           parameter("", "s_rad", chamfer_type, number, 490,60,80)
+           parameter("", "s_radx", distance, number, 490,85,60)
+           parameter("", "s_rady", distance, number, 490,110,60)
+       }
+        tab_page("", " Parts ", 3)
+       {
+	   part("Stiffeners",     st_plt, , ,ST1 , st_plg, ,P1 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P2", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P3", integer, number, 940,26,40)
+
+	   part("Shear Tab",     s_plt, , ,SH1 ,s_plg , ,P7 ,3)
+           parameter("", "P8", string, text, 830,74,80)
+           parameter("", "P9", integer, number, 940,74,40)
+           attribute("LABEL_A", "NS Of Web?", label, "%s", no, none, "0.0", "0.0", 20, 100)
+           parameter("", "s_side", YesNo, number, 398,100,92)
+
+	   part("Continuity Plate",     c_uplt, , ,CP1 , c_plg, , P4,6)
+           parameter("", "P5", string, text, 830,146,80)
+           parameter("", "P6", integer, number, 940,146,40)
+           attribute("LABEL_B", "Add Stiff Plates", label, "%s", no, none, "0.0", "0.0", 20, 175)
+           parameter("", "c_add", YesNo, number, 398,175,92)
+           attribute("LABEL_C", "Calc Stiff Thickness", label, "%s", no, none, "0.0", "0.0", 20, 200)
+           parameter("", "c_cplt", distance, number, 398,200,92)
+           attribute("LABEL_D", "System Calc Thickness", label, "%s", no, none, "0.0", "0.0", 20, 225)
+           parameter("", "c_calc", YesNo, number, 398,225,92)
+       }
+
+       tab_page("", " Welds ", 7)
+       {
+	   parameter("1", "wcs_flanges", distance, number, 1)
+           parameter("2", "wcs_web", distance, number, 2)
+           parameter("3", "ws_web", distance, number, 3) 
+           parameter("4", "ws_stif", distance, number, 4)
+           parameter("5", "wst_flanges", distance, number, 5)
+
+           parameter("Bolt Diameter", "b_dia_diameter", bolt_size, number, 8)
+           parameter("Bolt Grade", "b_dia_screwdin", bolt_standard, text, 9)
+           parameter("Site/Workshop", "b_type", bolt_type, number, 10)
+       }
+
+   }
+}

@@ -1,0 +1,11 @@
+page("TeklaStructures", "")
+{
+    macro(1, "PC14")
+    {
+        helpurl("cchelp_usa_pile_caps")
+        tab_page("", "Picture", 1)
+        {
+            picture("usa_PC14", 486, 403, 94, 72)
+        }
+    }
+}

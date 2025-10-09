@@ -1,0 +1,42 @@
+page("TeklaStructures","")
+{
+   joint(1, "Shear K")
+   {
+       helpurl("cchelp_usa_shear_k")
+       tab_page("", " Parameters ", 1)
+       {
+	   picture("usa_shear_k",500, 200, 100, 150)
+		part ("Plate",     plt, ,   ,X1 , Material, ,P1 ,1)
+	    attribute("LABEL1", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5)   
+           parameter("", "P2", string, text, 830,26,80)
+	    attribute("LABEL2", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5)   
+           parameter("", "P3", integer, number, 940,26,40)
+
+	      attribute("LABEL10", "Plate NS of Web", label, "%s", no, none, "0.0", "0.0", 20, 49)   
+            parameter("NS of Web", "NSFS", YesNo, number, 398,50,110)
+
+            parameter("", "bm_stbk", distance, number, 125, 128, 65)
+            parameter("", "cope_clr", distance, number, 280, 128, 65)
+            parameter("", "clip_size", distance, number, 62, 205, 65)
+            parameter("", "bm_ed", distance, number, 132, 383, 65)
+            parameter("", "horzpl", distance, number, 270, 383, 65)
+            parameter("", "fhole", distance, number, 435, 190, 65)
+            parameter("", "nb", integer, number, 435, 220, 30)
+            parameter("", "bgage", distance, number, 435, 245,65)
+
+	  	attribute("Label1", "Bolts", label, "%s", no, none, "0.0", "0.0",538,155)
+	  	attribute("number_lb", "Bolt size", label2,"%s",  none, none, "0.0", "0.0",538,180)
+	 	attribute("bolt_standard_lb", "j_bolt_standard", label3,"%s",  none, none, "0.0", "0.0",538,205)
+	  	attribute("tolerance_lb", "j_tolerance", label2,"%s",  none, none, "0.0", "0.0",538,230)
+	  	parameter("","bdia_diameter", bolt_size, number,677,180,90)
+	 	parameter("","bdia_screwdin", bolt_standard, text,677,205,90)
+ 	 	parameter("","btol", distance, number,677,230,90)
+
+  		attribute("WeldLabel", "Weld", label, "%s", no, none, "0.0", "0.0",538,275)
+  		attribute("WeldLabel2", "Weld Size", label2,"%s",  none, none, "0.0", "0.0",538,300)
+ 		attribute("WeldLabel3", "Weld Type", label2,"%s",  none, none, "0.0", "0.0",538,325)
+ 	 	parameter("","weldsize", distance, number,677,300,90)
+ 		parameter("","weldtype", welding_site, number,677,325,90)
+       }
+   }
+}

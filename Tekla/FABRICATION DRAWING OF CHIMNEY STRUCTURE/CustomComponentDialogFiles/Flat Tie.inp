@@ -1,0 +1,12 @@
+page("TeklaStructures","")
+{
+   macro(1, "Flat Tie")
+   {
+       helpurl("cchelp_usa_formwork_hardware")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Wall Width", "T1", distance, number, 1)
+           parameter("Material", "WB1", material, text, 2)
+       }
+   }
+}

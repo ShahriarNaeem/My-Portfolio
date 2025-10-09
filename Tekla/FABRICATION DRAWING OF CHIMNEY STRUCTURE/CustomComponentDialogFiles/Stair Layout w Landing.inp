@@ -1,0 +1,21 @@
+page("TeklaStructures", "")
+{
+    macro(1, "Stair Landing w Landing")
+    {
+        helpurl("cchelp_usa_stair_layout")
+        tab_page("", " Stair Layout", 1)
+        {
+            picture("usa_StairLayoutwithLanding", 0, 0, 129, 14)
+            parameter("", "P2", distance, number, 912, 24, 50)
+            attribute("", "Maximum Riser", label, "%s", none, none, "0", "0", 756, 25)
+            parameter("", "D1", distance, number, 328, 45, 75)
+            parameter("", "P10", distance, number, 912, 58, 50)
+            attribute("", "Fixed Tread Run", label, "%s", none, none, "0", "0", 756, 60)
+            parameter("", "P12", distance, number, 346, 97, 50)
+            parameter("", "P1", distance, number, 61, 149, 75)
+            parameter("", "P6", distance, number, 230, 207, 75)
+            attribute("", "Max", label, "%s", none, none, "0", "0", 250, 232)
+            attribute("", "Use insertion handles to set clear opening", label, "%s", none, none, "0", "0", 292, 332)
+        }
+    }
+}

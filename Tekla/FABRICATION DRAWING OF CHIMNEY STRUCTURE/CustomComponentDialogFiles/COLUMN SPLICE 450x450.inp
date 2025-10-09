@@ -1,0 +1,9 @@
+page("TeklaStructures","")
+{
+   joint(1, "COLUMN SPLICE 450x450")
+   {
+       tab_page("", " Parameters 1 ", 1)
+       {
+       }
+   }
+}

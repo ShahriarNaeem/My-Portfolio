@@ -1,0 +1,15 @@
+page("TeklaStructures","")
+{
+   macro(1, "CMU Wall Seam")
+   {
+       helpurl("cchelp_usa_masonry")
+       tab_page("", " Design ", 1)
+       {
+           parameter("Wall height", "P1", distance, number, 1)
+           parameter("Name", "P4", string, text, 3)
+           parameter("Profile", "P5", profile, text, 4)
+           parameter("Material", "P6", material, text, 5)
+           parameter("Class", "P7", integer, number, 6)
+       }
+   }
+}

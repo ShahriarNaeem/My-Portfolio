@@ -1,0 +1,15 @@
+page("TeklaStructures","")
+{
+   joint(1, "Profile Finish")
+   {
+       helpurl("cchelp_usa_reveal_components")
+       tab_page("", " Parameters ", 1)
+       {
+           picture("usa_profile_finish", 350,150)
+           parameter("", "P1", distance, number, 120,180,80)
+           parameter("", "P2", distance, number, 50,150,80)
+           parameter("", "P3", distance, number, 50,80,80)
+           parameter("", "P4", distance, number, 330,150,80)
+       }
+   }
+}

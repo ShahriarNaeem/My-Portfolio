@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   macro(1, "EP5")
+   {
+       helpurl("cchelp_usa_embed_plates")
+       tab_page("", " Parameters ", 1)
+       {
+           parameter("Class", "P1", integer, number, 1)
+           parameter("Finish", "P2", string, text, 2)
+           parameter("Material", "P3", material, text, 3)
+       }
+   }
+}

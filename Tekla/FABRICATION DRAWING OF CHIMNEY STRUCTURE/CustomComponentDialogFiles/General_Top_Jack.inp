@@ -1,0 +1,28 @@
+page("TeklaStructures","")
+{
+   macro(1, "General_Top_Jack")
+   {
+       helpurl("cchelp_usa_shoring_components")
+       tab_page("", "j_parameters", 1)
+       {
+           picture("Tekla_Top_Jack", 300,300,100,50)
+           profile("j_profile", , GTJMark, GTJMat, , GTJName,21)
+           attribute(" ","j_parameters",label,"%s",none,none,"0","0", 20,502)
+           attribute(" ","j_class",label,"%s",none,none,"0","0", 840,482)
+           parameter("", "GTJClass", integer, number, 840,502,80)
+           attribute(" ","j_finish",label,"%s",none,none,"0","0", 20,532)
+           parameter("", "GTJFinish", string, text, 397,532,235)
+           attribute(" ","j_Assembly_Prefix",label,"%s",none,none,"0","0", 20,562)
+           parameter("", "GTJAssPrefix", string, text, 397,562,235)
+           attribute(" ","j_d_j_Assembly_Start_No",label,"%s",none,none,"0","0", 20,592)
+           parameter("", "GTJAssStartno", integer, number, 397,592,235)
+           parameter("", "GTJProf", profile, text, 400,400,100)
+           parameter("", "GTJProfA", profile, text, 180,20,100)
+           parameter("", "GTJThk", distance, number, 520,127,80)
+           parameter("", "GTJLength", distance, number, 180,270,80)
+           parameter("", "GTJWidth", distance, number, 30,180,80)
+           parameter("", "GTJHeight1", distance, number, 520,70,80)
+           parameter("", "GTJHeight2", distance, number, 520,260,80)
+       }
+   }
+}

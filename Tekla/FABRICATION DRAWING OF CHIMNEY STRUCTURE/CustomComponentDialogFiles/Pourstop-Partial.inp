@@ -1,0 +1,28 @@
+page("TeklaStructures","")
+{
+   detail(1, "Pourstop-Partial")
+   {
+	   helpurl("cchelp_usa_pourstop_partial")
+	   tab_page("", " Parameters ", 1)
+       {
+
+           parameter("Class", "P2", integer, number, 1)
+           attribute("LABEL_pp", "Attached or Loose?", label, "%s", no, none, "0.0", "0.0", 19,27) 
+		   attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 374,27,160) 
+			{ 
+                value("Loose",1) 
+                value("Attached",0) 
+            } 		   
+           attribute("LABEL_swp", "Flip Partial", label, "%s", no, none, "0.0", "0.0", 19,54) 
+		   attribute("S1", "", option, "%s", no, none, "0.0", "0.0", 374,54,160) 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 		
+			
+           parameter("", "P1", distance, number, 235,116,100)		   
+           picture("usa_pourstop_partial",225,110,127,141) 		   
+           parameter("", "P7", distance, number, 235,270,100) 
+		   }
+   }
+}

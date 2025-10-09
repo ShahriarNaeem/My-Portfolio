@@ -1,0 +1,51 @@
+page("TeklaStructures","")
+{
+   detail(1, "Wall Formwork")
+   {
+       helpurl("cchelp_usa_formwork_components")
+       tab_page("", " Picture ", 1)
+	   {
+           picture("usa_Wall_Formwork_1", 500,500,100,50)
+	       parameter(" 1st Panel Height", "P100", distance, number, 85,440,125)
+           parameter(" 2nd Panel Height", "P200", distance, number, 85,305,125)
+           parameter(" 3rd Panel Height", "P300", distance, number, 85,177,125)
+           parameter(" Create 1st Panel", "P400", YesNo, number, 655,435,75)
+           parameter(" Create 2nd Panel", "P500", YesNo, number, 655,300,75)
+           parameter(" Create 3rd Panel", "P600", YesNo, number, 655,165,75)
+           parameter(" CIP Wall Height (Ref Only)", "P1900", distance, number, 405,55,125)
+           parameter(" Left End Offset", "P2000", distance, number, 240,568,75)
+           parameter(" Bottom Panel Offset", "D200", distance, number, 695,505,100)
+           parameter(" Number to be added on Right", "P2300", integer, number, 565,538,125)			   
+           parameter(" Create Filler Panel", "P2200", YesNo, number, 565,565,125)		   
+           parameter(" Filler Panel Thickness", "P1300", distance, number, 565,592,125)
+           parameter("Panel Thickness", "CC1", distance, number, 385,645,125)
+           parameter(" Panel Material", "CC2", material, text, 565,645,125)
+           parameter("Profile", "CC3", profile, text, 385,672,125)
+           parameter(" Material", "CC4", material, text, 565,672,125)
+		   }
+       tab_page("", " Hardware ", 2)
+       {
+           picture("usa_Wall_Formwork_2", 500,500,100,50)
+           parameter(" Flat Ties Spacing", "P2700", distance, number, 60,465,125)
+           parameter(" Flat Tie from Bottom", "P2900", distance, number, 60,505,125)
+           parameter("Hardware Material", "CC5", material, text, 1)
+		   }
+       tab_page("", " Bulkheads ", 3)
+       {
+           picture("usa_Wall_Formwork_3", 500,500,100,50)		
+           parameter(" Create Left Bulkhead", "P2400", YesNo, number, 335,55,75)
+           parameter(" Create Right Bulkhead", "P2500", YesNo, number, 705,55,75)
+           parameter(" 1st Left Bulkhead Height", "P3600", distance, number, 60,445,125)
+           parameter(" 2nd Left Bulkhead Height", "P3700", distance, number, 60,300,125)
+           parameter(" 3rd Left Bulkhead Height", "P3800", distance, number, 60,155,125)
+           parameter(" Left end Bottom Bulkhead below", "P3000", distance, number, 320,515,100)
+           parameter(" Right end Bottom Bulkhead", "P3200", distance, number, 475,515,100)
+	       parameter(" 1st Right Bulkhead Height", "P4500", distance, number, 760,445,125)
+           parameter(" 2nd Right Bulkhead Height", "P4600", distance, number, 760,300,125)
+           parameter(" 3rd Right Bulkhead Height", "P4700", distance, number, 760,155,125)	
+           parameter("Bulkhead Thickness", "P4800", distance, number, 24)			   
+    	   parameter("Bulkhead Material", "P4900", material, text, 23)           
+/*		   parameter("Right end Top Bulkhead", "P3300", distance, number, 1) */
+       }
+   }
+}

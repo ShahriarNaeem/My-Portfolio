@@ -1,0 +1,74 @@
+page("TeklaStructures","")
+{
+   macro(1, "Anchor-Epoxy v2")
+   {
+       helpurl("cchelp_usa_anchor_rods")
+       tab_page("", " Parameters ", 1)
+       {
+		   part ("Anchor Rod", B1, P7, , B6, , B8, B2, 1) 
+		   attribute("LABEL_fin", "Finish", label2, "%s", no, none, "0.0", "0.0", 830, 5) 
+		   attribute("LABEL_cls", "Class", label2, "%s", no, none, "0.0", "0.0", 940, 5) 
+		   parameter("", "B4", string, text, 830,26,80) 
+		   parameter("", "B6", integer, number, 940,26,40)
+
+		   part ("Plate Washer", PW1, PW2, PW3, PW8, PW6, , PW4, 3)
+		   parameter("", "PW7", string, text, 830,74,80) 
+		   parameter("", "PW5", integer, number, 940,74,40) 
+
+			   
+		   
+		   part ("Screen Tube", T2, P6, , T7, , , T3, 4)
+		   parameter("", "T5", string, text, 830,99,80) 
+		   parameter("", "T6", integer, number, 940,99,40) 		   
+
+		   attribute("LABEL4", "Plate Washer?", label2, "%s", no, none, "0.0", "0.0", 20, 123) 
+		   attribute("PWO1", "", option, "%s", no, none, "0.0", "0.0", 398,123,93,"toggle_field:!usa_anchor_epoxy4_v2=1;!usa_anchor_epoxy5_v2=0;PW1=0;PW2=0;PW3=0;PW4=0;PW5=0;PW6=0;PW7=0;prefix_PW8=0;startno_PW8=0;PW_Tol=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+        	} 
+		   attribute("LABEL5", "Plate Washer Tolerance", label2, "%s", no, none, "0.0", "0.0", 20, 148) 
+		   parameter("", "PW_Tol", distance, number, 398, 148, 93)
+
+			picture("usa_anchor_frame",255, 100, 575, 205)		   
+		   attribute("LABEL6", "Item Name \ Catalog No.", label2, "%s", no, none, "0.0", "0.0", 582, 212) 			
+         attribute("LABEL1_boi", "Anchor", label2, "%s", no, none, "0.0", "0.0", 582,236) 
+         parameter("", "BOI2", string, text, 710,236,200) 
+         attribute("LABEL2_boi", "Screen Tube", label, "%s", no, none, "0.0", "0.0", 582,262) 
+         parameter("", "BOI4", string, text, 710,262,200) 
+		 
+		   attribute("LABEL7", "Create Screen?", label2, "%s", no, none, "0.0", "0.0", 400, 328) 
+		   attribute("O1", "", option, "%s", no, none, "0.0", "0.0", 400,352,93,"toggle_field:!usa_anchor_epoxy1_v2=1;!usa_anchor_epoxy2_v2=0;T2=0;P6=0;prefix_T7=0;startno_T7;T3=0;T5=0;T6=0;BOI4=0") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 
+		   attribute("LABEL8", "Headed Bolt?", label2, "%s", no, none, "0.0", "0.0", 400, 376) 			
+		   attribute("O2", "", option, "%s", no, none, "0.0", "0.0", 400,400,93,"toggle_field:!usa_anchor_epoxy3_v2=1;P1=1") 
+			{ 
+                value("No",1) 
+                value("Yes",0) 
+            } 
+			
+			picture("usa_anchor_epoxy1_v2",175, 150, 216, 300)
+			picture("usa_anchor_epoxy2_v2",175, 150, 216, 300)			
+			picture("usa_anchor_epoxy3_v2",175, 150, 216, 250)	
+		    picture("usa_anchor_epoxy4_v2",175, 150, 216, 276)			   
+		    picture("usa_anchor_epoxy5_v2",175, 150, 216, 276)				
+			parameter("", "P1", distance, number, 121, 321, 90)
+           parameter("", "Z1", distance, number, 443, 281, 90)
+
+/*  This option is for demo purposes. All it does it turn on an image.
+
+         picture("usa_vender_redhead_logo",235,60,650,300)
+          picture("usa_vender_hilti_logo",235,60,650,300)		  
+
+           attribute("V1", "", option, "%s", no, none, "0.0", "0.0", 750,365,160,"toggle_field:!usa_vender_redhead_logo=0,2;!usa_vender_hilti_logo=0,1")
+                {
+                     value("Default",1)
+                     value("Red Head",0)
+                     value("Hilti",0)
+					 }
+*/					 
+   }
+}
