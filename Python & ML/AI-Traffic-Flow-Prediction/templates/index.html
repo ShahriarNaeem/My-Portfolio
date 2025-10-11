@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Prediction</title>
+</head>
+<body>
+    <h2>Traffic Volume Prediction</h2>
+    <form method="POST" action="/predict">
+        Temp: <input type="number" step="any" name="temp"><br>
+        Rain (0/1): <input type="number" name="rain_1h"><br>
+        Lag 1: <input type="number" step="any" name="lag_1"><br>
+        Lag 2: <input type="number" step="any" name="lag_2"><br>
+        Rolling Mean 3: <input type="number" step="any" name="rolling_mean_3"><br>
+        Accident Intensity: <input type="number" step="any" name="accident_intensity"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Traffic Volume: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
