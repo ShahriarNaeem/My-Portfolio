@@ -1,0 +1,795 @@
+Raster check report
+Folder: C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_01_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.6787157058716/65.38599395752
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_02_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.7366313934326/62.731582641602
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_03_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.6146259307861/48.351482391357
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_04_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.4280018806458/26.317554473877
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_05_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.0976638793945/17.849256515503
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_06_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.4794192314148/30.659114837646
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_07_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.1558146476746/24.992574691772
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_08_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.1515336036682/20.641487121582
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_09_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.6173610687256/104.08724212646
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_10_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.7969694137573/43.002910614014
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_11_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.4242172241211/62.43628692627
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2019_12_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 10.562630653381/50.195896148682
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_01_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.8160524368286/62.459503173828
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_02_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.3967370986938/64.720985412598
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_03_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.7596278190613/48.754314422607
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_04_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.9161157608032/15.987192153931
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_05_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.3229637145996/25.529815673828
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_06_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.063446521759/21.953706741333
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_07_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 3.5589425563812/19.13680267334
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_08_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 3.6525139808655/18.172918319702
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_09_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.1409721374512/46.975292205811
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_10_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.5052819252014/76.98949432373
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_11_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.29944896698/63.77486038208
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2020_12_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.9533586502075/85.582862854004
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_01_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.4992876052856/89.120986938477
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_02_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.5699424743652/79.518135070801
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_03_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 14.540227890015/77.339752197266
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_04_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.0408101081848/45.597057342529
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_05_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.7928085327148/38.427932739258
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_06_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 3.8885612487793/26.334117889404
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_07_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.2699685096741/27.927665710449
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_08_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.4569811820984/33.623687744141
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_09_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.0486297607422/61.93424987793
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_10_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.53551197052/51.678665161133
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_11_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.7603521347046/87.940322875977
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2021_12_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 14.620884895325/62.839275360107
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_01_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.1594839096069/89.03343963623
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_02_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 11.240265846252/76.031387329102
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_03_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.3327054977417/70.776565551758
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_04_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.2640767097473/31.201684951782
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_05_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.3047494888306/35.657112121582
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_06_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.6663680076599/26.97008895874
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_07_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.8078379631042/25.94469833374
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_08_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.5830569267273/25.264867782593
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_09_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.7886562347412/44.184234619141
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_10_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.1145553588867/61.096698760986
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_11_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 13.673225402832/88.059791564941
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2022_12_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.7021999359131/106.66220855713
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_01_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 10.729594230652/76.572929382324
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_02_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 9.0456418991089/61.749908447266
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_03_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.544340133667/76.707656860352
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_04_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.8258919715881/44.098052978516
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_05_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.6165165901184/41.214107513428
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_06_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.7051682472229/42.378265380859
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_07_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.5642442703247/26.213947296143
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_08_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 3.9384028911591/32.728893280029
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_09_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.1664047241211/33.642711639404
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_10_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.1058125495911/46.675720214844
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_11_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 10.580641746521/55.874084472656
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2023_12_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.220193862915/55.197292327881
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_01_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.1530699729919/72.312217712402
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_02_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.1798639297485/51.967102050781
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_03_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.6047458648682/42.790138244629
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_04_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.496768951416/21.172618865967
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_05_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 7.8815884590149/39.773506164551
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_06_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 5.4698934555054/28.366119384766
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_07_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.5755844116211/18.667901992798
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_08_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 4.4064865112305/22.964225769043
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_09_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.5215368270874/33.897548675537
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_10_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 6.09494972229/50.816230773926
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_11_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 11.584290504456/56.415683746338
+Calculated statistics OK
+
+== C:\Users\Shahriar Rahman\OneDrive\Desktop\GIS\Dhaka_NO2_Project\Raw_Data\UTM_Rasters_converted\NO2_2024_12_clip_UTM_ugm3.tif
+SpatialRef: WGS_1984_UTM_Zone_46N
+BandCount: 1
+PixelType: F32
+Format: TIFF
+Extent: 194121.6432243699 2602948.5788579234 270992.83115584997 2662304.8125771675
+Width x Height: 79 x 61
+NoDataValue: -3.4028234663852886e+38
+Min/Max: 8.8551797866821/62.040920257568
+Calculated statistics OK
+

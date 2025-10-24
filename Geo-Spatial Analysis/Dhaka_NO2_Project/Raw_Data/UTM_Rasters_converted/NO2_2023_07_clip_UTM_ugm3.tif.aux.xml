@@ -1,0 +1,27 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>tropospheric_NO2_column_number_density</Description>
+    <Histograms>
+      <HistItem>
+        <HistMin>4.564244270324707</HistMin>
+        <HistMax>26.21394729614258</HistMax>
+        <BucketCount>256</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>1|2|2|7|13|11|13|18|17|37|55|39|37|43|43|47|35|31|25|28|21|17|24|18|13|11|5|12|8|12|11|8|15|10|11|8|7|5|7|8|6|4|12|8|16|10|7|8|10|16|15|13|7|13|8|16|10|7|10|17|11|15|16|14|14|18|12|15|15|9|11|14|11|14|13|20|12|10|8|15|14|24|20|19|13|16|17|9|27|15|18|13|23|19|17|17|21|17|21|16|19|12|15|12|16|17|21|14|18|17|23|16|12|13|18|10|14|8|8|9|15|7|11|7|8|10|10|8|12|8|7|9|9|12|9|6|4|4|4|8|5|5|4|9|7|7|5|5|11|10|11|7|12|8|7|12|6|6|8|6|5|3|4|4|2|10|3|9|7|4|2|6|6|1|2|0|6|2|2|5|2|2|1|2|2|3|2|6|1|3|4|3|1|3|6|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|1</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata>
+      <MDI key="STATISTICS_COUNT">2310.000000</MDI>
+      <MDI key="STATISTICS_COVARIANCES">18.1075253666694</MDI>
+      <MDI key="STATISTICS_EXCLUDEDVALUES"></MDI>
+      <MDI key="STATISTICS_MAXIMUM">26.213947296143</MDI>
+      <MDI key="STATISTICS_MEAN">10.9367586751</MDI>
+      <MDI key="STATISTICS_MEDIAN">10.931804</MDI>
+      <MDI key="STATISTICS_MINIMUM">4.5642442703247</MDI>
+      <MDI key="STATISTICS_SKIPFACTORX">1</MDI>
+      <MDI key="STATISTICS_SKIPFACTORY">1</MDI>
+      <MDI key="STATISTICS_STDDEV">4.2552938049763</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
