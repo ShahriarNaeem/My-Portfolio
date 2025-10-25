@@ -1,0 +1,2 @@
+n_months,rmse,mae,mape_percent,bias_mean,pearson_r,r_squared,ccc
+72,18.222,15.513,37.719,-7.134,-0.003,0,0
