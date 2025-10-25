@@ -51,7 +51,25 @@ To explore the potential for modeling the relationship, a Leave-One-Month-Out (L
 *   **Linear Regression Performance:** The Linear Regression model achieved the lowest $\text{RMSE}_{\text{CV}}$ and $\text{MAE}_{\text{CV}}$. Surprisingly, it also yielded a high **negative correlation** ($r_{\text{CV}} = -0.890$). This counter-intuitive result suggests that the model is primarily learning to predict the nearly constant ground mean value, and the negative correlation is a mathematical artifact of the LOMO process on a dataset with one highly variable feature (Satellite) and one nearly constant target (Ground).
 *   **Model Utility:** The low $\text{RMSE}_{\text{CV}}$ values (around $1.3-1.8 \mu\text{g}/\text{m}^3$) indicate that the ground data is highly predictable, but this predictability is likely due to the ground data's low variance, not a robust relationship with the satellite data. The very low Concordance Correlation Coefficients ($\text{CCC}_{\text{CV}}$) confirm that neither model provides a reliable, highly concordant prediction.
 
-## 4. Conclusion
+## 4. $\text{NO}_2$ Reduction Analysis During COVID-19 Lockdown (April - June 2020)
+
+The time-series plot (monthly_timeseries.png) visually suggests a sharp drop in $\text{NO}_2$ concentrations, particularly in the satellite data, during the initial COVID-19 lockdown period in 2020. To quantify this reduction, the monthly mean $\text{NO}_2$ concentrations for April, May, and June 2020 were compared against the average of the same months in 2019 (pre-COVID baseline).
+
+| Dataset | Period | Mean $\text{NO}_2$ ($\mu\text{g}/\text{m}^3$) | Reduction from 2019 Baseline |
+| :--- | :--- | :--- | :--- |
+| **Ground Data** | Apr-Jun 2019 | 39.62 | 0.8% |
+| **Ground Data** | Apr-Jun 2020 | 40.07 | **-1.1% (Increase)** |
+| **Satellite Data** | Apr-Jun 2019 | 18.90 | 46.5% |
+| **Satellite Data** | Apr-Jun 2020 | 13.09 | **30.7%** |
+
+The analysis reveals a stark difference in the observed impact:
+
+*   **Ground Data:** The ground-based measurements show a **negligible change** (a slight increase of 1.1%) between the 2019 and 2020 April-June periods. This suggests that the local ground-level $\text{NO}_2$ concentration was highly stable and largely unaffected by the lockdown-induced reduction in emissions, or that the monitoring station is situated in an area where local emissions were not significantly reduced.
+*   **Satellite Data:** The satellite data, in contrast, recorded a **significant reduction of 30.7%** in the mean $\text{NO}_2$ concentration for the same period. This reduction is consistent with global observations of reduced atmospheric $\text{NO}_2$ during lockdowns due to decreased traffic and industrial activity.
+
+This disparity further highlights the **fundamental difference** between the two datasets: the satellite data captures a regional atmospheric signal that is sensitive to large-scale emission changes, while the ground data captures a highly localized signal that remained stable.
+
+## 5. Conclusion
 
 The statistical analysis strongly suggests that the **raw satellite $\text{NO}_2$ data is not statistically comparable to the ground-based $\text{NO}_2$ data** for this specific study area and period.
 
