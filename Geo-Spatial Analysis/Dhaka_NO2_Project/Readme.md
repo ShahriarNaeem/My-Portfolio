@@ -63,7 +63,7 @@ Further research or modeling efforts would need to focus on **bias correction** 
 
 ---
 
-**Attachments for Reference:**
+**Attachments for Reference (Outputs\comparison_outputs):**
 
 *   `comparison_results.csv`
 *   `statistical_closeness_summary.csv`
