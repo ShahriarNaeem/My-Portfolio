@@ -1,4 +1,4 @@
-# $\text{NO}_2$ Satellite vs. Ground Data Comparison Report
+# $\text{NO}_2$ Satellite vs. Ground Data Comparison Report for Dhaka, Bangladesh (Period: 2019 to 2024)
 
 This report summarizes the statistical analysis comparing monthly mean Nitrogen Dioxide ($\text{NO}_2$) concentrations derived from satellite remote sensing data against corresponding ground-based monitoring station data. The analysis covers a total of **72 months** (6 years) from January 2019 to December 2024.
 
